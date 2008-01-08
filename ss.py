@@ -3,7 +3,6 @@
 # *** SHED SKIN Python-to-C++ Compiler 0.0.25 ***
 # Copyright 2005-2007 Mark Dufour; License GNU GPL version 3 (See LICENSE)
 
-
 from compiler import *
 from compiler.ast import *
 from compiler.visitor import *
