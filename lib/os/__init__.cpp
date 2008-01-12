@@ -153,7 +153,11 @@ int removedirs(str *name) {
 
 
 int mkdir(str *path, int mode) {
+#ifdef WIN32
+    if (::mkdir(path->unit.c_str()) == -1)
+#else
     if (::mkdir(path->unit.c_str(), mode) == -1)
+#endif
         throw new OSError(path);
 }
 
