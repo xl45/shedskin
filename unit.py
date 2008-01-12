@@ -8789,7 +8789,7 @@ for arg in sys.argv[1:]:
 
 if not 'p' in options:
     print '*** SHEDSKIN Python->C++ Compiler ***'
-    print 'Copyright 2005, 2006 Mark Dufour; License GNU GPL version 3 (See LICENSE)'
+    print 'Copyright 2005-2008 Mark Dufour; License GNU GPL version 3 (See LICENSE)'
     print
 
 if 'h' in options:
