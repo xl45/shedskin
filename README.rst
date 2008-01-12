@@ -5,17 +5,13 @@ Shed Skin Tutorial
 :Date: Jan. 8, 2008
 :Authors: Mark Dufour and James Coughlan
 
-.. _documentation: documentation.html
-.. _homepage: homepage.html
-.. _Psyco: psyco.html
-.. _Parallel Python: pp.html
-.. _pprocess: pprocess.html
-.. _Sourceforge site: sf.html
-.. _scipy: scipy.html
-.. _numpy: numpy.html
-.. _quameon: quameon.html
-.. _Summer of code: soc.html
-.. _GHOP: ghop.html
+.. _Parallel Python: http://www.parallelpython.com/
+.. _Googlecode Site: http://shedskin.googlecode.com/
+.. _pprocess: http://www.boddie.org.uk/python/pprocess.html
+.. _numpy: http://numpy.scipy.org/
+.. _quameon: http://quameon.sourceforge.net/
+.. _Summer of code: http://code.google.com/soc/
+.. _GHOP: http://code.google.com/opensource/ghop/
 
 .. contents::
 
@@ -35,11 +31,11 @@ Introduction
 
 **Shed Skin** uses type inference techniques to determine the *implicit* types used in a Python program, in order to generate the *explicit* type declarations needed in a C++ version. Because C++ is *statically typed*, Shed Skin requires Python code to be written such that all variables are (implicitly) statically typed.
 
-Besides the *typing* and *subset* restrictions, supported programs cannot freely use the Python standard library, although the most common ones are supported, such as ``math`` and ``random`` (see `Library Limitations`_). 
+Besides the *typing* and *subset* restrictions, supported programs cannot freely use the Python standard library, although the most common modules are supported, such as ``math`` and ``random`` (see `Library Limitations`_). 
 
 Additionally, the type inference techniques employed by **Shed Skin** currently do not scale very well beyond several hundred lines of code (the largest compiled program is about 1,600 lines). In all, this means that **Shed Skin** is currently mostly useful to compile *smallish* programs and extension modules, that do not make extensive use of dynamic Python features or the standard library.
 
-Because **Shed Skin** is still in a very early stage of development, it can still improve a lot. At the moment, you will probably run into some bugs when using it. Please report these, so they can be fixed! 
+Because **Shed Skin** is still in a very early stage of development, it can also improve a lot. At the moment, you will probably run into some bugs when using it. Please report these, so they can be fixed! 
 
 At the moment, **Shed Skin** supports GNU/Linux and Windows platforms only.
 
@@ -56,7 +52,7 @@ is not allowed. However, as in C++, types can be *abstract* or *generic*, so tha
 
     a = A(); a = B() # good
 
-where **A** and **B** have a common base class, is allowed. 
+where **A** and **B** have a common base class, is allowed. (See `Tips and Tricks`_ for an example of a generic type.) 
 
 The typing restriction also means that the elements of some collection (``list``, ``set``, etc.) cannot have different types (because their *subtype* must also be static). Thus: ::
 
@@ -105,17 +101,17 @@ Python Subset Restrictions
 
 **Shed Skin** will only ever support a subset of all Python features. The following common features are currently not supported:
 
-  - variable numbers of and keyword arguments (varargs and kwargs)
+  - variable numbers of arguments and keyword arguments (varargs and kwargs)
   - arbitrary-size arithmetic (integers become 32-bit on a 32-bit machine!)
   - reflection (getattr, hasattr), eval, or other really dynamic stuff
   - multiple inheritance
   - generator expressions
-  - nested functions
+  - nested functions and classes
   - inheritance from builtins 
 
 Some other features are currently only partially supported:
 
-  - class attributes must always be accessed using a class identifier ::
+  - class attributes must always be accessed using a class identifier: ::
 
         self.class_attr # bad
         bla.class_attr # good
@@ -129,7 +125,7 @@ Library Limitations
 
 Programs to be compiled with **Shed Skin** cannot freely use the Python standard library. Only a handful of common modules is currently supported. 
 
-Note **Shed Skin** can be used build an extension module, so the main program can still use the full standard library (and of course all Python features!). See `Compiling an Extension Module`_. 
+Note that **Shed Skin** can be used to build an extension module, so the main program can still use the full standard library (and of course all Python features!). See `Compiling an Extension Module`_. 
 
 In general, programs can only import functionality that is defined in the **Shed Skin** ``lib/`` directory. The following modules are largely supported at the moment: 
 
@@ -145,20 +141,22 @@ In general, programs can only import functionality that is defined in the **Shed
   - sys (partially, but including argv, exit, stdin etc.)
   - time (partially, but including time and clock)
 
-For version **0.1** of **Shed Skin**, support for ``re``, ``datetime`` and ``socket`` is planned, as well as complete ``os`` and ``time`` support.
+For version **0.1** of **Shed Skin**, support for ``re``, ``datetime`` and ``socket`` is planned, as well as complete support for ``os`` and ``time``. (See `How to help out in Shed Skin Development`_ if you'd like to help improve support for these or other modules.)
 
 .. _Installation:
 
 Installation
 ------------
 
-The latest version of Shed Skin can be downloaded from the `Sourceforge site`_. There are three types of packages available: a GNU/Linux source package, a **Debian** package, and a self-extracting Windows installer. 
+The latest version of Shed Skin can be downloaded from the `Googlecode site`_. There are three types of packages available: a self-extracting Windows installer, a **Debian** package, and a GNU/Linux source package.
 
-To install the **Debian** package, simply download and install it using your package manager. To install the Windows version, simply download and start it.
+To install the Windows version, simply download and start it.
+
+To install the **Debian** package, simply download and install it using your package manager. 
 
 To install the GNU/Linux source package, take the following steps:
 
- - download and unpack the package 
+ - download and unpack it
  - install the Boehm garbage collector; on a **Debian** system this is simply:
     
    ``sudo apt-get install libgc-dev``
@@ -224,7 +222,7 @@ We begin with a simple example module, called ``simple_module.py``, containing t
         print func1(5)
         print func2(10)
 
-In order for type inference to work, note that the module must (*indirectly*) call its own functions (if ``func1`` calls ``func2``, we only need to add a call to ``func1``). This is accomplished in the example by putting the function calls in the if-statement so that they will not be executed when the module is imported.
+In order for type inference to work, note that the module must (*indirectly*) call its own functions (if ``func1`` calls ``func2``, we can omit the call to ``func2``). This is accomplished in the example by putting the function calls in the ``if __name__=='__main__'`` statement, so that they will not be executed when the module is imported.
 
 To compile the module into an extension module, type: ::
 
@@ -249,6 +247,8 @@ Note that calling ``func1`` with a non-integer argument causes an error: ::
         func1(10.5)
     TypeError: error in conversion to Shed Skin (integer expected)
 
+This error would not arise in standard Python, but arises with Shed Skin since it infers *specific* argument types for each function, based on how it is called in the module.
+ 
 It is useful to know which version of the module you are importing: either the **Shed Skin** version (``simple_module.so`` or ``simple_module.pyd``) or the original Python version (``simple_module.py`` or ``simple_module.pyc``). One way to determine this, is to include the following code in the top of the module: ::
 
     import sys
@@ -266,9 +266,7 @@ There are several important restrictions that must be observed when compiling an
 
 **Example for NumPy/SciPy users**
 
-Here we provide another example to illustrate the potential uses of **Shed Skin** with `SciPy`_ or `NumPy`_ (these are useful Python packages geared to scientific computations with support for matrices and multi-dimensional arrays).
-
-This simple example demonstrates how a matrix created in **NumPy** can be processed by a module compiled with **Shed Skin**. The function ``my_sum`` sums all the elements in a matrix: ::
+The following example demonstrates how a matrix created in `NumPy`_ can be processed by a module compiled with **Shed Skin**. The function ``my_sum`` sums all the elements in a matrix: ::
 
     #simple_module2.py
     #function to compute sum of elements in list of lists (matrix):
@@ -287,7 +285,9 @@ This simple example demonstrates how a matrix created in **NumPy** can be proces
         a=[[1.,2.],[3.,4.]]
         print my_sum(a)
 
-This example is given purely as an illustration, since `NumPy`_ arrays already include a built-in ``sum`` method.) After compiling the module with **Shed Skin**, the ``my_sum`` function can now be used as follows: ::
+(This example is given purely as an illustration, since `NumPy`_ arrays already include a built-in ``sum`` method.) 
+
+After compiling the module with **Shed Skin**, the ``my_sum`` function can now be used as follows: ::
 
     >>> import numpy
     >>> from simple_module import my_sum
@@ -295,7 +295,7 @@ This example is given purely as an illustration, since `NumPy`_ arrays already i
     >>> my_sum(a.tolist())
     10.0
 
-The ``tolist`` call is necessary here, as **Shed Skin** does not directly support `NumPy`_ or `SciPy`_ types.
+The ``tolist`` call is necessary here, as **Shed Skin** does not directly support `NumPy`_ types.
 
 
 .. _Parallel Processing:
@@ -338,8 +338,8 @@ To use the generated extension module with `Parallel Python`_ >= 1.5.1, simply a
     job_server.set_ncpus(2)
 
     jobs = []
-    jobs.append(job_server.submit(part_sum, (1, 1000000)))
-    jobs.append(job_server.submit(part_sum, (1000001, 2000000)))
+    jobs.append(job_server.submit(part_sum, (1, 10000000)))
+    jobs.append(job_server.submit(part_sum, (10000001, 20000000)))
 
     print sum([job() for job in jobs])
 
@@ -391,7 +391,7 @@ By moving ``stuff.*`` to ``lib/``, we have in fact added support for an arbitrar
 
 **Shed Skin Types**
 
-**Shed Skin** reimplements the Python builtins with its own set of C++ classes, built on the C++ Standard Template Library. They have a similar interface, so they should be easy to used, provided you have some basic C++ knowledge. See the class definitions in ``lib/builtin.hpp`` for details. If in doubt, convert some equivalent Python code to C++, and have a look at the result.
+**Shed Skin** reimplements the Python builtins with its own set of C++ classes, built on the C++ Standard Template Library. They have a similar interface, so they should be easy to use (provided you have some basic C++ knowledge.) See the class definitions in ``lib/builtin.hpp`` for details. If in doubt, convert some equivalent Python code to C++, and have a look at the result.
 
 .. _Command-line Options:
 
@@ -417,8 +417,6 @@ The ``--bounds`` option is used to catch index out-of-bounds errors in lists, tu
 
 The ``--nowrap`` option can speed up program execution by a modest amount, at the risk of giving wrong values for negative indices (``a[-1]`` in the above example.) Before using this option, make sure that your code will run safely with it.
 
-The type inference techniques performed by **Shed Skin** may currently end up in an infinite loop; if this happens, it sometimes helps to run **Shed Skin** with the ``--infinite`` option.
-
 .. _Tips and Tricks:
 
 Tips and Tricks
@@ -430,6 +428,8 @@ Tips and Tricks
 
 2. If you modify a module after compiling it with **Shed Skin**, you may find yourself unable to import the new version (e.g. to test it in **CPython** before recompiling with Shed Skin) until you delete the corresponding ``.pyd`` or ``.so`` file.
  
+3. Shed Skin takes the flags it sends to the C++ compiler from the ``FLAGS`` file in the Shed Skin working directory. These flags can be overridden by creating a local file with the same name.
+
 **Tricks**
 
 1. The used type inference techniques can end up in an infinite loop, especially for larger programs. If this happens, it sometimes helps to run **Shed Skin** with the ``--infinite`` command-line option.
@@ -464,13 +464,20 @@ Tips and Tricks
 How to help out in Shed Skin Development
 ----------------------------------------
 
-Open source projects, especially new ones such as **Shed Skin**, thrive on user feedback. Please visit the homepage_ and send in bug reports (email: ``mark.dufour@gmail.com``), patches or other code, suggestions about this document, or join the mailing list and start or participate in discussions (see the `Sourceforge site`_.)
+Open source projects, especially new ones such as **Shed Skin**, thrive on user feedback. Please send in bug reports (email: ``mark.dufour@gmail.com``), patches or other code, or suggestions about this document; or join the mailing list and start or participate in discussions (see the `Googlecode site`_.)
 
 If you are a student, you might want to consider applying for the yearly Google `Summer of Code`_ or `GHOP`_ projects. **Shed Skin** has so far successfully participated in one Summer of Code and one GHOP. 
 
 The following company/people deserve to be mentioned for their help with **Shed Skin** so far:
  
-Google, Bearophile, Jeff Miller, Harri Pasanen, Luis M. Gonzales, Denis de Leeuw Duarte, Paul Boddie and James Coughlan
+* Google
+* Bearophile
+* Paul Boddie 
+* James Coughlan
+* Luis M. Gonzales
+* Denis de Leeuw Duarte
+* Jeff Miller
+* Harri Pasanen
 
 .. _Roadmap:
 
