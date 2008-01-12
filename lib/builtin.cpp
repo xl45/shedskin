@@ -993,6 +993,10 @@ str *raw_input(str *msg) {
     return new str(s); 
 }
 
+int __int() {
+    return 0;
+}
+
 template<> int __int(str *s) {
     return __int(s, 10);
 }
@@ -1011,6 +1015,7 @@ int __int(str *s, int base) {
     return i;
 }
 
+double __float() { return 0; }
 template<> double __float(int p) { return p; }
 template<> double __float(double d) { return d; }
 template<> double __float(str *s) {
@@ -1344,6 +1349,8 @@ template<> str *hex(int i) {
 template<> str *oct(int i) {
     return (new str("0"))->__add__(__str(i, 8));
 }
+
+str *__str() { return new str(""); } /* XXX optimize */
 
 template<> str *__str(double t) {
     std::stringstream ss;

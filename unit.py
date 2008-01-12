@@ -121,6 +121,9 @@ except OSError, e:
     print e.strerror
     print e.filename
 
+#int(), float(), str(); test all
+print int(), float(), list(), dict(), set(), tuple(), frozenset(), # XXX repr(str())
+
 ''', '''
 output(equal=True)
 

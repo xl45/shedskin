@@ -74,17 +74,20 @@ template<class K, class V> dict<K,V> *__dict(pyiter<tuple2<K, V> *> *p);
 template<class K, class V> dict<K,V> *__dict(dict<K,V> *p);
 template<class K> dict<K,K> *__dict(pyiter<list<K> *> *p);
 
+int __int();
 template<class T> int __int(T t) { return t->__int__(); }
 template<> int __int(str *s);
 template<> int __int(int i);
 template<> int __int(double d);
 int __int(str *s, int base);
 
+double __float();
 template<class T> double __float(T t) { return t->__float__(); }
 template<> double __float(int i);
 template<> double __float(double f);
 template<> double __float(str *s);
 
+str *__str();
 template<class T> str *__str(T t);
 template<> str *__str(double t);
 str *__str(int t, int base=10);
@@ -194,14 +197,14 @@ template<class T> class cpp_cmp2 {
     public: int operator()(T t, T v) const { return __cmp(t, v) == -1; }
 };
 
-/* binding */
-
-#ifdef __SS_BIND
 template<class T> struct dereference {}; 
 template<class T> struct dereference <T*> {
     typedef T type;
 };
 
+/* binding */
+
+#ifdef __SS_BIND
 template<class T> T __to_ss(PyObject *p) {
     if(p==Py_None) return 0;
     return new (typename dereference<T>::type)(p); /* isn't C++ pretty :-) */

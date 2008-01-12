@@ -491,16 +491,16 @@ __exception.message = ''
 __exception.strerror = ''
 
 # --- builtin functions
-def str(x):                          
+def str(x=None):                          
     x.__str__()
     x.__repr__()
     return ''                       
 
-def int(x, base=1):  
+def int(x=None, base=1):  
     x.__int__()
     return 1        
 
-def float(x):                            
+def float(x=None):                            
     x.__float__()
     return 1.0                          
 

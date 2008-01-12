@@ -1786,12 +1786,7 @@ class moduleVisitor(ASTVisitor):
         objexpr, ident, direct_call, method_call, constructor, mod_var, parent_constr = analyze_callfunc(node)
 
         if constructor and ident == 'defaultdict':
-            if isinstance(node.node, Name) and node.node.name == 'int':
-                node.args[0] = Const(1)
-            elif isinstance(node.node, Name) and node.node.name == 'float':
-                node.args[0] = Const(1.0)
-            else:
-                node.args[0] = CallFunc(node.args[0], []) 
+            node.args[0] = CallFunc(node.args[0], []) 
 
         # --- arguments
         for arg in node.args: 
@@ -3717,7 +3712,7 @@ class generateVisitor(ASTVisitor):
             self.append(func.parent.bases[0].ident+'::'+node.node.attrname+'(') # XXX
 
         elif direct_call: # XXX no namespace (e.g., math.pow), check nr of args
-            if ident == 'float' and self.mergeinh[node.args[0]] == set([(defclass('float_'), 0)]):
+            if ident == 'float' and node.args and self.mergeinh[node.args[0]] == set([(defclass('float_'), 0)]):
                 self.visit(node.args[0], func)
                 return
             if ident in ['abs', 'int', 'float', 'str', 'dict', 'tuple', 'list', 'type', 'bool', 'cmp', 'sum']:
@@ -3865,7 +3860,8 @@ class generateVisitor(ASTVisitor):
                 self.append(', ')
 
         if constructor and ident == 'frozenset':
-            self.append(',1')
+            if pairs: self.append(',')
+            self.append('1')
         self.append(')')
         if constructor:
             self.append(')')
