@@ -649,7 +649,7 @@ int getsize(str *filename) {
     return (__os__::stat(filename))->st_size;
 }
 
-int getmtime(str *filename) {
+double getmtime(str *filename) {
     /**
     Return the last modification time of a file, reported by os.stat()
     */
@@ -657,7 +657,7 @@ int getmtime(str *filename) {
     return (__os__::stat(filename))->_st_mtime;
 }
 
-int getatime(str *filename) {
+double getatime(str *filename) {
     /**
     Return the last access time of a file, reported by os.stat()
     */
@@ -665,7 +665,7 @@ int getatime(str *filename) {
     return (__os__::stat(filename))->_st_atime;
 }
 
-int getctime(str *filename) {
+double getctime(str *filename) {
     /**
     Return the creation time of a file, reported by os.stat().
     */
