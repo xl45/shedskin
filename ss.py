@@ -1783,6 +1783,16 @@ class moduleVisitor(ASTVisitor):
             self.visit(node.node, func)
             inode(node.node).callfuncs.append(node) # XXX iterative dataflow analysis: move there
 
+        objexpr, ident, direct_call, method_call, constructor, mod_var, parent_constr = analyze_callfunc(node)
+
+        if constructor and ident == 'defaultdict':
+            if isinstance(node.node, Name) and node.node.name == 'int':
+                node.args[0] = Const(1)
+            elif isinstance(node.node, Name) and node.node.name == 'float':
+                node.args[0] = Const(1.0)
+            else:
+                node.args[0] = CallFunc(node.args[0], []) 
+
         # --- arguments
         for arg in node.args: 
             if isinstance(arg, Keyword):
@@ -1794,7 +1804,7 @@ class moduleVisitor(ASTVisitor):
              error('automatic argument unpacking is not supported', node)
 
         # --- handle instantiation or call
-        constructor = analyze_callfunc(node)[4]
+        #objexpr, ident, direct_call, method_call, constructor, mod_var, parent_constr = analyze_callfunc(node)
 
         if constructor:
             self.instance(node, constructor, func)
@@ -3811,6 +3821,9 @@ class generateVisitor(ASTVisitor):
         
             pairs = connect_actual_formal(node, target, parent_constr, check_error=True)
 
+            if constructor and ident=='defaultdict' and node.args:
+                pairs = pairs[1:]
+
         for (arg, formal) in pairs:
             if isinstance(arg, tuple):
                 # --- pack arguments as tuple
@@ -4874,7 +4887,9 @@ def callfunc_targets(node, merge):
         funcs = [t[0] for t in merge[node.node]]
 
     elif constructor:
-        if '__init__' in constructor.funcs: 
+        if ident == 'defaultdict' and len(node.args) == 2:
+            funcs = [constructor.funcs['__initdict__']] # XXX __initi__
+        elif '__init__' in constructor.funcs: 
             funcs = [constructor.funcs['__init__']]
 
     elif parent_constr:
@@ -5001,6 +5016,12 @@ def cpa(callnode, worklist):
 
         if objtype: objtype = (objtype,)
         else: objtype = ()
+
+        if ident == 'defaultdict' and len(callnode.thing.args) == 2:
+            if defclass('dict') in [x[0] for x in c]:
+                func = list(callnode.types())[0][0].funcs['__initdict__'] 
+            else:
+                func = list(callnode.types())[0][0].funcs['__inititer__'] 
 
         # filter CPA terms using filters on formals
         if not func.mv.module.builtin and not func.ident in ['__getattr__', '__setattr__']:
@@ -5156,6 +5177,7 @@ def connect_actual_formal(expr, func, parent_constr=False, check_error=False):
         if len(actuals)+len(keywords) > len(formals) and not func.varargs:
             #if func.ident != 'join':
             if not (func.mv.module.builtin and func.mv.module.ident == 'path' and func.ident == 'join'): # XXX
+                traceback.print_stack()
                 error("too many arguments in call to '%s'" % func.ident, expr)
         if len(actuals)+len(keywords) < len(formals)-len(func.defaults) and not expr.star_args:
             error("not enough arguments in call to '%s'" % func.ident, expr)

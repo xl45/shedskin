@@ -200,31 +200,121 @@ template <class T> __iter<T> *reversed(deque<T> *d) {
 }
 
 template <class K, class V> class defaultdict : public dict<K, V> {
-    V default_value;
+    typename __GC_HASH_MAP::iterator iter;
+
 public:
-    defaultdict(V v) {
-        default_value = v;
+    defaultdict() {
+    }
+
+    defaultdict(dict<K, V> *d) {
+
+    }
+
+    defaultdict(pyiter<tuple2<K, V> *> *i) {
+
     }
 
     V __getitem__(K k) {
-        typename __GC_HASH_MAP::iterator iter;
         iter = this->units.find(k);
         if(iter == this->units.end()) return __missing__(k);
         return iter->second;
     }
 
     V __missing__(K k) { 
-        this->units[k] = default_value;
-        return default_value; 
-    }
+        V v = new (typename dereference<V>::type)(); 
+        return (this->units[k] = v);
+    } 
 
     int __addtoitem__(K k, V v) {
         typename __GC_HASH_MAP::iterator iter;
         iter = this->units.find(k);
-        if(iter == this->units.end()) this->units[k] = (default_value, v);
-        else iter->second = __add(iter->second, v);
+        if(iter == this->units.end()) {
+            V defval = new (typename dereference<V>::type)();
+            this->units[k] = __add(defval, v);
+        }
+        else  
+            iter->second = __add(iter->second, v);
         return 0;
+    } 
+
+};
+
+#define __GC_HASH_MAPI __gnu_cxx::hash_map<K, int, hashfunc<K>, hasheq<K>, gc_allocator<std::pair<K, int> > >
+
+template<class K> class defaultdict<K, int> : public dict<K, int> {
+    typename __GC_HASH_MAPI::iterator iter;
+public:
+    defaultdict() {
     }
+
+    defaultdict(dict<K, int> *d) {
+        this->units = d->units;
+    }
+
+    defaultdict(pyiter<tuple2<K, int> *> *i) {
+       __iter<tuple2<K, int> *> *__0;
+       tuple2<K, int> *k;
+
+       FOR_IN(k, i, 0)
+           this->units[k->__getfirst__()] = k->__getsecond__();
+       END_FOR
+    }
+
+    int __missing__(K k) {
+        return (this->units[k] = 0);
+    }
+
+    int __getitem__(K k) {
+        iter = this->units.find(k);
+        if(iter == this->units.end()) return __missing__(k);
+        return iter->second;
+    }
+
+    int __addtoitem__(K k, int v) {
+        iter = this->units.find(k);
+        if(iter == this->units.end()) 
+            this->units[k] = v;
+        else  
+            iter->second = iter->second;
+        return 0;
+    } 
+
+};
+
+#define __GC_HASH_MAPD __gnu_cxx::hash_map<K, double, hashfunc<K>, hasheq<K>, gc_allocator<std::pair<K, double> > >
+
+template<class K> class defaultdict<K, double> : public dict<K, double> {
+    typename __GC_HASH_MAPD::iterator iter;
+public:
+    defaultdict() {
+    }
+
+    defaultdict(dict<K, double> *d) {
+
+    }
+
+    defaultdict(pyiter<tuple2<K, double> *> *i) {
+
+    }
+
+    double __missing__(K k) {
+        return (this->units[k] = 0);
+    }
+
+    double __getitem__(K k) {
+        iter = this->units.find(k);
+        if(iter == this->units.end()) return __missing__(k);
+        return iter->second;
+    }
+
+    double __addtoitem__(K k, double v) {
+        iter = this->units.find(k);
+        if(iter == this->units.end()) 
+            this->units[k] = v;
+        else  
+            iter->second = iter->second;
+        return 0;
+    } 
 
 };
 
