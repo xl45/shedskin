@@ -22,7 +22,7 @@ return _environ[n];
 namespace __os__ {
 
 str *const_0;
-str *linesep;
+str *linesep, *name;
 dict<str *, str *> *environ;
 struct stat sbuf;
 
@@ -57,6 +57,10 @@ int chdir(str *dir) {
         throw new OSError(dir);
 }
 
+str *strerror(int i) {
+    return new str(::strerror(i));
+}
+
 #ifndef WIN32
 str *readlink(str *path) {
     int size = 255;
@@ -84,7 +88,7 @@ int getgid() { return ::getgid(); }
 int fork() {
     int ret;
     if ((ret = ::fork()) == -1)
-        throw new OSError(new str("could not fork"));
+        throw new OSError();
     return ret;
 }
 
@@ -212,7 +216,7 @@ __cstat::__cstat(int fd) {
     this->__class__ = cl___cstat;
 
     if(fstat(fd, &sbuf) == -1)
-        throw new OSError(new str("file does not exist"));
+        throw new OSError();
 
     fill_er_up();
 }
@@ -305,6 +309,11 @@ void __init() {
     cl___cstat = new class_("__cstat", 4, 4);
 
     linesep = new str("\n");
+#ifdef WIN32
+    name = new str("nt");
+#else
+    name = new str("posix");
+#endif
     
     environ = new dict<str *, str *>();
 

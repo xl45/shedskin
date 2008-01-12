@@ -124,6 +124,30 @@ except OSError, e:
 #int(), float(), str(); test all
 print int(), float(), list(), dict(), set(), tuple(), frozenset(), # XXX repr(str())
 
+#collections.defaultdict
+from collections import defaultdict
+
+s1 = 'mississippi'
+d1 = defaultdict(int)
+for k1 in s1:
+    d1[k1] += 1
+
+print sorted(d1.items())
+
+s2 = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+d2 = defaultdict(list)
+for k2, v2 in s2:
+    d2[k2].append(v2)
+
+print sorted(d2.items())
+
+s3 = [('red', 1), ('blue', 2), ('red', 3), ('blue', 4), ('red', 1), ('blue', 4)]
+d3 = defaultdict(set)
+for k3, v3 in s3:
+    d3[k3].add(v3)
+
+print sorted(d3.items())
+
 ''', '''
 output(equal=True)
 

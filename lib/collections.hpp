@@ -237,6 +237,9 @@ public:
         return 0;
     } 
 
+    str *__repr__() {
+        return __add_strs(3, new str("defaultdict("), dict<K, V>::__repr__(), new str(")"));
+    }
 };
 
 #define __GC_HASH_MAPI __gnu_cxx::hash_map<K, int, hashfunc<K>, hasheq<K>, gc_allocator<std::pair<K, int> > >
@@ -275,10 +278,13 @@ public:
         if(iter == this->units.end()) 
             this->units[k] = v;
         else  
-            iter->second = iter->second;
+            iter->second = iter->second+v;
         return 0;
     } 
 
+    str *__repr__() {
+        return __add_strs(3, new str("defaultdict("), dict<K, int>::__repr__(), new str(")"));
+    }
 };
 
 #define __GC_HASH_MAPD __gnu_cxx::hash_map<K, double, hashfunc<K>, hasheq<K>, gc_allocator<std::pair<K, double> > >
@@ -312,10 +318,13 @@ public:
         if(iter == this->units.end()) 
             this->units[k] = v;
         else  
-            iter->second = iter->second;
+            iter->second = iter->second+v;
         return 0;
     } 
 
+    str *__repr__() {
+        return __add_strs(3, new str("defaultdict("), dict<K, double>::__repr__(), new str(")"));
+    }
 };
 
 void __init();

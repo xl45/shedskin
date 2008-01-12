@@ -10,7 +10,7 @@
 using namespace __shedskin__;
 namespace __os__ {
 
-extern str *linesep;
+extern str *linesep, *name;
 extern dict<str *, str *> *environ;
 extern str *altsep, *curdir, *defpath, *devnull, *extsep, *pardir, *pathsep, *sep;
 
@@ -62,6 +62,7 @@ int fork();
 #endif
 
 int stat_float_times(int newvalue=-1);
+str *strerror(int i);
 
 typedef OSError error;
 

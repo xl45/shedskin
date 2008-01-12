@@ -4941,7 +4941,8 @@ def cartesian_product(node, worklist):
         funcs = [(direct_call, 0, None)]
 
         if ident == 'dict':
-            if defclass('dict') in [t[0] for t in gx.cnode[expr.args[0],node.dcpa,node.cpa].types()]:
+            clnames = [t[0].ident for t in gx.cnode[expr.args[0],node.dcpa,node.cpa].types() if isinstance(t[0], class_)]
+            if 'dict' in clnames or 'defaultdict' in clnames:
                 funcs = [(node.mv.ext_funcs['__dict'], 0, None)]
 
     elif method_call:
@@ -5014,7 +5015,8 @@ def cpa(callnode, worklist):
         else: objtype = ()
 
         if ident == 'defaultdict' and len(callnode.thing.args) == 2:
-            if defclass('dict') in [x[0] for x in c]:
+            clnames = [x[0].ident for x in c if isinstance(x[0], class_)]
+            if 'dict' in clnames or 'defaultdict' in clnames:
                 func = list(callnode.types())[0][0].funcs['__initdict__'] 
             else:
                 func = list(callnode.types())[0][0].funcs['__inititer__'] 

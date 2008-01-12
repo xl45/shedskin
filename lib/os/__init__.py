@@ -1,5 +1,7 @@
 import os.path
 
+name = ''
+
 linesep = ''
 environ = {'':''}
 
@@ -56,6 +58,9 @@ def chown(path, uid, gid):
 
 def system(c):
     return 1
+
+def strerror(i):
+    return ''
 
 class __cstat:
     def __init__(self):
