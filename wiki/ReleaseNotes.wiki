@@ -1,3 +1,18 @@
 #summary Release notes
 
 = Shed Skin 0.0.26 =
+
+-support for:
+  -most os.path methods
+  -many os methods
+  -collections.defaultdict
+  -getopt.gnu_getopt
+  -5 of the last missing str methods
+  -some missing file functionality
+-improved locale support
+-removed many leading underscores in code generation
+-optimized string addition (a+b+c+..)
+-new documentation/tutorial
+-added a Debian package
+-moved to Google code hosting
+-many minor bug fixes
