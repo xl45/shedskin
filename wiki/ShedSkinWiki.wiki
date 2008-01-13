@@ -3,3 +3,5 @@
 Hi there,
 
 Please write down here anything that may be useful to other Shed Skin users, but is not mentioned in the tutorial. I'll have a look once in a while, and update the tutorial if necessary.
+
+=0.0.26 Release Notes=
