@@ -11,6 +11,10 @@ namespace std {
 #include <unistd.h>
 }
 
+#ifdef errno
+#undef errno
+#endif
+
 char *get_environ(int n) { 
 #ifndef WIN32
 return environ[n]; 
@@ -178,7 +182,7 @@ int makedirs(str *name, int mode) {
         try {
             makedirs(head, mode);
         } catch (OSError *e) {
-            if (e->_errno != EEXIST) {
+            if (e->errno != EEXIST) {
                 throw (e);
             }
         }

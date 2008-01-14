@@ -23,9 +23,15 @@
 #include <ext/hash_map>
 #include <ext/hash_set>
 
+#ifdef errno
+#undef errno
+#endif
+#ifdef fileno
+#undef fileno
+#endif
 #ifdef write
 #undef write
-#endif
+#endif 
 
 namespace __shedskin__ {
 
@@ -935,7 +941,7 @@ public:
 
 class OSError : public Exception { 
 public: 
-    int _errno;
+    int errno;
     str *filename; 
     str *message;
     str *strerror;

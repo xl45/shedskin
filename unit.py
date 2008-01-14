@@ -5,7 +5,71 @@ from sets import Set
 import traceback, sys, os, time
 
 tests = [
-('''fixes for 0.0.26''', '''
+
+('''fixes for 0.0.27; re''', '''
+#re
+import re
+
+try:
+	a = re.compile(r'\\b(?P<email_name>[\\w.-]+?)@(?P<email_domain>[a-z.-]{3,})\\b', re.IGNORECASE)
+	b = 'bob (BoB@gmaiL.com) said to sally (sally123_43.d@hOtmail.co.uk) that no-name (not_a-real@em_ail.dres) was annoying...'
+	
+	print a.search(b, 20).group(0)
+	print a.match(b, 5).expand(r'the found name: \\g<email_name>\\nthe domain: \\g<email_domain>')
+	print a.subn(r'\\1 AT \\g<email_domain>', b)
+	print a.sub(r'<a href="mailto:\\g<0>">\\1</a>', b)
+#	print a.findall(b)
+	
+	c = re.compile(r\'\'\'
+		\\b
+		(?P<protocol>https?|(ftp)|(?P<mailto>mailto))
+		:(?(mailto)|//)
+		(
+			(?P<user>[\\w._-]+?)
+			(?(mailto)
+					
+				|
+					:(?P<pass>[\\w._-]*?)
+			)
+			@
+		)?
+		(?P<domain>[\\w.-]+)
+		(?(mailto)
+				
+			|
+				(?P<path>/[^\\s]*)
+		)
+		\\b
+		\'\'\', re.X)
+	d = 'fasdf mailto:bob@gmail.com, dasdfed ftp://haha:hoho@bla.com/files, http://fsesdf@asd.com orRLY!!?!L!? \\
+	https://example.com/OMG.html'
+	
+	allm = c.finditer(d)
+	i = 1
+	for mo in allm:
+		s = str(i) + ': \\n'
+		s += '\\tfull: ' + mo.group(0)
+		s += '\\n\\tnamed: '
+		
+		gd = mo.groupdict()
+		for k in sorted(gd):
+			if gd[k] == None: continue
+			s += '\\n\\t\\t' + k + ': ' + gd[k]
+		
+		print s
+		i += 1
+	
+	print re.split(r'\\W+', b)
+	print re.split(r'(\\W+)', b, 2)
+	
+except re.error, msg:
+	print msg
+''', '''
+output(equal=True)
+
+'''),
+
+('''fixes for 0.0.26; os.path, defaultdict''', '''
 #simple fixes
 print 8+(2 if 1 else 3)
 print repr('\\377ai\\37aoi\\001123\\00hoi\\01hoi\\0hoi')
@@ -423,7 +487,7 @@ output(equal=True)
 
 '''),
 
-('''fixes for 0.0.21''', '''
+('''fixes for 0.0.21; collections.deque''', '''
 # iter.__len__
 print len(xrange(10))
 

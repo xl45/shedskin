@@ -958,7 +958,11 @@ int file::close() {
 
 int file::fileno() {
     __check_closed();
+#ifdef WIN32
+    return _fileno(f);
+#else
     return ::fileno(f);
+#endif
 }
 
 str *file::__repr__() {
@@ -1708,12 +1712,22 @@ template<> double __to_ss(PyObject *p) {
 
 #endif
 
-//int __errno() { return errno; }
+int get_errno() {
+#ifdef WIN32
+    return *_errno();
+#else
+    return errno;
+#endif
+}
+
+#ifdef errno
+#undef errno
+#endif
 
 // Exceptions
 OSError::OSError(str *filename) {
     this->filename = filename;
-    _errno = errno;
+    errno = get_errno();
     message = new str("");
     strerror = new str(::strerror(errno));
 }
