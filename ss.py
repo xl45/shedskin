@@ -6640,6 +6640,8 @@ def generate_code():
                 if gx.extension_module: 
                     if sys.platform == 'win32': line += ' -shared -Lc:/Python%s/libs -lpython%s' % (pyver2, pyver2) 
                     else: line += ' -shared -Xlinker -export-dynamic -lpython%s' % pyver
+                if 're' in [m.ident for m in mods]:
+                    line += ' -lpcre'
             print >>makefile, line
         print >>makefile
 
