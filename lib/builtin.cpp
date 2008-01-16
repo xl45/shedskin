@@ -1720,22 +1720,18 @@ int get_errno() {
 #endif
 }
 
-#ifdef errno
-#undef errno
-#endif
-
 // Exceptions
 OSError::OSError(str *filename) {
     this->filename = filename;
-    errno = get_errno();
+    _errno = get_errno();
     message = new str("");
-    strerror = new str(::strerror(errno));
+    strerror = new str(::strerror(_errno));
 }
 str *OSError::__str__() {
-    return __add_strs(7, new str("[Errno "), __str(errno), new str("] "), strerror, new str(": '"), filename, new str("'"));
+    return __add_strs(7, new str("[Errno "), __str(_errno), new str("] "), strerror, new str(": '"), filename, new str("'"));
 }
 str *OSError::__repr__() {
-    return __add_strs(5, new str("OSError("), __str(errno), new str(", '"), strerror, new str("')")); 
+    return __add_strs(5, new str("OSError("), __str(_errno), new str(", '"), strerror, new str("')")); 
 }
 
 } // namespace __shedskin__
