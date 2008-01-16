@@ -5,6 +5,7 @@
 #include <deque>
 
 using namespace __shedskin__;
+
 namespace __collections__ {
 
 template <class A> class deque;
@@ -199,8 +200,10 @@ template <class T> __iter<T> *reversed(deque<T> *d) {
     return new __dequereviter<T>(d);
 }
 
+#define __GC_HASH_MAP2 __gnu_cxx::hash_map<K, V, __shedskin__::hashfunc<K>, hasheq<K>, gc_allocator<std::pair<K, V> > >
+
 template <class K, class V> class defaultdict : public dict<K, V> {
-    typename __GC_HASH_MAP::iterator iter;
+    typename __GC_HASH_MAP2::iterator iter;
 
 public:
     defaultdict() {
@@ -226,7 +229,6 @@ public:
     } 
 
     int __addtoitem__(K k, V v) {
-        typename __GC_HASH_MAP::iterator iter;
         iter = this->units.find(k);
         if(iter == this->units.end()) {
             V defval = new (typename dereference<V>::type)();
@@ -242,7 +244,7 @@ public:
     }
 };
 
-#define __GC_HASH_MAPI __gnu_cxx::hash_map<K, int, hashfunc<K>, hasheq<K>, gc_allocator<std::pair<K, int> > >
+#define __GC_HASH_MAPI __gnu_cxx::hash_map<K, int, __shedskin__::hashfunc<K>, hasheq<K>, gc_allocator<std::pair<K, int> > >
 
 template<class K> class defaultdict<K, int> : public dict<K, int> {
     typename __GC_HASH_MAPI::iterator iter;
@@ -287,7 +289,8 @@ public:
     }
 };
 
-#define __GC_HASH_MAPD __gnu_cxx::hash_map<K, double, hashfunc<K>, hasheq<K>, gc_allocator<std::pair<K, double> > >
+
+#define __GC_HASH_MAPD __gnu_cxx::hash_map<K, double, __shedskin__::hashfunc<K>, hasheq<K>, gc_allocator<std::pair<K, double> > >
 
 template<class K> class defaultdict<K, double> : public dict<K, double> {
     typename __GC_HASH_MAPD::iterator iter;
