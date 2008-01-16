@@ -4558,12 +4558,13 @@ def typestrnew(split, root_class, cplusplus, orig_parent, node=None):
         if cplusplus: namespace = '__'+cl.module.ident+'__::'
 
     # --- recurse for types with parametric subtypes
+    template_vars = cl.template_vars # XXX why needed
     if cl.ident in ['pyiter', 'pyseq','pyset']: # XXX dynamic subtype check
         for c in classes:
             if 'A' in c.template_vars:
                 template_vars = {'A': c.template_vars['A']}
-    else:
-        template_vars = cl.template_vars
+    #else:
+    #    template_vars = cl.template_vars
 
     if not template_vars:
         if cl.ident in gx.cpp_keywords:
