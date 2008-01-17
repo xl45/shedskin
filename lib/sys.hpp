@@ -14,7 +14,15 @@ extern tuple2<int, int> *version_info;
 extern str *__name__, *copyright, *platform;
 extern int hexversion, maxint;
 extern file *_stdin, *_stdout, *_stderr;
-void exit(int code=0);
+
+void exit();
+template<class T> void exit(T x) {
+    if(x == 0)
+        std::exit(0);
+    print(_stderr, "%s\n", __str(x)); 
+    std::exit(1);
+}
+template<> void exit(int x);
 
 } // module namespace
 #endif

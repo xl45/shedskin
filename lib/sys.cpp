@@ -32,9 +32,13 @@ void __init(int c, char **v) {
     _stderr = new file(stderr); 
 }
 
-void exit(int code) {
-    std::exit(code);
-};
+void exit() {
+    std::exit(0);
+}; 
+
+template<> void exit(int x) {
+    std::exit(x);
+}
 
 } // module namespace
 
