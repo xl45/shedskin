@@ -13,4 +13,5 @@ Extension modules are currently quite limited; there is no support for custom cl
 Currently, Shed Skin does not support Exceptions such as SystemExit, ZeroDivisionError, OverflowError and the like.
 
 http://code.google.com/p/shedskin/issues/detail?id=1
+
 http://groups.google.com/group/shedskin-discuss/browse_thread/thread/949c561d12476f70
