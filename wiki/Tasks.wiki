@@ -15,3 +15,7 @@ Currently, Shed Skin does not support Exceptions such as SystemExit, ZeroDivisio
 http://code.google.com/p/shedskin/issues/detail?id=1
 
 http://groups.google.com/group/shedskin-discuss/browse_thread/thread/949c561d12476f70
+
+= Bootstrap fnmatch, glob.. =
+
+Using Shed Skin to compile pure-Python library modules helps improve library support and find bugs at the same time. Possible targets are fnmatch, glob, ..
