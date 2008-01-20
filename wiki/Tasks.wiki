@@ -23,3 +23,5 @@ Using Shed Skin to compile pure-Python library modules helps improve library sup
 = Cleanup file, cStringIO, pipes code =
 
 cStringIO and os.popen_pipe (in the future) both inherit from file. the corresponding code hierarchy on the C++ side is a bit ugly and probably extremely inefficient.
+
+= Test 174 fails under Windows =
