@@ -19,3 +19,7 @@ http://groups.google.com/group/shedskin-discuss/browse_thread/thread/949c561d124
 = Bootstrap fnmatch, glob.. =
 
 Using Shed Skin to compile pure-Python library modules helps improve library support and find bugs at the same time. Possible targets are fnmatch, glob, .. (add potential modules here)
+
+= Cleanup file, cStringIO, pipes code =
+
+cStringIO and os.popen_pipe (in the future) both inherit from file. the corresponding code hierarchy on the C++ side is a bit ugly and probably extremely inefficient.
