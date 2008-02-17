@@ -20,18 +20,18 @@ http://groups.google.com/group/shedskin-discuss/browse_thread/thread/949c561d124
 
 cStringIO and os.popen_pipe (in the future) both inherit from file. the corresponding code hierarchy on the C++ side is a bit ugly and probably extremely inefficient.
 
-= datetime implementation =
+= Datetime implementation =
 
 there is a datetime.py type model in lib/, but no C++ implementation yet. it should be possible to bootstrap most of the latter using Shed Skin.
 
-= socket support =
+= Socket support =
 
 nasty thing here is we seem to need to use winsock under windows.
 
-= replace set implementation with something faster = 
+= Replace set implementation with something faster = 
 
 the hash set used in Shed Skin is not as good as the one in Python, especially for unions, intersections and such. google's sparse hash project looks interesting.
 
-= optimize builtins, especially str =
+= Optimize builtins, especially str =
 
 there are many places in lib/builtin.?pp that can still be optimized further, especially for str.
