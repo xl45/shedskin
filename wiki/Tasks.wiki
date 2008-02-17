@@ -30,7 +30,7 @@ nasty thing here is we seem to need to use winsock under windows.
 
 = Replace set implementation with something faster = 
 
-the hash set used in Shed Skin is not as good as the one in Python, especially for unions, intersections and such. google's sparse hash project looks interesting.
+the hash set used in Shed Skin is not as good as the one in CPython, especially for unions, intersections and such. google's sparse hash project looks interesting.
 
 = Optimize builtins, especially str =
 
