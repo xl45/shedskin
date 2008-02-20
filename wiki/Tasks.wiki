@@ -35,3 +35,5 @@ the hash set used in Shed Skin is not as good as the one in CPython, especially 
 = Optimize builtins, especially str =
 
 there are many places in lib/builtin.?pp that can still be optimized further, especially for str.
+
+= Improve 'os' support under Windows =
