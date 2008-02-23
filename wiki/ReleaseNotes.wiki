@@ -2,7 +2,7 @@
 
 = Shed Skin 0.0.27 =
 
-- support for 're', via pcre (perl-compatible-regular-expressions)
+- support for 're', via libpcre (perl-compatible-regular-expressions)
 
 - support for 'time' (except for time.strptime under Windows)
 
