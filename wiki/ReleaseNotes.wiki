@@ -6,19 +6,21 @@
 
 - support for 'time' (except for time.strptime under Windows)
 
+- basic support for 'staticmethod' and 'property'
+
 - support for 'fnmatch', 'glob' (bootstrapped)
 
-- OSX support (including extension modules!)
-
-- split up compiler core, ss.py, into several files
-
 - improved support for 'os' (POSIX)
+
+- OSX support (including extension modules!)
 
 - many fixes for multi-dir/multi-file projects
 
 - several builtin optimizations (zip, list(str)..)
 
 - type model for 'datetime' (no C++ implementation yet)
+
+- split up compiler core, ss.py, into several files
 
 - many minor bugfixes
 
