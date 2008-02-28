@@ -33,3 +33,7 @@ the hash set used in Shed Skin is not as good as the one in CPython, especially 
 there are many places in lib/builtin.?pp that can still be optimized further, especially for str.
 
 = Improve 'os' support under Windows =
+
+= Code Review =
+
+the compiler source code is a bit messy. an extra pair of hands to perform minor cleanups and refactoring would be very useful.
