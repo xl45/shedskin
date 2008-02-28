@@ -24,10 +24,6 @@ cStringIO and os.popen_pipe (in the future) both inherit from file. the correspo
 
 there is a datetime.py type model in lib/, but no C++ implementation yet. it should be possible to bootstrap most of the latter using Shed Skin.
 
-= Socket support =
-
-nasty thing here is we seem to need to use winsock under windows.
-
 = Replace set implementation with something faster = 
 
 the hash set used in Shed Skin is not as good as the one in CPython, especially for unions, intersections and such. google's sparse hash project looks interesting.
