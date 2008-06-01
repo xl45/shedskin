@@ -17,7 +17,7 @@
 - Important fixes for type inference and inheritance
 
 - Restore compatibility with Python 2.3
-  
+
 - Many minor bugfixes
 
 
