@@ -1,5 +1,25 @@
 #summary Release notes
 
+= Shed Skin 0.0.28 =
+
+- Basic 'socket' support (Michael Elkins)
+
+- Support for os.{popen3, popen4} (Jaroslaw Tworek)
+
+- Support for time.strptime under Windows (David Marek)
+
+- Options for changing output dir, disabling annotation (Dave Tweed)
+
+- Support for 'cmp' and 'reverse' arguments of 'sorted' and 'list.sort'
+
+- Fixes for cross-module default arguments 
+
+- Important fixes for type inference and inheritance
+
+- Restore compatibility with Python 2.3
+  
+- Many minor bugfixes
+
 = Shed Skin 0.0.27 =
 
 - support for 're', via libpcre (perl-compatible-regular-expressions)
