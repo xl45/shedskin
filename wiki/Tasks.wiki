@@ -4,10 +4,6 @@
 
 The MingW contained in the Windows package is getting old. The MingW project has not yet upgraded to g++ 4.x, but there is at least one fork that is more uptodate (TODO: insert link)
 
-= Improve Extension Module Support = 
-
-Extension modules are currently quite limited; there is no support for custom classes, or classes such as collections.defaultdict, and calls can be quite slow because of recursive copying. 
-
 = Improve Support for Non-common Exceptions =
 
 Currently, Shed Skin does not support Exceptions such as SystemExit, ZeroDivisionError, OverflowError and the like.
@@ -20,19 +16,17 @@ http://groups.google.com/group/shedskin-discuss/browse_thread/thread/949c561d124
 
 cStringIO and os.popen_pipe (in the future) both inherit from file. the corresponding code hierarchy on the C++ side is a bit ugly and probably extremely inefficient.
 
-= Datetime implementation =
-
-there is a datetime.py type model in lib/, but no C++ implementation yet. it should be possible to bootstrap most of the latter using Shed Skin.
-
 = Replace set implementation with something faster = 
 
-the hash set used in Shed Skin is not as good as the one in CPython, especially for unions, intersections and such. google's sparse hash project looks interesting.
+the hash set used in Shed Skin is not as good as the one in CPython, especially for unions, intersections and such. in part, CPython is fast for these methods, because it avoids rehashing all the time (directly works with underlying hashtable). 
 
 = Optimize builtins, especially str =
 
 there are many places in lib/builtin.?pp that can still be optimized further, especially for str.
 
-= Improve 'os' support under Windows =
+= Improve 'os' support =
+
+especially under windows.
 
 = Code Review =
 
