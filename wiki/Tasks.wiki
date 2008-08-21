@@ -4,7 +4,7 @@
 
 The MingW contained in the Windows package is getting old. The MingW project has not yet upgraded to g++ 4.x, but there is at least one fork that is more uptodate (TODO: insert link)
 
-= Implement ConfigParser =
+= Add support for ConfigParser, by compiling it =
 
 this should be a nice exercise, be useful, and help locate bugs at the same time.
 
