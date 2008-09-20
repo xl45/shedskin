@@ -16,7 +16,7 @@
 
 - improvements to the import mechanism for nested modules (e.g. os.path)
 
-- __init__ is now less of a special case
+- _ _ init _ _ is now less of a special case
 
 - many fixes for calling ancestor methods (e.g. __init__)
 
