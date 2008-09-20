@@ -2,9 +2,9 @@
 
 = Shed Skin 0.0.29 =
 
-- datetime implementation (Karel Heyse, Pavel Vinogradov, FFAO, David Marek)
+- `datetime` implementation (Karel Heyse, Pavel Vinogradov, FFAO, David Marek)
 
-- ConfigParser implementation (suggested by Albert Hofkamp)
+- `ConfigParser` implementation (suggested by Albert Hofkamp)
 
 - staticmethod and property decorator support (Sanxyin)
 
@@ -12,19 +12,19 @@
 
 - FreeBSD, OpenSolaris and 64-bit support
 
-- support for mapping keys('%(key)x' % some_dict)
+- support for mapping keys(`'%(key)x' % some_dict`)
 
-- improvements to the import mechanism for nested modules (e.g. os.path)
+- improvements to the import mechanism for nested modules (e.g. `os.path`)
 
-- _ _ init _ _ is now less of a special case
+- `__init__` is now less of a special case
 
-- many fixes for calling ancestor methods (e.g. __init__)
+- many fixes for calling ancestor methods (e.g. `__init__`)
 
 - all example programs now compile to extension modules
 
 - avoid stack overflows for highly recursive/dynamic types
 
-- re.sub now accepts a replacement function
+- `re.sub` now accepts a replacement function
 
 - remove tuple hash caching (as CPython does not do this)
 
