@@ -6,9 +6,9 @@
 
 - `ConfigParser` implementation (suggested by Albert Hofkamp)
 
-- `staticmethod` and `property` decorator support (Sanxyin)
+- `staticmethod` and `property` decorator support (Seo Sanghyeon)
 
-- GCC 4.3 fixes (Sanxiyn, Winterknight)
+- GCC 4.3 fixes (Seo Sanghyeon, Winterknight)
 
 - FreeBSD, OpenSolaris and 64-bit support
 
