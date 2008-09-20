@@ -10,7 +10,7 @@
 
 - GCC 4.3 fixes (Sanxiyn, Winterknight)
 
-- FreeBSD, OpenSolaris and 64-bit GNU/Linux support
+- FreeBSD, OpenSolaris and 64-bit support
 
 - support for mapping keys('%(key)x' % some_dict)
 
