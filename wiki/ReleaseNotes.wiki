@@ -1,5 +1,35 @@
 #summary Release notes
 
+= Shed Skin 0.0.29 =
+
+- datetime implementation (Karel Heyse, Pavel Vinogradov, FFAO, David Marek)
+
+- ConfigParser implementation (suggested by Albert Hofkamp)
+
+- staticmethod and property decorator support (Sanxyin)
+
+- GCC 4.3 fixes (Sanxiyn, Winterknight)
+
+- FreeBSD, OpenSolaris and 64-bit GNU/Linux support
+
+- support for mapping keys('%(key)x' % some_dict)
+
+- improvements to the import mechanism for nested modules (e.g. os.path)
+
+- __init__ is now less of a special case
+
+- many fixes for calling ancestor methods (e.g. __init__)
+
+- all example programs now compile to extension modules
+
+- avoid stack overflows for highly recursive/dynamic types
+
+- re.sub now accepts a replacement function
+
+- remove tuple hash caching (as CPython does not do this)
+
+- many, many bugfixes
+
 = Shed Skin 0.0.28 =
 
 - basic 'socket' support (Michael Elkins)
