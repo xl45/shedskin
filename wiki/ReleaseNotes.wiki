@@ -6,7 +6,7 @@
 
 - `ConfigParser` implementation (suggested by Albert Hofkamp)
 
-- staticmethod and property decorator support (Sanxyin)
+- `staticmethod` and `property` decorator support (Sanxyin)
 
 - GCC 4.3 fixes (Sanxiyn, Winterknight)
 
