@@ -16,13 +16,9 @@ http://groups.google.com/group/shedskin-discuss/browse_thread/thread/949c561d124
 
 cStringIO and os.popen_pipe (in the future) both inherit from file. the corresponding code hierarchy on the C++ side is a bit ugly and probably extremely inefficient.
 
-= Replace set implementation with something faster = 
+= Optimize builtins =
 
-the hash set used in Shed Skin is not as good as the one in CPython, especially for unions, intersections and such. in part, CPython is fast for these methods, because it avoids rehashing all the time (directly works with underlying hashtable). 
-
-= Optimize builtins, especially str =
-
-there are many places in lib/builtin.?pp that can still be optimized further, especially for str.
+there are many places in lib/builtin.?pp that can still be optimized further.
 
 = Improve 'os' support =
 
