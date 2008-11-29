@@ -1,5 +1,29 @@
 #summary Release notes
 
+= Shed Skin 0.0.30 =
+
+- user-defined class support in extension modules
+
+- blindingly fast set implementation (FFAO)
+
+- complex number support
+
+- many string formatting improvements
+
+- None maps to NULL instead of 0, and prints as 'None'
+
+- re.match_object.group accepts multiple arguments
+
+- casting improvements
+
+- inheritance from builtin exceptions other than Exception
+
+- hashing None should work now
+
+- important type inference fix
+
+- many, many bugfixes
+
 = Shed Skin 0.0.29 =
 
 - `datetime` implementation (Karel Heyse, Pavel Vinogradov, FFAO, David Marek)
