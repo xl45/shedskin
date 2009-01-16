@@ -1,5 +1,31 @@
 #summary Release notes
 
+= Shed Skin 0.1 =
+
+- almost complete support for 'os' (UNIX)
+
+- jpeg decoder (1200 lines) and two other programs added to ss-progs
+
+- extension module fixes:
+
+  - improved exception handling
+
+  - support for frozenset
+
+  - improved compiler flags under OSX
+
+- important type inference fix (disappearing type)
+
+- improved variable overloading
+
+- casting improvements 
+
+- fixes for __setslice__, __delslice__ corner cases
+
+- xrange returns xrange object instead of iterator
+
+- several other bugfixes
+
 = Shed Skin 0.0.30 =
 
 - user-defined class support in extension modules
