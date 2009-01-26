@@ -22,7 +22,7 @@ there are many places in lib/builtin.?pp that can still be optimized further.
 
 = Improve 'os' support =
 
-especially under windows.
+some functionality missing under Windows.
 
 = Code Review =
 
