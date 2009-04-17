@@ -4,6 +4,10 @@
 
 The MingW contained in the Windows package is getting old. The MingW project has not yet upgraded to g++ 4.x, but there is at least one fork that is more uptodate (TODO: insert link)
 
+= Extension Module Improvements =
+
+keyword arguments should be relatively easy to add.
+
 = Improve Support for Non-common Exceptions =
 
 Currently, Shed Skin does not support Exceptions such as SystemExit, ZeroDivisionError, OverflowError and the like.
@@ -21,7 +25,7 @@ cStringIO and os.popen_pipe (in the future) both inherit from file. the correspo
 there are many places in lib/builtin.?pp that can still be optimized further.
 
 = Improve 'os' support =
-
+=
 some functionality missing under Windows.
 
 = Code Review =
