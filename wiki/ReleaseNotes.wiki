@@ -40,7 +40,7 @@
 
 -many minor bug fixes/improvements
 
-  -added os.SEEK..
+  -added os.SEEK`*`
 
   -added file.next
 
@@ -48,7 +48,7 @@
 
   -fixed overloading of __getitem__
 
-  -asterisk support in string formatting ('%*d' % (7,8))
+  -asterisk support in string formatting ('%`*`d' % (7,8))
 
   -optimized string slicing
 
