@@ -40,7 +40,7 @@
 
 -many minor bug fixes/improvements
 
-  -added os.SEEK*
+  -added os.SEEK..
 
   -added file.next
 
