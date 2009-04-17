@@ -1,5 +1,59 @@
 #summary Release notes
 
+= Shed Skin 0.1.1 = 
+
+-five new example programs:
+
+  -minilight: advanced raytracer (triangle primitives, octree spatial index)
+
+  -peter norvig's sudoku solver (solves top 95 difficult ones in under 10 seconds)
+
+  -interactive circle packing algorithm (pygame + compiled extension module)
+
+  -ao bench: ambient occlusion benchmark
+
+  -mastermind strategy evaluator
+
+-removal of generic type support (nice, but rarely useful)
+
+  -no need for command-line option -i anymore
+
+  -compiler core is now 10% smaller (from 7700 to under 7000 lines)
+
+  -weird templates would confuse user
+
+-traditional important TI fixes (disappearing types, non-termination)
+
+-compiler should use about 25% less memory and CPU time
+
+-huge refactoring for readability in infer.py and cpp.py
+
+-extmod fixes:
+
+  -incref None, so it doesn't get deallocated
+
+  -accept None when converting to custom class instance
+
+-new command-line option -r, for faster random number generator (C rand())
+
+-bounds checking is now on by default (for compatibility), -b now turns it off
+
+-many minor bug fixes/improvements
+
+  -added os.SEEK*
+
+  -added file.next
+
+  -fixed return type of re.groups
+
+  -fixed overloading of __getitem__
+
+  -asterisk support in string formatting ('%*d' % (7,8))
+
+  -optimized string slicing
+
+-added performance tips to tutorial
+
 = Shed Skin 0.1 =
 
 - almost complete support for 'os' (UNIX)
