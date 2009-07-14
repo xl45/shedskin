@@ -4,7 +4,7 @@
 
 - 7 new example programs (some removed, now 40 in total):
 
-  -disco: an simple Monte Carlo + UCT go player (368 lines, mark dufour)
+  -disco: a simple Monte Carlo + UCT go player (368 lines, mark dufour)
 
   -a more advanced voronoi algorithm (795 lines; steve fortune, bill simons)
 
