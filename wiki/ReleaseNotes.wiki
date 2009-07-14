@@ -27,6 +27,7 @@
 
 - fixes for 'import as' 
  
+
 - follow module initialization order
 
 - optimized 'len(list)' (remove virtual call)
@@ -42,6 +43,7 @@
 - cleanup compiler core further, removing about 100 lines again
 
 - many minor bugfixes
+
 
 = Shed Skin 0.1.1 = 
 
