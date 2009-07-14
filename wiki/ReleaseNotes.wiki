@@ -36,7 +36,7 @@
 
 - fysphun example now uses an extension module
 
-- "_" is not a special-case variable anymore (could be dynamic before)
+- _ is not a special-case variable anymore (could be dynamic before)
 
 - cleanup compiler core further, removing about 100 lines again
 
