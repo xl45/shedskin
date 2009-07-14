@@ -40,7 +40,7 @@
 
 - variable with name underscore no special case anymore (could be dynamic)
 
-- cleanup compiler core further, removing about 100 lines again
+- cleaned up compiler core further, removing about 100 lines again
 
 - many minor bugfixes
 
