@@ -10,7 +10,7 @@
 
   -another neural network (raymond hettinger, jeff hinrichs)
 
-  -TSP approximation using ant colonies
+  -TSP approximation using ant colonies (eric rollins)
 
   -Lempel-Ziv compressor (David MacKay)
 
