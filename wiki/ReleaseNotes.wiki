@@ -12,11 +12,11 @@
 
   -TSP approximation using ant colonies (eric rollins)
 
-  -Lempel-Ziv compressor (David MacKay)
+  -Lempel-Ziv compressor (david mackay)
 
-  -huffman block compressor (David MacKay)
+  -huffman block compressor (david mackay)
 
-  -arithmetic coding compressor (David MacCay)
+  -arithmetic coding compressor (david mackay)
 
 - many inlining optimizations
 
