@@ -1,5 +1,47 @@
 #summary Release notes
 
+= Shed Skin 0.2 =
+
+- 7 new example programs (some removed, now 40 in total):
+
+  -disco: an elegant Monte Carlo + UCT go player (368 lines, mark dufour)
+
+  -a more advanced voronoi algorithm (795 lines; steve fortune, bill simons)
+
+  -another neural network (raymond hettinger, jeff hinrichs)
+
+  -TSP approximation using ant colonies
+
+  -Lempel-Ziv compressor (David MacKay)
+
+  -huffman block compressor (David MacKay)
+
+  -arithmetic coding compressor (David MacCay)
+
+- many inlining optimizations
+
+- huge speedups for 'for .., .. in enumerate/zip(sequence, [sequence])' 
+  
+- important TI fix (involving default arguments)
+
+- fixes for 'import as' 
+ 
+- follow module initialization order
+
+- optimized 'len(list)' (remove virtual call)
+
+- optimized list slicing (when step is 1)
+
+- drop compatibility with 2.3, follow 2.6 implementation
+
+- fysphun example now uses an extension module
+
+- '_' is not a special-case variable anymore (could be dynamic before)
+
+- cleanup compiler core further, removing about 100 lines again
+
+- many minor bugfixes
+
 = Shed Skin 0.1.1 = 
 
 -five new example programs:
