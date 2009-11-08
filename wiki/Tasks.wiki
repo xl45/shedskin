@@ -25,7 +25,7 @@ cStringIO and os.popen_pipe (in the future) both inherit from file. the correspo
 there are many places in lib/builtin.?pp that can still be optimized further.
 
 = Improve 'os' support =
-=
+
 some functionality missing under Windows.
 
 = Code Review =
@@ -34,8 +34,8 @@ the compiler source code is a bit messy. an extra pair of hands to perform minor
 
 = dict rewrite = 
 
-this one is a bit difficult. rewrite the dict implementation in lib/builtin.?pp based on the cpython code, as ffao did for the set class.
+(this one is a bit difficult). rewrite the dict implementation in lib/builtin.?pp based on the cpython code, like ffao did for the set implementation.
 
 = use c++ library for str =
 
-this one is a bit difficult too. rip out the str implementation and replace it with a python-compatible C++ library, if such a thing exists.
+(this one is a bit difficult). rip out the str implementation and replace it with a python-compatible C++ library, if such a thing exists. that would certainly clean things up, and solve many efficiency problems.
