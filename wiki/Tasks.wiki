@@ -31,3 +31,11 @@ some functionality missing under Windows.
 = Code Review =
 
 the compiler source code is a bit messy. an extra pair of hands to perform minor cleanups and refactoring would be very useful.
+
+= dict rewrite = 
+
+this one is a bit difficult. rewrite the dict implementation in lib/builtin.?pp based on the cpython code, as ffao did for the set class.
+
+= use c++ library for str =
+
+this one is a bit difficult too. rip out the str implementation and replace it with a python-compatible C++ library, if such a thing exists.
