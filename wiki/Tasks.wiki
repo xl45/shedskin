@@ -36,6 +36,6 @@ the compiler source code is a bit messy. an extra pair of hands to perform minor
 
 (this one is a bit difficult). rewrite the dict implementation in lib/builtin.?pp based on the cpython code, like ffao did for the set implementation.
 
-= Use c++ library for str =
+= Use C++ library for str =
 
 (this one is a bit difficult). rip out the str implementation and replace it with a python-compatible C++ library, if such a thing exists. that would certainly clean things up, and solve many efficiency problems.
