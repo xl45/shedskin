@@ -20,7 +20,7 @@
 
 - many inlining optimizations
 
-- huge speedups for 'for .., .. in enumerate/zip(sequence, [sequence])' 
+- huge speedups for 'for a, b in enumerate/zip(sequence, [sequence])' 
   
 
 - important TI fix (involving default arguments)
