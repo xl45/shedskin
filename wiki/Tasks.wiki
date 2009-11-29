@@ -42,4 +42,4 @@ the compiler source code is a bit messy. an extra pair of hands to perform minor
 
 = Matrix support =
 
-investigate the options for doing fast matrix calculations using shedskin. numpy seems too flexible to do type inference on, but perhaps there are other options, like Python bindings to some C/C++ library? 
+investigate the options for doing fast matrix calculations using shedskin. if numpy is too flexible to do type inference on (dunno), perhaps something like eigen may be useful?
