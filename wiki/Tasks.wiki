@@ -38,4 +38,8 @@ the compiler source code is a bit messy. an extra pair of hands to perform minor
 
 = Matrix support =
 
-investigate the options for doing fast matrix calculations using shedskin. if numpy is too flexible to do type inference on (dunno), perhaps something like eigen may be useful?
+investigate the options for doing fast matrix calculations using shedskin. if numpy is too flexible to do type inference on (dunno), perhaps something like eigen may be useful? (see also next point)
+
+= buffer/memoryview support =
+
+to avoid copying overhead of using an extension module, e.g. for large lists/matrices.
