@@ -2,7 +2,7 @@
 
 = Shed Skin 0.3 =
 
-- support for 3 new standard library modules:
+- support for 3 new standard library modules (now about 20 in total):
 
     - itertools (jeremie roquet)
 
