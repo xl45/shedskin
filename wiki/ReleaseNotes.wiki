@@ -42,6 +42,10 @@
 
 - optimized list slicing
 
+- ignore blocks surrounded by #{ and }# (schrick)
+
+- add --makefile option (schrick)
+
 - several cleanups, removing about 100 lines again
 
 - large amount of bugfixes
