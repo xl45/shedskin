@@ -42,7 +42,7 @@
 
 - optimized list slicing
 
-- ignore blocks surrounded by #{ and }# (schrick)
+- ignore blocks surrounded by #{ and #} (schrick)
 
 - add --makefile option (schrick)
 
