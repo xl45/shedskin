@@ -1,5 +1,51 @@
 #summary Release notes
 
+= Shed Skin 0.3 =
+
+- support for 3 new standard library modules:
+
+    - itertools (jeremie roquet)
+
+    - heapq (jeremie roquet)
+
+    - csv (converted using shedskin)
+
+- 4 new example programs (now 44 in total!):      
+  
+    - maximum weighted matching algorithm (joris van rantwijk)
+
+    - kanoodle: knuth's dancing links (david austin)
+
+    - bidirectional dijkstra algorithm (from networkx)
+
+    - barnes-hut force calculation
+
+- improved type inference (scalability, bugfixes, major cleanup)
+
+- support for 'map', 'filter', 'reduce' and 'next'
+
+- support for 'with' statement (jeremie roquet)
+
+- support for 'key' argument of 'sorted' (and 'list.sort')
+
+- reorganized codebase, distutils setup.py (thomas spura)
+
+- optimized list indexing (joris van rantwijk)
+
+- optimized addition of 1-length lists and strings
+
+- improved forward referencing of variables/functions
+
+- avoid GCC warnings for 'shedskin -e'
+
+- support for passing keyword arguments to extension module
+
+- optimized 'list.__slice__'
+
+- several cleanups, removing about 100 lines again
+
+- large amount of bugfixes
+
 = Shed Skin 0.2 =
 
 - 7 new example programs (some removed, now 40 in total):
