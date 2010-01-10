@@ -42,9 +42,9 @@
 
 - optimized list slicing
 
-- ignore blocks surrounded by #{ and #} (schrick)
+- ignore blocks surrounded by #{ and #} (mike schrick)
 
-- add --makefile option (schrick)
+- add --makefile option (mike schrick)
 
 - several cleanups, removing about 100 lines again
 
