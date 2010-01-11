@@ -36,7 +36,7 @@
 
 - improved forward referencing of variables/functions
 
-- avoid GCC warnings for 'shedskin -e'
+- avoid GCC warnings after 'shedskin -e'
 
 - support for passing keyword arguments to extension module
 
