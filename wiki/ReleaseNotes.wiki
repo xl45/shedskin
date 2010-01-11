@@ -16,7 +16,7 @@
 
     - kanoodle: knuth's dancing links (david austin)
 
-    - bidirectional dijkstra algorithm (from networkx)
+    - bidirectional dijkstra algorithm (from networkx, uses heapq)
 
     - barnes-hut force calculation
 
