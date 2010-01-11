@@ -38,7 +38,7 @@
 
 - avoid GCC warnings after 'shedskin -e'
 
-- support for passing keyword arguments to extension module
+- support for passing keyword arguments to extension modules
 
 - optimized list slicing
 
