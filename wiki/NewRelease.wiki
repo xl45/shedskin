@@ -14,8 +14,7 @@
 
 -new examples: 
 
-  -pylife (by david bau, based on the wonderful hashlife
-algorithm)
+  -pylife (by david bau, based on the wonderful hashlife algorithm)
 
   -a-star/pygame algorithm
 
