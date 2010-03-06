@@ -8,10 +8,6 @@
 
 -support for the 'key' argument of 'min' and 'max'
 
--support for 'bin'
-
--support for 'math.factorial'
-
 -new examples: 
 
   -pylife (by david bau, based on the wonderful hashlife algorithm)
@@ -24,13 +20,15 @@
 
 -resolved some licensing issues for time.strptime and string hashing implementations
 
+-pass defaultdicts to/from extension modules
+
 -support for open('U')
 
 -support 'dict([[1,1]])' and similar 
 
--implement random.triangular (new in 2.6)
+-support for 'bin'
 
--pass defaultdicts to/from extension modules
+-support for 'math.factorial'
 
 = Todo =
 
