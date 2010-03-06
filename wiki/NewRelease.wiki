@@ -3,43 +3,58 @@
 = Done =
 
 -support for generator expressions 
--first-class support for booleans (so they print as 'True', for
-example) 
+
+-first-class support for booleans (so they print as 'True', for example) 
+
 -support for the 'key' argument of 'min' and 'max'
+
 -support for 'bin'
+
 -support for 'math.factorial'
+
 -new examples: 
+
   -pylife (by david bau, based on the wonderful hashlife
 algorithm)
+
   -a-star/pygame algorithm
--several improvements to 'defaultdict' (for example, support for
-'defaultdict(None, ..)')
--improved partial support for '**kwargs' in lib/.
--resolved some licensing issues for time.strptime and string hashing
-implementations 
+
+-several improvements to 'defaultdict' (for example, support for 'defaultdict(None, ..)')
+
+-improved partial support for '**kwargs' in lib/
+
+-resolved some licensing issues for time.strptime and string hashing implementations
+ 
 -support for open('U')
+
 -support 'dict([[1,1]])' and similar 
+
 -implement random.triangular (new in 2.6)
+
+-pass defaultdicts to/from extension modules
 
 = Todo =
 
 -support for __iter__ methods (the analysis part works fine already)
--add memoryview support or similar, for easier integration with numpy
-and such
--examples/life.py seems to trigger an infinite loop in TI, and worse,
-results are imprecise after the maximum number of iterations
+
+-add memoryview support or similar, for easier integration with numpy and such
+
+-examples/life.py seems to trigger an infinite loop in TI, and worse, results are imprecise after the maximum number of iterations
+
 -improve IO speed
--investigate whether GC is not scanning lists/tuples of integers at
-the moment, which is pointless if there are no secret pointers in
-there. (for sets of ints, GC is already disabled specifically)
+
+-investigate whether GC is not scanning lists/tuples of integers at the moment, which is pointless if there are no secret pointers in there. (for sets of ints, GC is already disabled specifically)
+
 -fix GCC warnings that occur when enabling all warnings
+
 -what happens on 'raise SystemExit'?
--pass defaultdicts to/from extension modules
--add some new examples (almost 50 already!)
--hashing of floats is different from CPython; printing of floats is
-close, but not perfect.
+
+-hashing of floats is different from CPython; printing of floats is close, but not perfect.
+
 -fix issue 53 (it looks like we may be forced to add some kind of type
 declarations to lib/ to solve this.. though ugly it would be
 relatively simple to do).
+
 -(list.)sort(ed) calls the 'key' argument more often than CPython
+
 -random.seed: support None or hashable argument
