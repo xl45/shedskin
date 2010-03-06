@@ -23,7 +23,7 @@
 -improved partial support for '**kwargs' in lib/
 
 -resolved some licensing issues for time.strptime and string hashing implementations
- 
+
 -support for open('U')
 
 -support 'dict([[1,1]])' and similar 
