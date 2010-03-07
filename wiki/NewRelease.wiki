@@ -30,6 +30,8 @@
 
 -support for 'math.factorial'
 
+-random.seed: support None or hashable argument
+
 = Todo =
 
 -support for __iter__ methods (the analysis part works fine already)
@@ -53,5 +55,3 @@ declarations to lib/ to solve this.. though ugly it would be
 relatively simple to do).
 
 -(list.)sort(ed) calls the 'key' argument more often than CPython
-
--random.seed: support None or hashable argument
