@@ -32,6 +32,8 @@
 
 -random.seed: support None or hashable argument
 
+-fix most GCC warnings that occur when enabling all warnings
+
 = Todo =
 
 -support for __iter__ methods (the analysis part works fine already)
@@ -43,8 +45,6 @@
 -improve IO speed
 
 -investigate whether GC is not scanning lists/tuples of integers at the moment, which is pointless if there are no secret pointers in there. (for sets of ints, GC is already disabled specifically)
-
--fix GCC warnings that occur when enabling all warnings
 
 -what happens on 'raise SystemExit'?
 
