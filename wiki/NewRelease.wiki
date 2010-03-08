@@ -32,7 +32,7 @@
 
 -random.seed: support None or hashable argument
 
--fix most GCC warnings that occur when enabling all warnings
+-fix many GCC warnings that occur when enabling all warnings
 
 = Todo =
 
@@ -45,8 +45,6 @@
 -investigate whether GC is not scanning lists/tuples of integers at the moment, which is pointless if there are no secret pointers in there. (for sets of ints, GC is already disabled specifically)
 
 -what happens on 'raise SystemExit'?
-
--hashing of floats is different from CPython; printing of floats is close, but not perfect.
 
 -fix issue 53 (it looks like we may be forced to add some kind of type
 declarations to lib/ to solve this.. though ugly it would be
