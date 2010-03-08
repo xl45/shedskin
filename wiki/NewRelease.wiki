@@ -38,8 +38,6 @@
 
 -support for __iter__ methods (the analysis part works fine already)
 
--add memoryview support or similar, for easier integration with numpy and such
-
 -examples/life.py seems to trigger an infinite loop in TI, and worse, results are imprecise after the maximum number of iterations
 
 -improve IO speed
@@ -55,3 +53,7 @@ declarations to lib/ to solve this.. though ugly it would be
 relatively simple to do).
 
 -(list.)sort(ed) calls the 'key' argument more often than CPython
+
+= Moved to later release = 
+
+-add memoryview support or similar, for easier integration with numpy and such
