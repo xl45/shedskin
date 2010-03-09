@@ -40,8 +40,6 @@
 
 -examples/life.py seems to trigger an infinite loop in TI, and worse, results are imprecise after the maximum number of iterations
 
--improve IO speed
-
 -investigate whether GC is not scanning lists/tuples of integers at the moment, which is pointless if there are no secret pointers in there. (for sets of ints, GC is already disabled specifically)
 
 -what happens on 'raise SystemExit'?
@@ -50,8 +48,10 @@
 declarations to lib/ to solve this.. though ugly it would be
 relatively simple to do).
 
--(list.)sort(ed) calls the 'key' argument more often than CPython
+= Moved to later release, or if someone volunteers = 
 
-= Moved to later release = 
+-improve IO speed
+
+-(list.)sort(ed) calls the 'key' argument more often than CPython
 
 -add memoryview support or similar, for easier integration with numpy and such
