@@ -34,6 +34,8 @@
 
 -fix many GCC warnings that occur when enabling all warnings
 
+-improvements for SystemExit
+
 = Todo =
 
 -support for __iter__ methods (the analysis part works fine already)
@@ -41,8 +43,6 @@
 -examples/life.py seems to trigger an infinite loop in TI, and worse, results are imprecise after the maximum number of iterations
 
 -investigate whether GC is not scanning lists/tuples of integers at the moment, which is pointless if there are no secret pointers in there. (for sets of ints, GC is already disabled specifically)
-
--what happens on 'raise SystemExit'?
 
 -fix issue 53 (it looks like we may be forced to add some kind of type
 declarations to lib/ to solve this.. though ugly it would be
