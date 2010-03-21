@@ -14,6 +14,8 @@
 
   -a-star/pygame algorithm
 
+-fix issue 53: casting to builtins when type inference is not enough
+
 -several improvements to 'defaultdict' (for example, support for 'defaultdict(None, ..)')
 
 -improved partial support for '**kwargs' in lib/
@@ -43,10 +45,6 @@
 -examples/life.py seems to trigger an infinite loop in TI, and worse, results are imprecise after the maximum number of iterations
 
 -investigate whether GC is not scanning lists/tuples of integers at the moment, which is pointless if there are no secret pointers in there. (for sets of ints, GC is already disabled specifically)
-
--fix issue 53 (it looks like we may be forced to add some kind of type
-declarations to lib/ to solve this.. though ugly it would be
-relatively simple to do).
 
 = Moved to later release, or if someone volunteers = 
 
