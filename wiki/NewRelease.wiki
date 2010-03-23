@@ -8,6 +8,8 @@
 
 -support for the 'key' argument of 'min' and 'max'
 
+-dropped windows support
+
 -new examples: 
 
   -pylife (by david bau, based on the wonderful hashlife algorithm)
