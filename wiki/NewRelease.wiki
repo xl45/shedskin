@@ -18,6 +18,8 @@
 
 -fix issue 53: casting to builtins when type inference is not enough
 
+-examples/life.py seems to trigger an infinite loop in TI, and worse, results are imprecise after the maximum number of iterations
+
 -several improvements to 'defaultdict' (for example, support for 'defaultdict(None, ..)')
 
 -improved partial support for '**kwargs' in lib/
@@ -43,8 +45,6 @@
 = Todo =
 
 -support for __iter__ methods (the analysis part works fine already)
-
--examples/life.py seems to trigger an infinite loop in TI, and worse, results are imprecise after the maximum number of iterations
 
 -investigate whether GC is not scanning lists/tuples of integers at the moment, which is pointless if there are no secret pointers in there. (for sets of ints, GC is already disabled specifically)
 
