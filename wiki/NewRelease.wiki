@@ -18,7 +18,7 @@
 
 -fix issue 53: casting to builtins when type inference is not enough
 
--examples/life.py seems to trigger an infinite loop in TI, and worse, results are imprecise after the maximum number of iterations
+-examples/life.py: randomize TI a bit, to avoid getting stuck
 
 -several improvements to 'defaultdict' (for example, support for 'defaultdict(None, ..)')
 
@@ -42,13 +42,11 @@
 
 -improvements for SystemExit
 
-= Todo =
+= Moved to later release, or if someone volunteers = 
 
 -support for __iter__ methods (the analysis part works fine already)
 
 -investigate whether GC is not scanning lists/tuples of integers at the moment, which is pointless if there are no secret pointers in there. (for sets of ints, GC is already disabled specifically)
-
-= Moved to later release, or if someone volunteers = 
 
 -improve IO speed
 
