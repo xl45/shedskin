@@ -20,6 +20,8 @@
 
 -examples/life.py: randomize TI a bit, to avoid getting stuck
 
+-heapq.{merge,nsmallest,nlargest} 
+
 -several improvements to 'defaultdict' (for example, support for 'defaultdict(None, ..)')
 
 -improved partial support for '**kwargs' in lib/
