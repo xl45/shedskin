@@ -1,4 +1,4 @@
-#summary release notes
+#summary shed skin release notes
 
 = Shed Skin 0.4 =
 
