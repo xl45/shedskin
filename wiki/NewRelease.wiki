@@ -50,6 +50,8 @@
 
 -improvements for SystemExit
 
+-several large code cleanups
+
 -added some important warnings
 
 -itertools.product repeat argument bug fix (jeremie roquet)
