@@ -48,7 +48,7 @@
 
 -fix many GCC warnings that occur when enabling all warnings
 
--improvements for SystemExit
+-improvements for 'SystemExit'
 
 -several large code cleanups
 
@@ -56,13 +56,15 @@
 
 -optimizations for tuple equality, any, all, reduce
 
--itertools.product repeat argument bug fix (jeremie roquet)
+-cleaner output for boolean testing, 'and' and 'or'
+
+-'itertools.product' repeat argument bug fix (jeremie roquet)
 
 -many, many other bug fixes
 
 = Moved to later release, or if someone volunteers = 
 
--support for __iter__ methods (the analysis part works fine already)
+-support for '__iter__' methods (the analysis part works fine already)
 
 -investigate whether GC is not scanning lists/tuples of integers at the moment, which is pointless if there are no secret pointers in there. (for sets of ints, GC is already disabled specifically)
 
