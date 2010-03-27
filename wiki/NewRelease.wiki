@@ -44,7 +44,7 @@
 
 -support for 'random.triangular'
 
--random.seed: support None or hashable argument
+-random.seed: support None or hashable argument (brent pedersen) 
 
 -fix many GCC warnings that occur when enabling all warnings
 
