@@ -24,7 +24,7 @@
 
 -examples/life.py: randomize TI a bit, to avoid getting stuck
 
--heapq.{merge,nsmallest,nlargest} 
+-heapq.{merge,nsmallest,nlargest} (jeremie roquet)
 
 -several improvements to 'defaultdict' (for example, support for 'defaultdict(None, ..)')
 
@@ -34,19 +34,23 @@
 
 -pass defaultdicts to/from extension modules
 
--support for open('U')
+-support for open('U') (jeremie roquet)
 
 -support 'dict([[1,1]])' and similar 
 
--support for 'bin'
+-support for 'bin' (jeremie roquet)
 
--support for 'math.factorial'
+-support for 'math.factorial' (jeremie roquet)
+
+-support for 'random.triangular'
 
 -random.seed: support None or hashable argument
 
 -fix many GCC warnings that occur when enabling all warnings
 
 -improvements for SystemExit
+
+-itertools.product repeat argument bug fix (jeremie roquet)
 
 -many, many bug fixes
 
