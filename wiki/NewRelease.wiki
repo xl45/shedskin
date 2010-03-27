@@ -54,7 +54,7 @@
 
 -added some important warnings
 
--optimized tuple.__eq__
+-optimizations for tuple equality, any, all, reduce
 
 -itertools.product repeat argument bug fix (jeremie roquet)
 
