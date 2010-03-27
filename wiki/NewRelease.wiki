@@ -10,11 +10,15 @@
 
 -dropped windows support
 
--new examples: 
+-four new examples, now 47 in total: 
 
-  -pylife (by david bau, based on the wonderful hashlife algorithm)
+  -pylife (by David Bau, based on the wonderful hashlife algorithm)
 
-  -a-star/pygame algorithm
+  -a-star/pygame algorithm (John Eriksson)
+  
+  -a second genetic example (Stavros Korokithakis)
+
+  -a replacement for the game of life example (Francesco Frassinelli)
 
 -fix issue 53: casting to builtins when type inference is not enough
 
