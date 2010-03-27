@@ -1,5 +1,67 @@
 #summary Release notes
 
+= Shed Skin 0.4 =
+
+-support for generator expressions 
+
+-first-class support for booleans (so they print as 'True', for example) 
+
+-support for the 'key' argument of 'min' and 'max'
+
+-dropped windows support
+
+-four new examples, now 47 in total: 
+
+  -pylife (by David Bau, based on the wonderful hashlife algorithm)
+
+  -a-star/pygame algorithm (John Eriksson)
+  
+  -a second genetic example (Stavros Korokithakis)
+
+  -a replacement for the game of life example (Francesco Frassinelli)
+
+-fix issue 53: casting to builtins when type inference is not enough
+
+-examples/life.py: randomize TI a bit, to avoid getting stuck
+
+-heapq.{merge,nsmallest,nlargest} (jeremie roquet)
+
+-several improvements to 'defaultdict' (for example, support for 'defaultdict(None, ..)')
+
+-improved partial support for '**kwargs' in lib/
+
+-resolved some licensing issues for time.strptime and string hashing implementations
+
+-pass defaultdicts to/from extension modules
+
+-support for open('U') (jeremie roquet)
+
+-support 'dict([[1,1]])' and similar 
+
+-support for 'bin' (jeremie roquet)
+
+-support for 'math.factorial' (jeremie roquet)
+
+-support for 'random.triangular'
+
+-random.seed: support None or hashable argument (brent pedersen) 
+
+-fix many GCC warnings that occur when enabling all warnings
+
+-improvements for 'SystemExit'
+
+-several large code cleanups
+
+-added some important warnings
+
+-optimizations for tuple equality, 'any', 'all', 'reduce'
+
+-cleaner output for boolean testing, 'and' and 'or'
+
+-'itertools.product' repeat argument bug fix (jeremie roquet)
+
+-many, many other bug fixes
+
 = Shed Skin 0.3 =
 
 - support for 3 new standard library modules (now about 20 in total):
