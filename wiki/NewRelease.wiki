@@ -50,9 +50,11 @@
 
 -improvements for SystemExit
 
+-some improved warnings
+
 -itertools.product repeat argument bug fix (jeremie roquet)
 
--many, many bug fixes
+-many, many other bug fixes
 
 = Moved to later release, or if someone volunteers = 
 
