@@ -54,6 +54,8 @@
 
 -added some important warnings
 
+-optimized tuple.__eq__
+
 -itertools.product repeat argument bug fix (jeremie roquet)
 
 -many, many other bug fixes
