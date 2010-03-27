@@ -54,7 +54,7 @@
 
 -added some important warnings
 
--optimizations for tuple equality, any, all, reduce
+-optimizations for tuple equality, 'any', 'all', 'reduce'
 
 -cleaner output for boolean testing, 'and' and 'or'
 
