@@ -10,7 +10,7 @@
 
 -dropped windows support
 
--four new examples, now 47 in total: 
+-4 new examples, now 47 in total: 
 
   -pylife (by David Bau, based on the wonderful hashlife algorithm)
 
