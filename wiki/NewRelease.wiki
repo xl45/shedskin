@@ -48,6 +48,8 @@
 
 -improvements for SystemExit
 
+-many, many bug fixes
+
 = Moved to later release, or if someone volunteers = 
 
 -support for __iter__ methods (the analysis part works fine already)
