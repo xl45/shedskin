@@ -36,7 +36,7 @@
 
 -support for open('U') (jeremie roquet)
 
--support 'dict([1,1?])' and similar
+-support `dict([1,1])` and similar
 
 -support for 'bin' (jeremie roquet)
 
@@ -48,7 +48,7 @@
 
 -fix many GCC warnings that occur when enabling all warnings
 
--improvements for 'SystemExit?'
+-improvements for `SystemExit`
 
 -several large code cleanups
 
