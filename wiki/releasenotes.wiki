@@ -1,6 +1,6 @@
 #summary shed skin release notes
 
-= Shed Skin 0.4 =
+= Shed Skin 0.4 (1-3-2010) =
 
 -support for generator expressions
 
@@ -62,7 +62,7 @@
 
 -many, many other bug fixes 
 
-= Shed Skin 0.3 =
+= Shed Skin 0.3 (13-1-2010) =
 
 - support for 3 new standard library modules (now about 20 in total):
 
@@ -112,8 +112,8 @@
 
 - large amount of bugfixes
 
-= Shed Skin 0.2 =
-
+= Shed Skin 0.2 (14-7-2009) =
+ 
 - 7 new example programs (some removed, now 40 in total):
 
   -disco: a simple monte carlo + UCT go player (368 lines, mark dufour)
@@ -157,7 +157,7 @@
 - many minor bugfixes
 
 
-= Shed Skin 0.1.1 = 
+= Shed Skin 0.1.1 (22-4-2009) = 
 
 -five new example programs:
 
@@ -211,7 +211,7 @@
 
 -added performance tips to tutorial
 
-= Shed Skin 0.1 =
+= Shed Skin 0.1 (25-1-2009) =
 
 - almost complete support for 'os' (UNIX)
 
