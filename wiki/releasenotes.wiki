@@ -237,7 +237,7 @@
 
 - several other bugfixes
 
-= Shed Skin 0.0.30 =
+= Shed Skin 0.0.30 (2-12-2008) =
 
 - user-defined class support in extension modules
 
@@ -261,7 +261,7 @@
 
 - many, many bugfixes
 
-= Shed Skin 0.0.29 =
+= Shed Skin 0.0.29 (20-9-2008) =
 
 - `datetime` implementation (Karel Heyse, Pavel Vinogradov, FFAO, David Marek)
 
@@ -291,7 +291,7 @@
 
 - many, many bugfixes
 
-= Shed Skin 0.0.28 =
+= Shed Skin 0.0.28 (3-6-2008) =
 
 - basic 'socket' support (Michael Elkins)
 
@@ -312,7 +312,7 @@
 - many minor bugfixes
 
 
-= Shed Skin 0.0.27 =
+= Shed Skin 0.0.27 (23-2-2008) =
 
 - support for 're', via libpcre (perl-compatible-regular-expressions)
 
@@ -337,7 +337,7 @@
 - many minor bugfixes
 
 
-= Shed Skin 0.0.26 =
+= Shed Skin 0.0.26 (6-1-2008) =
 
 -support for:
 
