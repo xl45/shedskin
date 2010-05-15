@@ -61,3 +61,308 @@
 -'itertools.product' repeat argument bug fix (jeremie roquet)
 
 -many, many other bug fixes 
+
+= Shed Skin 0.3 =
+
+- support for 3 new standard library modules (now about 20 in total):
+
+    - itertools (jeremie roquet)
+
+    - heapq (jeremie roquet)
+
+    - csv (converted using shedskin)
+
+- 4 new example programs (now 44 in total!):      
+  
+    - maximum weighted matching algorithm (joris van rantwijk)
+
+    - kanoodle: knuth's dancing links (david austin)
+
+    - bidirectional dijkstra algorithm (from networkx, uses heapq)
+
+    - barnes-hut force calculation
+
+- improved type inference (scalability, bugfixes, major cleanup)
+
+- support for 'map', 'filter', 'reduce' and 'next'
+
+- support for 'with' statement (jeremie roquet)
+
+- support for 'key' argument of 'sorted' (and 'list.sort')
+
+- reorganized codebase, distutils setup.py (thomas spura)
+
+- optimized list indexing (joris van rantwijk)
+
+- optimized addition of 1-length lists and strings
+
+- improved forward referencing of variables/functions
+
+- avoid GCC warnings after 'shedskin -e'
+
+- support for passing keyword arguments to extension modules
+
+- optimized list slicing
+
+- ignore blocks surrounded by #{ and #} (mike schrick)
+
+- add --makefile option (mike schrick)
+
+- several cleanups, removing about 100 lines again
+
+- large amount of bugfixes
+
+= Shed Skin 0.2 =
+
+- 7 new example programs (some removed, now 40 in total):
+
+  -disco: a simple monte carlo + UCT go player (368 lines, mark dufour)
+
+  -a more advanced voronoi algorithm (795 lines; steve fortune, bill simons)
+
+  -a nicer neural network implementation (raymond hettinger, jeff hinrichs)
+
+  -TSP approximation using ant colonies (eric rollins)
+
+  -Lempel-Ziv compressor (david mackay)
+
+  -huffman block compressor (david mackay)
+
+  -arithmetic coding compressor (david mackay)
+
+- many inlining optimizations
+
+- huge speedups for 'for a, b in enumerate/zip(sequence, [sequence])' 
+  
+
+- important TI fix (involving default arguments)
+
+- fixes for 'import as' 
+ 
+
+- follow module initialization order
+
+- optimized 'len(list)' (remove virtual call)
+
+- optimized list slicing (when step is 1)
+
+- drop compatibility with 2.3, follow 2.6 implementation
+
+- fysphun example now uses an extension module
+
+- variable with name underscore no special case anymore (could be dynamic)
+
+- cleaned up compiler core further, removing about 100 lines again
+
+- many minor bugfixes
+
+
+= Shed Skin 0.1.1 = 
+
+-five new example programs:
+
+  -minilight: advanced raytracer (triangle primitives, octree spatial index)
+
+  -peter norvig's sudoku solver (solves top 95 difficult ones in under 10 seconds)
+
+  -interactive circle packing algorithm (pygame + compiled extension module)
+
+  -ao bench: ambient occlusion benchmark
+
+  -mastermind strategy evaluator
+
+-removal of generic type support (nice, but rarely useful)
+
+  -no need for command-line option -i anymore
+
+  -compiler core is now 10% smaller (from 7700 to under 7000 lines)
+
+  -weird templates would confuse user
+
+-traditional important TI fixes (disappearing types, non-termination)
+
+-compiler should use about 25% less memory and CPU time
+
+-huge refactoring for readability in infer.py and cpp.py
+
+-extmod fixes:
+
+  -incref None, so it doesn't get deallocated
+
+  -accept None when converting to custom class instance
+
+-new command-line option -r, for faster random number generator (C rand())
+
+-bounds checking is now on by default (for compatibility), -b now turns it off
+
+-many minor bug fixes/improvements
+
+  -added os.SEEK`*`
+
+  -added file.next
+
+  -fixed return type of re.groups
+
+  -fixed overloading of __getitem__
+
+  -asterisk support in string formatting ('%`*`d' % (7,8))
+
+  -optimized string slicing
+
+-added performance tips to tutorial
+
+= Shed Skin 0.1 =
+
+- almost complete support for 'os' (UNIX)
+
+- jpeg decoder (1200 lines) and two other programs added to ss-progs
+
+- extension module fixes:
+
+  - improved exception handling
+
+  - support for frozenset
+
+  - improved compiler flags under OSX
+
+- important type inference fix (disappearing type)
+
+- improved variable overloading
+
+- casting improvements 
+
+- fixes for __setslice__, __delslice__ corner cases
+
+- xrange returns xrange object instead of iterator
+
+- several other bugfixes
+
+= Shed Skin 0.0.30 =
+
+- user-defined class support in extension modules
+
+- blindingly fast set implementation (FFAO)
+
+- complex number support
+
+- many string formatting improvements
+
+- None maps to NULL instead of 0, and prints as 'None'
+
+- re.match_object.group accepts multiple arguments
+
+- casting improvements
+
+- inheritance from builtin exceptions other than Exception
+
+- hashing None should work now
+
+- important type inference fix
+
+- many, many bugfixes
+
+= Shed Skin 0.0.29 =
+
+- `datetime` implementation (Karel Heyse, Pavel Vinogradov, FFAO, David Marek)
+
+- `ConfigParser` implementation (suggested by Albert Hofkamp)
+
+- `staticmethod` and `property` decorator support (Seo Sanghyeon)
+
+- GCC 4.3 fixes (Seo Sanghyeon, Winterknight)
+
+- FreeBSD, OpenSolaris and 64-bit support
+
+- support for mapping keys(`'%(key)x' % some_dict`)
+
+- improvements to the import mechanism for nested modules (e.g. `os.path`)
+
+- `__init__` is now less of a special case
+
+- many fixes for calling ancestor methods (e.g. `__init__`)
+
+- all example programs now compile to extension modules
+
+- avoid stack overflows for highly recursive/dynamic types
+
+- `re.sub` now accepts a replacement function
+
+- remove tuple hash caching (as CPython does not do this)
+
+- many, many bugfixes
+
+= Shed Skin 0.0.28 =
+
+- basic 'socket' support (Michael Elkins)
+
+- support for os.{popen3, popen4} (Jaroslaw Tworek)
+
+- support for time.strptime under Windows (David Marek)
+
+- options for changing output dir, disabling annotation (Dave Tweed)
+
+- support for 'cmp' and 'reverse' arguments of 'sorted' and 'list.sort'
+
+- fixes for cross-module default arguments 
+
+- important fixes for type inference and inheritance
+
+- restore compatibility with Python 2.3
+
+- many minor bugfixes
+
+
+= Shed Skin 0.0.27 =
+
+- support for 're', via libpcre (perl-compatible-regular-expressions)
+
+- support for 'time' (except for time.strptime under Windows)
+
+- basic support for 'staticmethod' and 'property'
+
+- support for 'fnmatch', 'glob' (bootstrapped)
+
+- improved support for 'os' (POSIX)
+
+- OSX support (including extension modules!)
+
+- many fixes for multi-dir/multi-file projects
+
+- several builtin optimizations (zip, list(str)..)
+
+- type model for 'datetime' (no C++ implementation yet)
+
+- split up compiler core, ss.py, into several files
+
+- many minor bugfixes
+
+
+= Shed Skin 0.0.26 =
+
+-support for:
+
+  -most os.path methods
+
+  -many os methods
+
+  -collections.defaultdict
+
+  -getopt.gnu_getopt
+
+  -5 of the last missing str methods
+
+  -some missing file functionality
+
+-improved locale support
+
+-removed many leading underscores in code generation
+
+-optimized string addition (a+b+c+..)
+
+-new documentation/tutorial
+
+-added a Debian package
+
+-moved to Google code hosting
+
+-many minor bug fixes
