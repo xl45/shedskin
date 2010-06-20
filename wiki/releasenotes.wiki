@@ -18,7 +18,7 @@
 
 -new "adatron" example (stavros korokithakis)
 
--optimized printing somewhat (thomas spura)
+-optimized printing (thomas spura)
 
 -time.strptime implementation for windows (andy miller)
 
