@@ -1,6 +1,38 @@
 #summary shed skin release notes
 
-= Shed Skin 0.4 (1-3-2010) =
+= Shed Skin 0.5 (20-6-2010) =
+
+-64-bit integer support (shedskin -l)
+
+-many iteration optimizations (new FOR_IN, builtins using it)
+
+-new dict implementation, based on cpython (FFAO)
+
+-basic support for MSVC (shedskin -v; andy miller, jason ye)
+
+-improvements to the socket module (michael elkins)
+
+-support for generator methods (douglas mcneil)
+
+-support "from __future__ import print_function" (douglas mcneil)
+
+-new "adatron" example (stavros korokithakis)
+
+-optimized printing somewhat (thomas spura)
+
+-time.strptime implementation for windows (andy miller)
+
+-support for @x.setter syntax
+
+-optimize str(int) and int(str) conversion
+
+-major optimization in random module
+
+-improvements for class-level attributes
+
+-many minor optimizations, cleanups and bugfixes
+
+= Shed Skin 0.4 (27-3-2010) =
 
 -support for generator expressions
 
