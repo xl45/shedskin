@@ -18,7 +18,7 @@
 
 -optional 'murmur' string hashing (shedskin -s; thomas spura)
 
--some printing cleanups (perhaps; thomas spura)
+-some printing cleanups (thomas spura)
 
 -new 'chaos fractals' example (carl friedrich boltz)
 
