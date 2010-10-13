@@ -1,5 +1,37 @@
 #summary shed skin release notes
 
+= Shed Skin 0.6 (to be released) =
+
+-major scalability improvement (incremental type analysis)
+
+-progress bar (possible because of incremental analysis!)
+
+-extension module improvements:
+
+  -basic support for (un)pickling of compiled classes
+
+  -exposition of inheritance relations
+
+  -improved support for operator overloading
+
+-argument unpacking, as in 'def blah((a,(b,c)):' (hakan ardo)
+
+-optional 'murmur' string hashing (shedskin -s; thomas spura)
+
+-some printing cleanups (perhaps; thomas spura)
+
+-new 'chaos fractals' example (carl friedrich boltz)
+
+-several major bugfixes:
+
+  -variable lookup would sometimes look in wrong module
+
+  -dict corruption on 64-bit
+
+-reorganized test setup
+
+-several minor cleanups and bugfixes 
+
 = Shed Skin 0.5 (20-6-2010) =
 
 -64-bit integer support (shedskin -l)
