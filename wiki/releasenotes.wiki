@@ -22,7 +22,7 @@
 
 -new 'chaos fractals' example (carl friedrich boltz)
 
--several major bugfixes:
+-two major bugfixes:
 
   -variable lookup would sometimes look in wrong module
 
