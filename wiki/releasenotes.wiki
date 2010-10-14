@@ -22,7 +22,9 @@
 
 -new 'chaos fractals' example (carl friedrich boltz)
 
--two major bugfixes:
+-several major bugfixes:
+
+  -improved module/lineno information for warnings
 
   -variable lookup would sometimes look in wrong module
 
