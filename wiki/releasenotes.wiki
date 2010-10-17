@@ -22,6 +22,8 @@
 
 -new 'chaos fractals' example (carl friedrich boltz)
 
+-new commodore 64 emulator example! (Danny Milosavljevic)
+
 -several major bugfixes:
 
   -improved module/lineno information for warnings
