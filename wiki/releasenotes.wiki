@@ -22,7 +22,7 @@
 
 -new 'chaos fractals' example (carl friedrich boltz)
 
--new commodore 64 emulator example! (Danny Milosavljevic)
+-new commodore 64 emulator example! (danny milosavljevic)
 
 -several major bugfixes:
 
