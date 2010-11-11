@@ -19,3 +19,7 @@ related: http://code.google.com/p/shedskin/issues/detail?id=63
 = improve IO speed =
 
 IO in shedskin is SLOW. file IO (file, pipes, cStringIO) is currently per-character. print speed can also still be much improved (this is more difficult though).
+
+= refactoring =
+
+many places in the shedskin python code are in need of some serious refactoring. just browsing through the code will show lots of code that does more or less the same thing. some parts may not be used anymore, etc. etc.
