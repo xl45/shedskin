@@ -23,3 +23,7 @@ IO in shedskin is SLOW. file IO (file, pipes, cStringIO) is currently per-charac
 = refactoring =
 
 many places in the shedskin python code are in need of some serious refactoring. just browsing through the code will show lots of code that does more or less the same thing. some parts may not be used anymore, etc. etc.
+
+= extension module improvements =
+
+we could use more tests (see tests/run.py). support for class-level attributes and properties would be nice.
