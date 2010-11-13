@@ -27,3 +27,7 @@ many places in the shedskin python code are in need of some serious refactoring.
 = extension module improvements =
 
 we could use more tests (see tests/run.py). support for class-level attributes and properties would be nice.
+
+= exception hierarchy =
+
+there's some low-hanging fruit left here, for example de-duplicate stuff between OSError and IOError.
