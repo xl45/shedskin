@@ -8,8 +8,6 @@ http://code.google.com/p/shedskin/issues/detail?id=111
 
 http://code.google.com/p/shedskin/issues/detail?id=108
 
-http://code.google.com/p/shedskin/issues/detail?id=109
-
 = windows package =
 
 package shedskin 0.6 for windows, using a recent version of mingw.
