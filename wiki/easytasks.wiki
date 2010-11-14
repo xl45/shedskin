@@ -28,4 +28,4 @@ we could use more tests (see tests/run.py). support for class-level attributes a
 
 = exception hierarchy =
 
-there's some low-hanging fruit left here, for example de-duplicate stuff between OSError and IOError.
+there's some low-hanging fruit here, for example de-duplicate stuff between OSError and IOError.
