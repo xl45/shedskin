@@ -33,3 +33,7 @@ we could use more tests (see tests/run.py). support for class-level attributes a
 = exception hierarchy =
 
 there's some low-hanging fruit here, for example de-duplicate stuff between OSError and IOError.
+
+= string support =
+
+profile and optimize commonly used string methods
