@@ -8,12 +8,6 @@ http://code.google.com/p/shedskin/issues/detail?id=111
 
 http://code.google.com/p/shedskin/issues/detail?id=108
 
-= windows package =
-
-package shedskin 0.6 for windows, using a recent version of mingw.
-
-related: http://code.google.com/p/shedskin/issues/detail?id=63
-
 = improve IO speed =
 
 IO in shedskin is SLOW. file IO (file, pipes, cStringIO) is currently per-character. print speed can also still be much improved (this is more difficult though).
