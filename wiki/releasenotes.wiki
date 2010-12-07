@@ -34,7 +34,7 @@
 
 - string hash value sometimes not initialized as -1
 
-- global/instance variable clash in C++
+- fix global/instance variable clash in C++
 
 - 1-length string cache and strange chars
 
