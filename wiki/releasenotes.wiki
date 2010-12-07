@@ -12,7 +12,7 @@
 
 - string equality and slicing optimizations
 
-- -o/--noassert option to disable assertions 
+- new -o/--noassert option to disable assertions 
 
 - two new examples:
 
