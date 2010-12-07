@@ -12,6 +12,8 @@
 
 - string equality and slicing optimizations
 
+- -o/--noassert option to disable assertions 
+
 - two new examples:
 
   - 1050 sloc advanced raytracer (eric uhrhane)
@@ -22,9 +24,13 @@
 
 - basic support for 'super' keyword
 
-- fixes for [default]dict.update method
+- fixes for dict/defaultdict.update method
 
-- fix for str.[r]partition method
+- fix for str.partition/rpartition methods
+
+- fix for global variables and tuple assignment
+
+- improve support for IOError attributes
 
 - string hash value sometimes not initialized as -1
 
