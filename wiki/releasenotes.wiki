@@ -1,5 +1,45 @@
 #summary shed skin release notes
 
+= Shed Skin 0.7 (12-12-2010) =
+
+- windows package, based on recent mingw (GCC 4.5)
+
+- fix warnings again (now with tests!)
+
+- many multi-module fixes (several for circular imports)
+
+- major improvement to casting/conversion framework
+
+- string equality and slicing optimizations
+
+- two new examples:
+
+  - 1050 sloc advanced raytracer (eric uhrhane)
+  
+  - 200 sloc path tracing raytracer (jonas wagner)
+
+- C64 emulator example split up again in many modules
+
+- basic support for 'super' keyword
+
+- fixes for [default]dict.update method
+
+- fix for str.[r]partition method
+
+- string hash value sometimes not initialized as -1
+
+- global/instance variable clash in C++
+
+- 1-length string cache and strange chars
+
+- explicitly imported but unused function problem
+
+- untested socket.makefile implementation
+
+- removed some leftovers from support for generics
+
+- added 'easy tasks' wiki page
+
 = Shed Skin 0.6 (16-10-2010) =
 
 -major scalability improvement (incremental type analysis)
