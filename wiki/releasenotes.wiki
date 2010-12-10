@@ -42,6 +42,8 @@
 
 - untested socket.makefile implementation
 
+- fix for float('inf') and such under windows
+
 - removed some leftovers from support for generics
 
 - added 'easy tasks' wiki page
