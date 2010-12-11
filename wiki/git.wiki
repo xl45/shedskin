@@ -1,3 +1,3 @@
-#summary Source code
+#summary source code
 
 the source code for shedskin is maintained in GIT at [http://gitorious.org/shedskin gitorious]
