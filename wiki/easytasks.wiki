@@ -22,6 +22,10 @@ the important __modfill function in lib/builtin.cpp can probably become a lot fa
 
 many places in the shedskin python code are in need of some serious refactoring. just browsing through the code will show lots of code that does more or less the same thing. some parts may not be used anymore, etc. etc.
 
+= itertools.product =
+
+the performance of this common function can be improved in at least two ways, as was done for the zip(a,b) implementation: preallocate tuples if their number is known, and use general arguments such as A *iter, in combination with FOR_IN_NEW type iteration.
+
 = extension module improvements =
 
 we could use more tests (see tests/run.py). support for class-level attributes and properties would be nice.
