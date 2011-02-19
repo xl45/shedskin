@@ -1,5 +1,34 @@
 #summary shed skin release notes
 
+= Shed Skin 0.7.1 (19-02-2011) =
+
+- new 'rsync' example
+
+- updated 'c64 emulator' example, better and faster
+
+- Makefile cleanups (fahrzin hemmati)
+
+- experimental PyPy extmod generation (victor garcia)
+
+- optimized 'pow' (thomas spura)
+
+- several important extmod fixes (found by running all the tests using -e)
+
+- add extmod leakage test script, and fix some refcounting issues
+
+- explicitly warn about tuples of length > 2 and different types of elements
+
+- optimized zip, min, max, map, filter, reduce
+
+- fixes for some list method corner cases
+
+- cleanups for the internal abstract sequence class 
+
+- removed remains of deprecated FOR_IN macro
+
+- several minor fixes
+
+
 = Shed Skin 0.7 (12-12-2010) =
 
 - windows package, based on recent mingw (GCC 4.5)
