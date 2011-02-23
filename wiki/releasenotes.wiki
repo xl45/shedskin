@@ -2,6 +2,8 @@
 
 = Shed Skin 0.7.1 (19-02-2011) =
 
+- new quantum monte carlo simulation example (mark dewing, 1,200 sloc)
+
 - new 'rsync' example
 
 - updated 'c64 emulator' example, better and faster
