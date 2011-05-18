@@ -1,9 +1,5 @@
 #summary Easy tasks to get involved in Shedskin development
 
-= struct, array =
-
-shedskin 0.8 will support the 'struct' and 'array' modules. the nasty part is done (some TI hacks on the python side), but the C++ side is not yet finished.
-
 = easy issues =
 
 http://code.google.com/p/shedskin/issues/detail?id=62
