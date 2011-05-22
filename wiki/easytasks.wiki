@@ -38,6 +38,9 @@ there's some low-hanging fruit here, for example de-duplicate stuff between OSEr
 
 profile and optimize commonly used string methods
 
+= struct and ieee754 =
+
+(un)packing floats on hardware that doesn't natively use ieee754 format currently doesn't work.
 
 = list implementation =
 
