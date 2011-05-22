@@ -10,10 +10,6 @@ http://code.google.com/p/shedskin/issues/detail?id=108
 
 http://code.google.com/p/shedskin/issues/detail?id=120
 
-= list implementation =
-
-currently we use an STL vector internally. it should probably be faster to use our own cpython-based implementation, and GC_MALLOC_ATOMIC when possible (as was done for the set and dict classes). probably not that easy, but a proof-of-concept would be very interesting.
-
 = improve IO speed =
 
 IO in shedskin is SLOW. file IO (file, pipes, cStringIO) is currently per-character. print speed can also still be much improved (this is more difficult though).
@@ -41,3 +37,8 @@ there's some low-hanging fruit here, for example de-duplicate stuff between OSEr
 = string support =
 
 profile and optimize commonly used string methods
+
+
+= list implementation =
+
+currently we use an STL vector internally. it should probably be faster to use our own cpython-based implementation, and GC_MALLOC_ATOMIC when possible (as was done for the set and dict classes). probably not that easy, but a proof-of-concept would be very interesting.
