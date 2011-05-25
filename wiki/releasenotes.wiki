@@ -30,6 +30,8 @@
 
 - some fixes for Exception hierarchies
 
+- list.__delslice__ fix
+
 - improvements to sys module (sys.byteorder, sys.platform..)
 
 - updated tutorial (thanks to james coughlan, ian ozsvald and others)
