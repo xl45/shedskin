@@ -28,7 +28,7 @@
 
 - add default hash method (triggered by frank chang)
 
-- some fixes for Exception hierarchies (reported by fahrzin hemmati)
+- some fixes for Exception hierarchies
 
 - improvements to sys module (sys.byteorder, sys.platform..)
 
