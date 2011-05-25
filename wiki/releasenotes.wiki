@@ -30,6 +30,8 @@
 
 - improvements to sys module (sys.byteorder, sys.platform..)
 
+- updated tutorial (thanks to james coughlan, ian ozsvald and others)
+
 - several minor other fixes
 
 = Shed Skin 0.7.1 (19-02-2011) =
