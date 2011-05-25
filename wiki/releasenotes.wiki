@@ -6,9 +6,13 @@
 
 - support for 'struct' module
 
+- support for 'binascii' module (hopefully?)
+
 - new 'sha-1' example (uses struct; thanks to emanuel rumpf)
 
-- new 'solitaire encryption' example (thanks to alex)
+- new 'solitaire encryption' example (thanks to funami)
+
+- upgraded c64 emulator example, now around 3,000 lines (hopefully?)
 
 - important type inference fix
 
