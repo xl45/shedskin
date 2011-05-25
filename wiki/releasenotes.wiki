@@ -2,9 +2,9 @@
 
 = Shed Skin 0.8 (01-06-2011) =
 
-- support for 'array' module
+- support for 'struct' module (triggered by danny milosavljevic)
 
-- support for 'struct' module
+- support for 'array' module
 
 - support for 'binascii' module (hopefully?)
 
@@ -14,19 +14,19 @@
 
 - upgraded c64 emulator example, now around 3,000 lines (hopefully?)
 
-- important type inference fix (thanks to fahrzin hemmati)
+- important type inference fix (reported by fahrzin hemmati)
 
 - fix for tuple assignment unpacking to single variable
 
 - fix for OSX (separate FLAGS.osx, triggered by ian ozsvald)
 
-- GCC 4.3 fix (thanks to paul boddie)
+- GCC 4.3 fix (reported by paul boddie)
 
-- 64-bit fix (thanks to thomas spura)
+- 64-bit fix (reported by thomas spura)
 
-- remove -fomit-frame-pointer (thanks to thomas spura)
+- remove -fomit-frame-pointer (thomas spura)
 
-- add default hash method (thanks to frank chang)
+- add default hash method (triggered by frank chang)
 
 - improvements to sys module (sys.byteorder, sys.platform..)
 
