@@ -1,5 +1,21 @@
 #summary shed skin release notes
 
+= Shed Skin 0.8 (01-06-2011) =
+
+- support for 'array' module
+
+- support for 'struct' module
+
+- new 'sha-1' example (uses struct; thanks to emanuel rumpf)
+
+- new 'solitaire encryption' example (thanks to alex)
+
+- important type inference fix
+
+- fix for tuple assignment unpacking to single variable
+
+- several minor fixes
+
 = Shed Skin 0.7.1 (19-02-2011) =
 
 - new quantum monte carlo simulation example (mark dewing, 1,200 sloc)
