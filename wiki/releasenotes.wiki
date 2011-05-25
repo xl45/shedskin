@@ -34,7 +34,7 @@
 
 - improvements to sys module (sys.byteorder, sys.platform..)
 
-- updated tutorial (thanks to james coughlan, ian ozsvald and others)
+- updated tutorial (thanks to james coughlan, ian ozsvald and others for suggestions)
 
 - several minor fixes
 
