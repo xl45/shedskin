@@ -14,11 +14,23 @@
 
 - upgraded c64 emulator example, now around 3,000 lines (hopefully?)
 
-- important type inference fix
+- important type inference fix (thanks to fahrzin hemmati)
 
 - fix for tuple assignment unpacking to single variable
 
-- several minor fixes
+- fix for OSX (separate FLAGS.osx, triggered by ian ozsvald)
+
+- GCC 4.3 fix (thanks to paul boddie)
+
+- 64-bit fix (thanks to thomas spura)
+
+- remove -fomit-frame-pointer (thanks to thomas spura)
+
+- add default hash method (thanks to frank chang)
+
+- improvements to sys module (sys.byteorder, sys.platform..)
+
+- several minor other fixes
 
 = Shed Skin 0.7.1 (19-02-2011) =
 
