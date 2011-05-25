@@ -16,7 +16,7 @@
 
 - important type inference fix (reported by fahrzin hemmati)
 
-- fix for tuple assignment unpacking to single variable
+- fix for tuple assignment unpacking to single variable (reported by danny milosavljevic)
 
 - fix for OSX (separate FLAGS.osx, triggered by ian ozsvald)
 
