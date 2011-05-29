@@ -24,7 +24,7 @@ many places in the shedskin python code are in need of some serious refactoring.
 
 = itertools.product =
 
-the performance of this common function can be improved in at least two ways, as was done for the zip(a,b) implementation: preallocate tuples if their number is known, and use FOR_IN_NEW type iteration.
+the performance of this common function can be improved in at least two ways, as was done for the zip(a,b) implementation: preallocate tuples if their number is known, and use FOR_IN type iteration.
 
 = extension module improvements =
 
