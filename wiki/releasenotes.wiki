@@ -2,21 +2,21 @@
 
 = Shed Skin 0.8 (01-06-2011) =
 
-- support for 'struct' module (triggered by danny milosavljevic)
+- support for 'struct' module (triggered by danny milo)
 
 - support for 'array' module
+
+- upgraded c64 emulator example, now around 3,000 lines (danny milo)
 
 - new 'sha-1' example (uses struct; thanks to emanuel rumpf)
 
 - new 'solitaire encryption' example (thanks to funami)
 
-- upgraded c64 emulator example, now around 3,000 lines (danny milo)
-
 - important type inference fix (reported by fahrzin hemmati)
 
 - fix for cross-file inheritance and include file structure
 
-- fix for tuple assignment unpacking to single variable (reported by danny milosavljevic)
+- fix for tuple assignment unpacking to single variable (reported by danny milo)
 
 - fix for OSX (separate FLAGS.osx, triggered by ian ozsvald)
 
