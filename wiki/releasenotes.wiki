@@ -38,7 +38,9 @@
 
 - updated tutorial (thanks to james coughlan, ian ozsvald and others for suggestions)
 
-- several minor fixes
+- removed FOR_IN_SEQ macro, renamed FOR_IN_NEW to FOR_IN
+
+- several minor fixes, cleanups
 
 = Shed Skin 0.7.1 (19-02-2011) =
 
