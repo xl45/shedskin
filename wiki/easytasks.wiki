@@ -43,3 +43,7 @@ profile and optimize commonly used string methods
 = list implementation =
 
 currently we use an STL vector internally. it should probably be faster to use our own cpython-based implementation, and GC_MALLOC_ATOMIC when possible (as was done for the set and dict classes). probably not that easy, but a proof-of-concept would be very interesting.
+
+= open('U') =
+
+this doesn't work correctly yet under windows. see test 191 (test code is commented out for now).
