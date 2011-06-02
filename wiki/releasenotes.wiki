@@ -14,7 +14,7 @@
 
 - important type inference fix (reported by fahrzin hemmati)
 
-- fix for cross-file inheritance and include file structure
+- base include file order on cross-file inheritance relations
 
 - fix for tuple assignment unpacking to single variable (reported by danny milo)
 
