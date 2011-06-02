@@ -32,6 +32,8 @@
 
 - list.__delslice__ fix
 
+- bin() buffer overflow fix (reported by brian cleary)
+
 - improvements to sys module (sys.byteorder, sys.platform..)
 
 - updated tutorial (thanks to james coughlan, ian ozsvald and others for suggestions)
