@@ -16,6 +16,8 @@
 
 - base include file order on cross-file inheritance relations
 
+- add -x option as first attempt at displaying exception backtraces
+
 - fix for tuple assignment unpacking to single variable (reported by danny milo)
 
 - fix for OSX (separate FLAGS.osx, triggered by ian ozsvald)
