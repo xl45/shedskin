@@ -26,6 +26,8 @@
 
 - remove -fomit-frame-pointer (thomas spura)
 
+- optimized float**{2,3} (reported by thomas spura)
+
 - add default hash method (triggered by frank chang)
 
 - some fixes for Exception hierarchies
@@ -39,6 +41,8 @@
 - updated tutorial (thanks to james coughlan, ian ozsvald and others for suggestions)
 
 - removed FOR_IN_SEQ macro, renamed FOR_IN_NEW to FOR_IN
+
+- added 'setup.py test' option (thomas spura)
 
 - several minor fixes, cleanups
 
