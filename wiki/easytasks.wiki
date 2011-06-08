@@ -47,3 +47,9 @@ currently we use an STL vector internally. it should probably be faster to use o
 = open('U') =
 
 this doesn't work correctly yet under windows. see test 191 (test code is commented out for now).
+
+= shedskin -x improvement =
+
+it would be nice to get closer to a python backtrace, including filenames and line numbers. there are some snippets on the web to do this for C, so with some minor modifications it can probably be made to work for C++.
+
+it would be even nicer to generate a backtrace only when there is an uncaught exception, but it's not clear if this is possible with C++/GCC.
