@@ -44,11 +44,11 @@
 
 - updated tutorial (thanks to james coughlan, ian ozsvald and others for suggestions)
 
+- added 'distributing binaries' section to the tutorial
+
 - removed FOR_IN_SEQ macro, renamed FOR_IN_NEW to FOR_IN
 
 - added 'setup.py test' option (thomas spura)
-
-- added 'distributing binaries' section to the tutorial
 
 - several minor fixes, cleanups
 
