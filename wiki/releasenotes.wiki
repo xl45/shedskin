@@ -46,6 +46,8 @@
 
 - added 'setup.py test' option (thomas spura)
 
+- added 'distributing binaries' section to the tutorial
+
 - several minor fixes, cleanups
 
 = Shed Skin 0.7.1 (19-02-2011) =
