@@ -28,7 +28,7 @@
 
 - remove -fomit-frame-pointer (thomas spura)
 
-- optimized float**{2,3} (reported by thomas spura)
+- optimized power(float, {2,3}) (reported by thomas spura)
 
 - add default hash method (triggered by frank chang)
 
