@@ -6,7 +6,7 @@
 
 - support for 'array' module
 
-- upgraded c64 emulator example, now around 3,500 lines (uses struct, array; danny milo)
+- upgraded c64 emulator example, now around 3,500 lines (sloccount; uses struct, array; danny milo)
 
 - new 'havlak loop recognition' example
 
