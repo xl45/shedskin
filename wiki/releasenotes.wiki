@@ -8,6 +8,8 @@
 
 - upgraded c64 emulator example, now around 3,000 lines (uses struct; danny milo)
 
+- new havlak loop detection algorithm example
+
 - new 'sha-1' example (uses struct; thanks to emanuel rumpf)
 
 - new 'solitaire encryption' example (thanks to funami)
