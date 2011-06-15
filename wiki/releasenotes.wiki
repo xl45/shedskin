@@ -1,6 +1,6 @@
 #summary shed skin release notes
 
-= Shed Skin 0.8 (01-06-2011) =
+= Shed Skin 0.8 (15-06-2011) =
 
 - support for 'struct' module (triggered by danny milo)
 
@@ -49,6 +49,8 @@
 - updated tutorial (thanks to james coughlan, ian ozsvald and others for suggestions)
 
 - added 'distributing binaries' section to the tutorial
+
+- added 'faq' section to the wiki
 
 - removed FOR_IN_SEQ macro, renamed FOR_IN_NEW to FOR_IN
 
