@@ -33,9 +33,13 @@ for example, the [http://gitorious.org/shedskin/mainline/trees/master/examples p
 true, but:
 
 - not everyone can program in C
+
 - not everyone likes to program in C
+
 - not every program can be made much faster in C
+
 - statically compiled python code can often be fast enough
+
 - a single python version is easier to debug and maintain
 
 well, almost true, because you will have to use assembly language for ultimate performance of course.
