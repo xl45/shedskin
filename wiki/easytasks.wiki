@@ -8,6 +8,8 @@ http://code.google.com/p/shedskin/issues/detail?id=111
 
 http://code.google.com/p/shedskin/issues/detail?id=108
 
+http://code.google.com/p/shedskin/issues/detail?id=137
+
 = improve IO speed =
 
 IO in shedskin is SLOW. file IO (file, pipes, cStringIO) is currently per-character. print speed can also still be much improved (this is more difficult though).
