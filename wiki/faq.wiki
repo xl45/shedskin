@@ -22,7 +22,7 @@ static compilation has other advantages. if you know what you are doing, for exa
 
 = no sir, I don't like it. restricted python is not python! =
 
-code accepted by shedskin is still legal python code.
+code accepted by shedskin is still pure python code.
 
 shedskin can also generate extension modules for you, that can be incorporated into larger python programs. so you can use unrestricted python code and libraries in your main program, but still get a speedup in some critical piece of code, while keeping everything in pure python. 
 
