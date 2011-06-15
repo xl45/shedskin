@@ -18,7 +18,7 @@ that's true. but shedskin is not meant to work for arbitrary code, or to be very
 
 it is very useful to have a good JIT compiler when writing, say, a Django application. but when you are writing, say, a neural network implementation, it is not easy for a JIT to come close to the performance of a static C++ compiler. 
 
-static compilation has other advantages. if you know what you are doing, for example, it is more transparent how your code is optimized; static typing also gives you a guarantee of type-correctness - compilation with shedskin sometimes actually uncovers bugs in the original code; for some, better code obfuscation may be of benefit.
+static compilation has other advantages. if you know what you are doing, for example, it is more transparent how your code is optimized. static typing also gives you a guarantee of type-correctness - compilation with shedskin sometimes actually uncovers bugs in the original code.
 
 = no sir, I don't like it. restricted python is not python! =
 
