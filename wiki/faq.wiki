@@ -53,3 +53,9 @@ that's of course ridiculous. but it's true JITs will probably be 'fast enough' i
 shedskin has its own implementation of the python builtins, so when objects are passed between shedskin and cpython, they often have to be converted, which can be very slow indeed. additionally, not every type of object can be passed. for example, numpy is currently not supported, so numpy arrays have to be passed via their 'tolist' method. 
 
 shedskin is a tool, that can be very useful at times, but often you'll have to puzzle a bit how to best use it in a given situation.
+
+= my program doesn't become faster after compilation =
+
+in most cases, this is because C++ is not faster at IO, allocating small objects or string operations. there's often no use in compiling a program for speed if one of these is the bottleneck. 
+
+working around small object allocations cane often make the resulting C++ much faster. see the [http://code.google.com/p/shedskin/downloads/detail?name=shedskin-documentation-0.8.html&can=2&q= documentation] for other performance tips. 
