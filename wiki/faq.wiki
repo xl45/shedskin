@@ -44,7 +44,7 @@ true, but:
 
 well, almost true, because you will have to use assembly language for ultimate performance of course.
 
-= just you wait, those JIT compilers will be faster than manual assembly language! =
+= but wait, those JIT compilers will be faster than manual assembly language! =
 
 that's of course ridiculous. but it's true JITs will probably be 'fast enough' in more and more cases, so it's just not worth it to spend time optimizing things further. shedskin is there to push performance further if needed, with potentially much less user effort than having to resort to manual C.
 
