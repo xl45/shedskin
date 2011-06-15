@@ -58,7 +58,7 @@ shedskin is a tool, that can be very useful at times, but often you'll have to p
 
 in most cases, this is because C++ is not faster at IO, allocating small objects or string operations. there's often no use in compiling a program for speed if one of these is the bottleneck. 
 
-working around small object allocations cane often make the resulting C++ much faster. see the [http://code.google.com/p/shedskin/downloads/detail?name=shedskin-documentation-0.8.html&can=2&q= documentation] for other performance tips.
+working around small object allocations can often make the resulting C++ much faster. see the [http://code.google.com/p/shedskin/downloads/detail?name=shedskin-documentation-0.8.html&can=2&q= documentation] for other performance tips.
 
 = what about parallellization? = 
 
