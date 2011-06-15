@@ -1,13 +1,51 @@
-#summary One-sentence summary of this page.
+#summary frequently asked questions/repeated statements
 
-= Introduction =
+= my god, why? =
 
-Add your content here.
+because we can!
 
+= but I heard we can't! type inference doesn't scale! it's exponential! =
 
-= Details =
+does this <graph> look exponential? since publishing it, the largest program has almost doubled in size, and it still fits this (slightly quadratic) curve.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+type inference for arbitrary python code may be intractable, but that doesn't say anything about statically restricted programs. there just hasn't been much research on the topic recently, and failed experiments from way back still seem to linger in people's minds.
+
+the perceived problem is also somewhat academic, because you could observe most types in a running python program (or store analysis results of a previous session), making type inference much easier. shedskin doesn't do this, because so far it's not needed.
+
+= but still, a JIT compiler is easier to use =
+
+that's true. but shedskin is not meant to work for arbitrary code, or to be very easy to use. it makes a different trade-off than the typical JIT compiler. rather than try and give a good speedup for arbitrary python code, it is a tool that explicitly sacrifices some flexibility in order to maximize performance for certain types of programs. this may make it useless in many cases, and hopefully useful in others.
+
+it is very useful to have a good JIT compiler when writing, say, a Django application. but when you are writing, say, a neural network implementation, it is not easy for a JIT to come close to the performance of a static C++ compiler. 
+
+static compilation has other advantages. if you know what you are doing, for example, it is more transparent how your code is optimized; static typing also gives you a guarantee of type-correctness - compilation with shedskin sometimes actually uncovers bugs in the original code; for some, better code obfuscation may be of benefit.
+
+= no sir, I don't like it. restricted python is not python! =
+
+code accepted by shedskin is still legal python. 
+
+shedskin can also generate extension modules for you, that can be incorporated into larger python programs. so you can use unrestricted python code and libraries in your main program, but still get a speedup in some critical piece of code, while keeping everything in pure python. 
+
+for example, the <pylot> raytracer example uses Tk and multiprocessing in combination with a shedskin-compiled extension module, and the <c64> examples uses pygtk for its interface.
+
+= if you want to have ultimate performance, use manual C = 
+
+true, but:
+
+- not everyone can program in C
+- not everyone likes to program in C
+- not every program can be made much faster in C
+- statically compiled python code can often be fast enough
+- a single python version is easier to debug and maintain
+
+well, almost true, because you will have to use assembly language for ultimate performance of course.
+
+= just you wait, those JIT compilers will be faster than manual assembly language! =
+
+that's of course ridiculous. but it's true JITs will probably be 'fast enough' in more and more cases, so it's just not worth it to spend time optimizing things further.
+
+= integration is not straightforward =
+
+shedskin has its own implementation of the python builtins, so when objects are passed between shedskin and cpython, they often have to be converted, which can be very slow indeed. additionally, not every type of object can be passed. for example, numpy is currently not supported, so numpy arrays have to be passed via their 'tolist' method. 
+
+shedskin is a tool, that can be very useful at times, but often you'll have to puzzle a bit how to best use it in a given situation.
