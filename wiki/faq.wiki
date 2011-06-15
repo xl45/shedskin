@@ -6,7 +6,7 @@ because we can!
 
 = but I heard we can't! type inference doesn't scale! it's exponential! =
 
-does this <graph> look exponential? since publishing it, the largest program has almost doubled in size, and it still fits this (slightly quadratic) curve.
+does this [http://shed-skin.blogspot.com/2010/12/shed-skin-07-type-inference-scalability.html graph] look exponential? since publishing it, the largest program has almost doubled in size, and it still fits this (slightly quadratic?) curve.
 
 type inference for arbitrary python code may be intractable, but that doesn't say anything about statically restricted programs. there just hasn't been much research on the topic recently, and failed experiments from way back still seem to linger in people's minds.
 
