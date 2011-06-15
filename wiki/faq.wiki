@@ -62,7 +62,7 @@ working around small object allocations can often make the resulting C++ much fa
 
 = what about parallellization? = 
 
-the preferred way to parallelize shedskin-compiled programs is to generate a single extension module (shedskin -e), and use this in combination with the multiprocessing library. this way, the program will also run faster (no issues with the Global Interpreter Lock). 
+the preferred way to parallelize shedskin-compiled programs is to generate a single extension module (shedskin -e), and use this in combination with the multiprocessing library. this way, the original program will also run faster than when using threads (no issues with the Global Interpreter Lock). 
 
 see the [http://gitorious.org/shedskin/mainline/trees/master/examples pylot raytracer example] for an example of this.
 
