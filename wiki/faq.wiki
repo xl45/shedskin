@@ -4,7 +4,7 @@
 
 because we can!
 
-= but I heard we can't! type inference doesn't scale! it's exponential! =
+= but I heard we can't! type inference doesn't scale! it's exponential.. =
 
 does this [http://shed-skin.blogspot.com/2010/12/shed-skin-07-type-inference-scalability.html graph] look exponential? since publishing it, the largest program has almost doubled in size, and it still fits this (slightly quadratic?) curve.
 
