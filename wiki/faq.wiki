@@ -16,7 +16,7 @@ the perceived problem is also somewhat academic, because one could observe most 
 
 that's true. but shedskin is not meant to work for arbitrary code, or to be very easy to use. it makes a different trade-off than the typical JIT compiler. rather than try and give a good speedup for arbitrary python code, it is a tool that explicitly sacrifices some flexibility in order to maximize performance for certain types of programs. this may make it useless in many cases, and useful in some.
 
-it is very useful to have a good JIT compiler when writing, say, a Django application. but when you are writing, say, a neural network implementation, it is not easy for a JIT to come close to the performance of a static C++ compiler. 
+it is very useful to have a good JIT compiler when writing, say, a Django application. but when you are writing a neural network implementation, for example, it is not easy for a JIT to come close to the performance of a static C++ compiler. 
 
 static compilation has other advantages. if you know what you are doing, for example, it is more transparent how your code is optimized. static typing also gives you a guarantee of type-correctness - compilation with shedskin sometimes actually uncovers bugs in the original code.
 
