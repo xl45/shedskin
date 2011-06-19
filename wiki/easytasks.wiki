@@ -1,4 +1,4 @@
-#summary Easy tasks to get involved in Shedskin development
+#summary easy tasks to get involved in Shedskin development
 
 = easy issues =
 
