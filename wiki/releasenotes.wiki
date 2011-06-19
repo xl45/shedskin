@@ -1,4 +1,4 @@
-#summary shed skin release notes
+#summary Shedskin release notes
 
 = Shed Skin 0.8 (15-06-2011) =
 
