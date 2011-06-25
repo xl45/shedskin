@@ -1,11 +1,5 @@
 #summary easy tasks to get involved in Shedskin development
 
-= easy issues =
-
-http://code.google.com/p/shedskin/issues/detail?id=62
-
-http://code.google.com/p/shedskin/issues/detail?id=108
-
 = string formatting performance =
 
 the important __modfill function in lib/builtin.cpp can probably become a lot faster by building the result in one go, instead of using many intermediate allocations. something similar holds for many __repr__ methods..
