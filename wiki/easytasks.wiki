@@ -4,8 +4,6 @@
 
 http://code.google.com/p/shedskin/issues/detail?id=62
 
-http://code.google.com/p/shedskin/issues/detail?id=111
-
 http://code.google.com/p/shedskin/issues/detail?id=108
 
 = string formatting performance =
