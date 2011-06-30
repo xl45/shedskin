@@ -24,14 +24,8 @@ profile and optimize commonly used string methods
 
 currently we use an STL vector internally. it should probably be faster to use our own cpython-based implementation, and GC_MALLOC_ATOMIC when possible (as was done for the set and dict classes). probably not that easy, but a proof-of-concept would be very interesting.
 
-= open('U') =
-
-this doesn't work correctly yet under windows. see test 191 (test code is commented out for now).
-
 = shedskin -x improvement =
 
 it would be nice to get closer to a python traceback, including filenames and line numbers. there are some snippets on the web to do this for C, so with some minor modifications it can probably be made to work for C++.
-
-it would be even nicer to generate a traceback only when there is an uncaught exception, but it's not clear if this is possible with C++/GCC.
 
 this is also currently disabled under windows.
