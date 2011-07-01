@@ -33,3 +33,7 @@ currently we use an STL vector internally. it should probably be faster to use o
 it would be nice to get closer to a python traceback, including filenames and line numbers. there are some snippets on the web to do this for C, so with some minor modifications it can probably be made to work for C++.
 
 this is also currently disabled under windows.
+
+= arbitrary-size arithmetic =
+
+might be quite a bit of work, but long term it would be nice to support arbitrary-size integer arithmetic through something like libgmp.
