@@ -14,7 +14,7 @@ we could use more tests (see tests/run.py). support for class-level attributes a
 
 = string support =
 
-profile and optimize commonly used string methods
+profile and optimize commonly used string methods. long term, we want to replace the STL strings with a cpython-based implementation, but that's a lot of work.
 
 = struct and ieee754 =
 
