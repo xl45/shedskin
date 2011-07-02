@@ -36,4 +36,4 @@ this is also currently disabled under windows.
 
 = arbitrary-size arithmetic =
 
-might be quite a bit of work, but long term it would be nice to support arbitrary-size integer arithmetic through something like libgmp.
+might be quite a bit of work, but long term it would be nice to support arbitrary-size integer arithmetic through something like libgmp. note the 'typedef __ss_int' statement in the top of lib/builtin.hpp.
