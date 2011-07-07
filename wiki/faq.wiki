@@ -60,6 +60,12 @@ in most cases, this is because C++ is not faster at IO, allocating small objects
 
 working around small object allocations can often make the resulting C++ much faster. see the [http://code.google.com/p/shedskin/downloads/detail?name=shedskin-documentation-0.8.html&can=2&q= documentation] for other performance tips.
 
+= shedskin doesn't terminate for my program =
+
+we'd really like to hear about such programs, as they can be very useful to improve shedskin's type inference engine. please post them on the mailing list, or send them in private to mark.dufour, at gmail.com.
+
+shedskin is known to have trouble analyzing actually dynamic types. first please make sure that you are not mixing different types together, such as integers and strings in the same list or variable.
+
 = what about parallellization? = 
 
 the preferred way to parallelize shedskin-compiled programs is to generate a single extension module (shedskin -e), and use this in combination with the multiprocessing library. this way, the original program will also run faster than when using threads (no issues with the Global Interpreter Lock). 
