@@ -66,6 +66,8 @@ we'd really like to hear about such programs, as they can be very useful to impr
 
 shedskin is known to have trouble analyzing actually dynamic types. first please make sure that you are not mixing different types together, such as integers and strings in the same list or variable.
 
+if you are not sure where the dynamic types are, try to compile a small version of your program first, and add to it, until you see which part of the code triggers them.
+
 = what about parallellization? = 
 
 the preferred way to parallelize shedskin-compiled programs is to generate a single extension module (shedskin -e), and use this in combination with the multiprocessing library. this way, the original program will also run faster than when using threads (no issues with the Global Interpreter Lock). 
