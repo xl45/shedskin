@@ -66,7 +66,7 @@ we'd really like to hear about such programs, as they can be very useful to impr
 
 shedskin is known to have trouble analyzing actually dynamic types. first please make sure that you are not mixing different types together, such as integers and strings in the same list or variable.
 
-if you are not sure where the dynamic types are, try to compile a small version of your program first, and add to it, until you see which part of the code triggers them.
+if you are not sure where the dynamic types come from, try to compile a small version of your program first, and add to it, until you see which part of the code triggers them.
 
 = what about parallellization? = 
 
