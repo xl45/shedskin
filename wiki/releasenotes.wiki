@@ -12,6 +12,8 @@
 
 - only print tracebacks for uncaught exceptions (joris van zwieten)
 
+- some further exception handling cleanups
+
 - add set.isdisjoint, sys.maxsize (brent pedersen)
 
 - some other set improvements (brent pedersen)
