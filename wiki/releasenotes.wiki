@@ -6,6 +6,10 @@
 
 - c64 example now without glitches for international karate
 
+- file I/O rewrite for performance (francois boutines)
+
+- support for 'mmap' module (francois boutines)
+
 - only print tracebacks for uncaught exceptions (joris van zwieten)
 
 - implementation of builtins split up into separate files (triggered by francois)
