@@ -12,6 +12,8 @@
 
 - only print tracebacks for uncaught exceptions (joris van zwieten)
 
+- add set.isdisjoint, sys.maxsize (brent pedersen)
+
 - implementation of builtins split up into separate files (triggered by francois)
 
 - cleaned up GCC warnings for builtins (triggered by francois)
