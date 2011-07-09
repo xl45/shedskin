@@ -1,5 +1,17 @@
 #summary Shedskin release notes
 
+= Shed Skin 0.9 (GIT) =
+
+- new 'sokoban' example (uses array, collections.deque)
+
+- c64 now without glitches for international karate
+
+- only print tracebacks for uncaught exceptions (joris van zwieten)
+
+- implementation of builtins split up into separate files (triggered by francois)
+
+- warning cleanup for builtins (triggered by francois)
+
 = Shed Skin 0.8 (15-06-2011) =
 
 - support for 'struct' module (triggered by danny milo)
