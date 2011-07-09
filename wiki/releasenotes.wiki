@@ -27,6 +27,8 @@
 - cleaned up GCC warnings for builtins (triggered by francois)
 
 - support 'id' builtin for non-scalars
+ 
+- documented how to profile extension modules
 
 = Shed Skin 0.8 (15-06-2011) =
 
