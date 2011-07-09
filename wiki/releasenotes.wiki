@@ -6,11 +6,11 @@
 
 - c64 example now without glitches for international karate
 
-- file I/O rewrite for performance (francois boutines)
+- support for 'mmap' module (francois boutines)
+
+- file I/O rewrite for performance (francois)
 
 - fixes for 'universal mode' (francois)
-
-- support for 'mmap' module (francois)
 
 - only print tracebacks for uncaught exceptions (joris van zwieten)
 
