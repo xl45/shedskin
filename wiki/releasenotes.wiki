@@ -8,7 +8,9 @@
 
 - file I/O rewrite for performance (francois boutines)
 
-- support for 'mmap' module (francois boutines)
+- fixes for 'universal mode' (francois)
+
+- support for 'mmap' module (francois)
 
 - only print tracebacks for uncaught exceptions (joris van zwieten)
 
@@ -16,7 +18,7 @@
 
 - add set.isdisjoint, sys.maxsize (brent pedersen)
 
-- some other set improvements (brent pedersen)
+- some other set improvements (brent)
 
 - string equality optimization (francois)
 
