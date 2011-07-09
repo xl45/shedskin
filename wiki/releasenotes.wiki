@@ -10,7 +10,7 @@
 
 - implementation of builtins split up into separate files (triggered by francois)
 
-- warning cleanup for builtins (triggered by francois)
+- cleaned up GCC warnings for builtins (triggered by francois)
 
 = Shed Skin 0.8 (15-06-2011) =
 
