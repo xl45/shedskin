@@ -22,11 +22,15 @@
 
 - string equality optimization (francois)
 
+- fix for string/array equality and \0 (francois)
+
 - implementation of builtins split up into separate files (triggered by francois)
 
 - cleaned up GCC warnings for builtins (triggered by francois)
 
 - support 'id' builtin for non-scalars
+
+- some optimizations for array('c')
 
 - documented how to profile extension modules
 
