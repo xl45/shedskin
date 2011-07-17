@@ -28,9 +28,13 @@
 
 - cleaned up GCC warnings for builtins (triggered by francois)
 
+- improve rich comparison behavior for 'cmp' and 'sort(ed)' functions
+
 - support 'id' builtin for non-scalars
 
 - some optimizations for array('c')
+
+- use 'long' type for hash values everywhere
 
 - documented how to profile extension modules
 
