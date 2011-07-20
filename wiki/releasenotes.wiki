@@ -2,7 +2,9 @@
 
 = Shed Skin 0.9 (GIT) =
 
-- new 58th 'sokoban' example (uses array, collections.deque)
+- 58th 'sokoban' example (uses array, collections.deque)
+
+- 59th 'connect-4' example
 
 - c64 example now without glitches for international karate
 
