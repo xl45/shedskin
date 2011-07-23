@@ -26,6 +26,8 @@
 
 - fix for string/array equality and \0 (francois)
 
+- massive optimization for complex numbers (copy-by-value)
+
 - implementation of builtins split up into separate files (triggered by francois)
 
 - cleaned up GCC warnings for builtins (triggered by francois)
