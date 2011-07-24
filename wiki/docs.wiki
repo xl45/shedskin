@@ -330,7 +330,7 @@ shedskin-0.8\bin\libstdc++.dll
 
 ==UNIX==
 
-To use a generated binary on another system, make sure libgc and libpcre3 are installed there. If they are not, and you cannot install them globally, you can place copies of these libraries into the same directory as the binary, using the following approach:
+To use a generated binary on another system, make sure *libgc* and *libpcre3* are installed there. If they are not, and you cannot install them globally, you can place copies of these libraries into the same directory as the binary, using the following approach:
 
 {{{
 $ ldd test
@@ -345,39 +345,45 @@ Note that both systems have to be 32- or 64-bit for this to work. If not, **Shed
 
 = Parallel Processing =
 
-Suppose we have defined the following function in a file, called ``meuk.py``: ::
+Suppose we have defined the following function in a file, called `meuk.py`:
 
-    def part_sum(start, end):
-        """ calculate partial sum """
-        sum = 0
-        for x in xrange(start, end):
-            if x % 2 == 0:
-                sum -= 1.0 / x
-            else:
-                sum += 1.0 / x
-        return sum
+{{{
+def part_sum(start, end):
+    """ calculate partial sum """
+    sum = 0
+    for x in xrange(start, end):
+        if x % 2 == 0:
+            sum -= 1.0 / x
+        else:
+            sum += 1.0 / x
+    return sum
 
-    if __name__ == ’__main__’:
-        part_sum(1, 10)
+if __name__ == ’__main__’:
+    part_sum(1, 10)
+}}}
 
-To compile this into an extension module, type: ::
+To compile this into an extension module, type:
 
+{{{
     shedskin -e meuk
     make
+}}}
 
-To use the generated extension module with the ``multiprocessing`` standard library module, simply add a pure-Python wrapper: ::
+To use the generated extension module with the *multiprocessing* standard library module, simply add a pure-Python wrapper:
 
-    from multiprocessing import Pool
+{{{
+from multiprocessing import Pool
 
-    def part_sum((start, end)):
-        import meuk
-        return meuk.part_sum(start, end)
+def part_sum((start, end)):
+    import meuk
+    return meuk.part_sum(start, end)
 
-    pool = Pool(processes=2)
-    print sum(pool.map(part_sum, [(1,10000000), (10000001, 20000000)]))
-
+pool = Pool(processes=2)
+print sum(pool.map(part_sum, [(1,10000000), (10000001, 20000000)]))
+}}}
 
 = Calling C/C++ Code =
+
 To call manually written C/C++ code, follow these steps:
 
 1. Provide **Shed Skin** with enough information to perform type inference, by providing it with a *type model* of the C/C++ code. Suppose we wish to call a simple function that returns a list with the n smallest prime numbers larger than some number. The following type model, contained in a file called ``stuff.py``, is sufficient for **Shed Skin** to perform type inference: ::
