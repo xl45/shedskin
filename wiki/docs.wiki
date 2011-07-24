@@ -1,8 +1,10 @@
 #summary documentation
 
-= Introduction =
+= Shed Skin Documentation =
 
-Add your content here.
+Version 0.8
+June 15 2011
+Mark Dufour and James Coughlan
 
 
 = Details =
