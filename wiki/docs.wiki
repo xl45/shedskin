@@ -130,31 +130,31 @@ Programs to be compiled with **Shed Skin** cannot freely use the Python standard
  * *array*
  * *binascii*
  * *bisect*
+ * *collections* (defaultdict, deque)
+ * *ConfigParser* (no SafeConfigParser)
+ * *copy*
+ * *csv* (no Dialect, Sniffer)
+ * *datetime*
+ * *fnmatch*
+ * *getopt*
+ * *glob*
+ * *heapq*
+ * *itertools* (no starmap)
+ * *math*
+ * *mmap*
+ * *os*
+ * *os.path*
+ * *random*
+ * *re*
+ * *socket*
+ * *string*
+ * *struct* (no Struct, pack_into, unpack_from)
+ * *sys*
+ * *time*
 
+Note that other modules, such as *pickle*, may be used alongside a Shed Skin generated [#Generating_an_Extension_Module extension module].
 
-  - ``collections`` (defaultdict, deque)
-  - ``ConfigParser`` (no SafeConfigParser)
-  - ``copy``
-  - ``csv`` (no Dialect, Sniffer)
-  - ``datetime``
-  - ``fnmatch``
-  - ``getopt``
-  - ``glob``
-  - ``heapq``
-  - ``itertools`` (no starmap)
-  - ``math``
-  - ``mmap``
-  - ``os``
-  - ``os.path``
-  - ``random``
-  - ``re``
-  - ``socket``
-  - ``string``
-  - ``struct`` (no Struct, pack_into, unpack_from)
-  - ``sys``
-  - ``time``
-
-See `How to help out in Shed Skin Development`_ on how to help improve or add to the set of supported modules.
+See [#How_to_help_out_in_Development How to help out in Development] on how to help improve or add to the set of supported modules.
 
 = Installation =
 
