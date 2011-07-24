@@ -467,7 +467,7 @@ Also, negative index values can often be used to count 'backwards' (`a[-1]` in t
 
  * When optimizing, it is extremely useful to know exactly how much time is spent in each part of your program. The program [http://code.google.com/p/jrfonseca/wiki/Gprof2Dot Gprof2Dot] can be used to generate beautiful graphs for a stand-alone program, as well as the original Python code. The program [http://oprofile.sourceforge.net/ OProfile] can be used to profile an extension module.
 
-To use Gprof2dot, download 'gprof2dot.py' from the website, and install Graphviz. Then:
+To use Gprof2dot, download `gprof2dot.py` from the website, and install Graphviz. Then:
 
 {{{
 shedskin program
