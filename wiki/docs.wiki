@@ -110,9 +110,7 @@ Some other features are currently only partially supported:
 
 {{{
         self.class_attr # bad
-        self.__class__.class_attr # bad
         SomeClass.class_attr # good
-
         SomeClass.some_static_method() # good
 }}}
 
