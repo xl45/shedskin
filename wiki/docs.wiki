@@ -92,6 +92,39 @@ a = [1] # wrong - use a float here, too
 
 = Python Subset Restrictions =
 
+**Shed Skin** will only ever support a subset of all Python features. The following common features are currently not supported:
+
+  - *eval*, *getattr*, *hasattr*, *isinstance* and similar dynamic builtins
+  - arbitrary-size arithmetic (integers become 32-bit by default on most architectures, see `Command-line Options`_)
+  - variable numbers of arguments and keyword arguments
+  - multiple inheritance
+  - nested functions and classes
+  - unicode
+  - inheritance from builtins (excluding *Exception* and *object*)
+  - overloading *__iter__* and *__call__*
+  - closures
+
+Some other features are currently only partially supported:
+
+  - class attributes must always be accessed using a class identifier:
+
+{{
+        self.class_attr # bad
+        self.__class__.class_attr # bad
+        SomeClass.class_attr # good
+
+        SomeClass.some_static_method() # good
+}}
+
+  - function references can be passed around, but not method references, and they cannot be contained:
+
+{{
+        var = lambda x, y: x+y # good
+        var = some_func # good
+        var = self.some_method # bad, method reference
+        [var] # bad, contained
+}}
+
 = Library Limitations =
 
 = Installation = 
