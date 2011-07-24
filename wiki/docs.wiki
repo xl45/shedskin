@@ -1,6 +1,6 @@
 #summary documentation
 
-Shed Skin Documentation
+=Shed Skin Documentation=
 
 Version 0.8
 
