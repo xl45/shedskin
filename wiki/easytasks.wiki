@@ -1,4 +1,4 @@
-#summary easy tasks to get involved in Shedskin development
+#summary get involved in development
 
 = parameterize double type =
 
