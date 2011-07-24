@@ -158,6 +158,61 @@ See [#How_to_help_out_in_Development How to help out in Development] on how to h
 
 = Installation =
 
+The latest version of **Shed Skin** can be downloaded from the `Googlecode site`_. There are four types of packages available: a self-extracting **Windows** installer, a **Debian** (**Ubuntu**) package, an **RPM** package, and a **UNIX** source package.
+
+**Windows**
+
+To install the **Windows** version, simply download and start it. (If you use **ActivePython** or some other non-standard Python distribution, or **MingW**, please deinstall this first.)
+
+**Debian** (**Ubuntu**)
+
+To install the **Debian** package, simply download and install it using your package manager. Make sure the following packages are installed (at least version 4.2 of g++):
+
+``sudo apt-get install g++ libpcre3-dev libgc-dev python-dev``
+
+**RPM**
+
+To install the **RPM** package, simply download and install it using your package manager. Make sure the following packages are installed (at least version 4.2 of gcc-g++):
+
+``sudo yum install gcc-c++ pcre-devel gc-devel python-devel``
+
+**UNIX**
+
+To install the **UNIX** source package on a **GNU/Linux** or **OSX** system, take the following steps:
+
+ - download and unpack it
+
+ - run ``sudo python setup.py install``
+
+ - For **OSX**: install the Apple XCode development environment
+
+ - make sure you can run ``g++``, the C++ compiler (version 4.2 or higher)
+
+ - install the `Boehm`_ garbage collector (including development files)
+
+ - install the `PCRE`_ library (including development files)
+
+ - make sure the Python development files are installed
+
+**BOEHM GC**
+
+If the `Boehm`_ garbage collector is not available via your package manager, the following is known to work. Download for example version 7.2alpha5 from the `Boehm`_ website, unpack it, and install it as follows: ::
+
+    ./configure --prefix=/usr/local --enable-threads=posix --enable-cplusplus --enable-thread-local-alloc --enable-large-config
+    make
+    make check
+    sudo make install
+
+**PCRE**
+
+If the `PCRE`_ library is not available via your package manager, the following is known to work. Download for example version 8.12 from the `PCRE`_ website, unpack it, and build as follows: ::
+
+    ./configure --prefix=/usr/local
+    make
+    sudo make install
+
+
+
 = Compiling a Stand-Alone Program = 
 
 = Generating an Extension Module =
