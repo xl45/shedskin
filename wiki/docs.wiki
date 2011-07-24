@@ -22,6 +22,58 @@ At the moment, **Shed Skin** is compatible with Python versions 2.4 to 2.7, beha
 
 = Typing Restrictions =
 
+**Shed Skin** translates pure, but implicitly statically typed, Python programs into C++. The static typing restriction means that variables can only ever have a single, static type. So, for example, ::
+
+    a = 1
+    a = ’1’ # bad
+
+is not allowed. However, as in C++, types can be abstract, so that for example, ::
+
+    a = A()
+    a = B() # good
+
+where **A** and **B** have a common base class, is allowed.
+
+The typing restriction also means that the elements of some collection (``list``, ``set``, etc.) cannot have different types (because their subtype must also be static). Thus: ::
+
+    a = [’apple’, ’b’, ’c’] # good
+    b = (1, 2, 3) # good
+    c = [[10.3, -2.0], [1.5, 2.3], []] # good
+
+is allowed, but ::
+
+    d = [1, 2.5, ’abc’] # bad
+    e = [3, [1, 2]] # bad
+    f = (0, ’abc’, [1, 2, 3]) # bad
+
+is not allowed. Of course, dictionary keys and values may be of different types: ::
+
+    g = {’a’: 1, ’b’: 2, ’c’: 3} # good
+    h = {’a’: 1, ’b’: ’hello’, ’c’: [1, 2, 3]} # bad
+
+In the current version of **Shed Skin**, mixed types are also permitted in tuples of length two: ::
+
+    a = (1, [1]) # good
+
+In the future, mixed tuples up to a certain length will probably be allowed.
+
+``None`` may only be mixed with non-scalar types (i.e., not with ``int`` or ``float``): ::
+
+    l = [1]
+    l = None # good
+
+    m = 1
+    m = None # bad
+
+    def fun(x = None): # bad: use a special value for x here, e.g. x = -1
+        pass
+    fun(1)
+
+Integers and floats can often be mixed, but it is better to avoid this where possible, as it may confuse **Shed Skin**: ::
+
+    a = [1.0]
+    a = [1] # wrong - use a float here, too
+
 = Python Subset Restrictions =
 
 = Library Limitations =
