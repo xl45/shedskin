@@ -470,21 +470,21 @@ Also, negative index values can often be used to count 'backwards' (`a[-1]` in t
 To use Gprof2dot, download 'gprof2dot.py' from the website, and install Graphviz. Then:
 
 {{{
-    shedskin program
-    make program_prof
-    ./program_prof
-    gprof program_prof | gprof2dot.py | dot -Tpng -ooutput.png
+shedskin program
+make program_prof
+./program_prof
+gprof program_prof | gprof2dot.py | dot -Tpng -ooutput.png
 }}}
 
 To use OProfile, install it and use it as follows.
 
 {{{
-    shedskin -e extmod
-    make
-    sudo opcontrol --start
-    python main_program_that_imports_extmod
-    sudo opcontrol --shutdown
-    opreport -l extmod.so
+shedskin -e extmod
+make
+sudo opcontrol --start
+python main_program_that_imports_extmod
+sudo opcontrol --shutdown
+opreport -l extmod.so
 }}}
 
 ==Tricks==
