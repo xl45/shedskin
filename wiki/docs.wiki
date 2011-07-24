@@ -152,7 +152,7 @@ Programs to be compiled with **Shed Skin** cannot freely use the Python standard
  * *sys*
  * *time*
 
-Note that other modules, such as *pickle*, may be used alongside a Shed Skin generated [#Generating_an_Extension_Module extension module].
+Note that any other module, such as *pygame*, *pyqt* or *pickle*, may be used in combination with a Shed Skin generated [#Generating_an_Extension_Module extension module].
 
 See [#How_to_help_out_in_Development How to help out in Development] on how to help improve or add to the set of supported modules.
 
