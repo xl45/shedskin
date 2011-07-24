@@ -1,4 +1,4 @@
-#summary Shed Skin Documentation
+#summary documentation
 
 = Introduction =
 
