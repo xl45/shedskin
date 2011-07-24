@@ -160,7 +160,7 @@ See [#How_to_help_out_in_Development How to help out in Development] on how to h
 
 = Compiling a Stand-Alone Program = 
 
-= Generating an Extension module =
+= Generating an Extension Module =
 
 = Distributing Binaries = 
 
