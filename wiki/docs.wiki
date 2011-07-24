@@ -1,6 +1,8 @@
 #summary documentation
 
-Shed Skin Documentation 0.8
+=Shed Skin Documentation=
+
+Version 0.8
 
 Mark Dufour and James Coughlan
 
