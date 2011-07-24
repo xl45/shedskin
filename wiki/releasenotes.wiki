@@ -10,6 +10,8 @@
 
 - support for 'mmap' module (francois boutines)
 
+- support for 'binascii' module (fahrzin hemmati)
+
 - file I/O rewrite for performance (francois)
 
 - fixes for 'universal mode' (francois)
