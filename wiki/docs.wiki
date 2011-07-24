@@ -526,6 +526,6 @@ pl.show()
 
 = How to help out in Development =
 
-Open source projects thrive on feedback. Please send in bug reports, patches or other code, or suggestions about this document; or join the mailing list and start or participate in discussions.
+Open source projects thrive on feedback. Please send in bug reports, patches or other code, or suggestions about this document; or join the mailing list and start or participate in discussions. There is also a [easytasks page with suggestions] for possible tasks to start out with.
 
 If you are a student, you might want to consider applying for the yearly Google Summer of Code or GHOP projects. **Shed Skin** has so far successfully participated in one Summer of Code and one GHOP.
