@@ -12,7 +12,7 @@ Version 0.8, July 24 2011, Mark Dufour and James Coughlan
 
 **Shed Skin** uses type inference techniques to determine the implicit types used in a Python program, in order to generate the explicit type declarations needed in a C++ version. Because C++ is statically typed, **Shed Skin** requires Python code to be written such that all variables are (implicitly!) statically typed.
 
-Besides the typing and subset restrictions, supported programs cannot freely use the Python standard library, although 22 common modules are supported, such as `random` and `re` (see [#Library_Limitations Library Limitations]).
+Besides the typing and subset restrictions, supported programs cannot freely use the Python standard library, although 22 common modules are supported, such as *random* and *re* (see [#Library_Limitations Library Limitations]).
 
 Additionally, the type inference techniques employed by **Shed Skin** currently do not scale very well beyond several thousand lines of code (the largest compiled program is about 3,000 lines (sloccount)). In all, this means that **Shed Skin** is currently mostly useful to compile smallish programs and extension modules, that do not make extensive use of dynamic Python features or the standard or external libraries.
 
