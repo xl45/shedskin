@@ -461,7 +461,7 @@ Also, negative index values can often be used to count 'backwards' (`a[-1]` in t
 
  * Profile-guided optimization can help to squeeze out even more performance. For a recent version of GCC, first compile and run the generated code with `-fprofile-generate`, then with `fprofile-use`.
 
- * Several Python features (that may slow down generated code) are not always necessary, and can be turned off. See the section [#Command_line_Options Command-line Options] for details. Turning off bounds checking is usually a very safe optimization, and can help a lot for indexing-heavy code.
+ * Several Python features (that may slow down generated code) are not always necessary, and can be turned off. See the section [#Command-line_Options Command-line Options] for details. Turning off bounds checking is usually a very safe optimization, and can help a lot for indexing-heavy code.
 
  * For best results, configure a recent version of the Boehm GC using `CPPFLAGS="-O3 -march=native" ./configure --enable-cplusplus --enable-threads=pthreads --enable-thread-local-alloc --enable-large-config --enable-parallel-mark`. The last option allows the GC to take advantage of having multiple cores.
 
@@ -512,7 +512,7 @@ class mytuple:
         self.a, self.b, self.c = a, b, c
 }}}
 
-* Block comments surrounded by `#{` and `#}` are ignored by **Shed Skin**.  This can be used to comment out code that cannot be compiled. For example, the following will only produce a plot when run using **CPython**:
+ * Block comments surrounded by `#{` and `#}` are ignored by **Shed Skin**.  This can be used to comment out code that cannot be compiled. For example, the following will only produce a plot when run using **CPython**:
 
 {{{
 print "x =", x
