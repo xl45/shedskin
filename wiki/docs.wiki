@@ -22,15 +22,19 @@ At the moment, **Shed Skin** is compatible with Python versions 2.4 to 2.7, beha
 
 = Typing Restrictions =
 
-**Shed Skin** translates pure, but implicitly statically typed, Python programs into C++. The static typing restriction means that variables can only ever have a single, static type. So, for example, ::
+**Shed Skin** translates pure, but implicitly statically typed, Python programs into C++. The static typing restriction means that variables can only ever have a single, static type. So, for example, 
 
+{{{
     a = 1
     a = ’1’ # bad
+}}}
 
-is not allowed. However, as in C++, types can be abstract, so that for example, ::
+is not allowed. However, as in C++, types can be abstract, so that for example,
 
-    a = A()
-    a = B() # good
+{{{
+a = A()
+a = B() # good
+}}}
 
 where **A** and **B** have a common base class, is allowed.
 
