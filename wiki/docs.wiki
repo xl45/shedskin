@@ -3,7 +3,9 @@
 = Shed Skin Documentation =
 
 Version 0.8
+
 June 15 2011
+
 Mark Dufour and James Coughlan
 
 
