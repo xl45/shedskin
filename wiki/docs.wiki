@@ -108,22 +108,22 @@ Some other features are currently only partially supported:
 
  * class attributes must always be accessed using a class identifier:
 
-{{
+{{{
         self.class_attr # bad
         self.__class__.class_attr # bad
         SomeClass.class_attr # good
 
         SomeClass.some_static_method() # good
-}}
+}}}
 
  * function references can be passed around, but not method references, and they cannot be contained:
 
-{{
+{{{
         var = lambda x, y: x+y # good
         var = some_func # good
         var = self.some_method # bad, method reference
         [var] # bad, contained
-}}
+}}}
 
 = Library Limitations =
 
