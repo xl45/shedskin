@@ -1,4 +1,4 @@
-#summary Shedskin release notes
+#summary release notes
 
 = Shed Skin 0.9 (GIT) =
 
