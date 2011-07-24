@@ -46,6 +46,8 @@
 
 - documented how to profile extension modules
 
+- documentation moved to wiki
+
 
 = Shed Skin 0.8 (15-06-2011) =
 
