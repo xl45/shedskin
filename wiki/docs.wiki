@@ -8,6 +8,18 @@ Version 0.8, July 24 2011, Mark Dufour and James Coughlan
 
 = Introduction =
 
+**Shed Skin** is an experimental **Python-to-C++ compiler** designed to speed up the execution of computation-intensive Python programs. It converts programs written in a restricted subset of Python to C++. The C++ code can be compiled to executable code, which can be run either as a standalone program or as an extension module easily imported and used in a regular Python program.
+
+**Shed Skin** uses type inference techniques to determine the implicit types used in a Python program, in order to generate the explicit type declarations needed in a C++ version. Because C++ is statically typed, **Shed Skin** requires Python code to be written such that all variables are (implicitly!) statically typed.
+
+Besides the typing and subset restrictions, supported programs cannot freely use the Python standard library, although 22 common modules are supported, such as ``random`` and ``re`` (see `Library Limitations`_).
+
+Additionally, the type inference techniques employed by **Shed Skin** currently do not scale very well beyond several thousand lines of code (the largest compiled program is about 3,000 lines (sloccount)). In all, this means that **Shed Skin** is currently mostly useful to compile smallish programs and extension modules, that do not make extensive use of dynamic Python features or the standard or external libraries.
+
+Because **Shed Skin** is still in an early stage of development, it can also improve a lot. At the moment, you will probably run into some bugs when using it. Please report these, so they can be fixed!
+
+At the moment, **Shed Skin** is compatible with Python versions 2.4 to 2.7, behaves like 2.6, and should work on Windows and most UNIX platforms, such as GNU/Linux and OSX. On UNIX platforms, GCC version 4.2 or higher is required to compile the resulting C++ code.
+
 = Typing Restrictions =
 
 = Python Subset Restrictions =
