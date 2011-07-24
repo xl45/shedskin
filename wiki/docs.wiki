@@ -418,8 +418,9 @@ By moving `stuff.*` to `lib/`, we have in fact added support for an arbitrary li
 
 = Command-line Options = 
 
-The ``shedskin`` command can be given the following options: ::
+The `shedskin` command can be given the following options:
 
+{{{
     -a --ann               Output annotated source code (.ss.py)
     -b --nobounds          Disable bounds checking
     -d --dir               Specify alternate directory for output files
@@ -433,16 +434,18 @@ The ``shedskin`` command can be given the following options: ::
     -v --msvc              Output MSVC-style Makefile
     -w --nowrap            Disable wrap-around checking
     -x --backtrace         Print backtraces for all exceptions
+}}}
 
-For example, to compile the file ``test.py`` as an extension module, type ``shedskin –e test`` or ``shedskin ––extmod test``.
+For example, to compile the file `test.py` as an extension module, type `shedskin –e test` or `shedskin ––extmod test`.
 
-In Python, exceptions are raised for index out-of-bounds errors, as in the following example. Because checking for these errors can slow down certain programs, it can be turned off with the ``--nobounds`` option. ::
+In Python, exceptions are raised for index out-of-bounds errors, as in the following example. Because checking for these errors can slow down certain programs, it can be turned off with the `-b` or `--nobounds` option.
 
+{{{
     a = [1, 2, 3]
     print a[5] # invalid index: out of bounds
+}}}
 
-Also, negative index values can often be used to count 'backwards' (``a[-1]`` in the example). Because checking for this can also slow down certain programs, it can be turned off with the ``--nowrap`` option.
-
+Also, negative index values can often be used to count 'backwards' (`a[-1]` in the example). Because checking for this can also slow down certain programs, it can be turned off with the `-w` or `--nowrap` option.
 
 = Performance Tips and Tricks =
 
