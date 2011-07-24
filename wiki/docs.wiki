@@ -1,17 +1,27 @@
 #summary documentation
 
-= Shed Skin Documentation =
+= Introduction =
 
-Version 0.8
+= Typing Restrictions =
 
-June 15 2011
+= Python Subset Restrictions =
 
-Mark Dufour and James Coughlan
+= Library Limitations =
 
+= Installation = 
 
-= Details =
+= Compiling a Stand-Alone Program = 
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Generating an Extension module =
+
+= Distributing Binaries = 
+
+= Parallel Processing =
+
+= Calling C/C++ Code =
+
+= Command-line Options = 
+
+= Performance Tips and Tricks =
+
+= How to help out in Development =
