@@ -125,13 +125,12 @@ Some other features are currently only partially supported:
 
 = Library Limitations =
 
-At the moment, the following 25 modules are largely supported. Several of these, such as *os.path*, were compiled to C++ using **Shed Skin**.
+At the moment, the following 24 modules are largely supported. Several of these, such as *os.path*, were compiled to C++ using **Shed Skin**.
 
  * `array`
  * `binascii`
  * `bisect`
  * `collections` (defaultdict, deque)
- * `colorsys`
  * `ConfigParser` (no SafeConfigParser)
  * `copy`
  * `csv` (no Dialect, Sniffer)
