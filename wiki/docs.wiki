@@ -133,7 +133,7 @@ At the moment, the following 25 modules are largely supported. Several of these,
  * `collections` (defaultdict, deque)
  * `colorsys`
  * `ConfigParser` (no SafeConfigParser)
- * `opy`
+ * `copy`
  * `csv` (no Dialect, Sniffer)
  * `datetime`
  * `fnmatch`
