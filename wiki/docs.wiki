@@ -125,33 +125,33 @@ Some other features are currently only partially supported:
 
 = Library Limitations =
 
-Programs to be compiled with **Shed Skin** cannot freely use the Python standard library. At the moment, the following 24 modules are largely supported. Several of these, such as *os.path*, were compiled to C++ using **Shed Skin**.
+Programs to be compiled with **Shed Skin** cannot freely use the Python standard library. At the moment, the following 25 modules are largely supported. Several of these, such as *os.path*, were compiled to C++ using **Shed Skin**.
 
  * `array`
  * `binascii`
  * `bisect`
  * `collections` (defaultdict, deque)
  * `colorsys`
- * *ConfigParser* (no SafeConfigParser)
- * *copy*
- * *csv* (no Dialect, Sniffer)
- * *datetime*
- * *fnmatch*
- * *getopt*
- * *glob*
- * *heapq*
- * *itertools* (no starmap)
- * *math*
- * *mmap*
- * *os*
- * *os.path*
- * *random*
- * *re*
- * *socket*
- * *string*
- * *struct* (no Struct, pack_into, unpack_from)
- * *sys*
- * *time*
+ * `ConfigParser` (no SafeConfigParser)
+ * `opy`
+ * `csv` (no Dialect, Sniffer)
+ * `datetime`
+ * `fnmatch`
+ * `getopt`
+ * `glob`
+ * `heapq`
+ * `itertools` (no starmap)
+ * `math`
+ * `mmap`
+ * `os`
+ * `os.path`
+ * `random`
+ * `re`
+ * `socket`
+ * `string`
+ * `struct` (no Struct, pack_into, unpack_from)
+ * `sys`
+ * `time`
 
 Note that any other module, such as *pygame*, *pyqt* or *pickle*, may be used in combination with a Shed Skin generated [#Generating_an_Extension_Module extension module]. For examples of this, see the [http://gitorious.org/shedskin/mainline/trees/master/examples Shed Skin examples].
 
