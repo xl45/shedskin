@@ -2,17 +2,21 @@
 
 = Shed Skin 0.9 (GIT) =
 
+- support for 'mmap' module (francois boutines)
+
+- support for 'binascii' module (fahrzin hemmati)
+
+- support for 'colorsys' module (tony veijalainen)
+
+- file I/O rewrite for performance (francois)
+
+- massive optimization for complex numbers (copy-by-value)
+
 - 58th 'sokoban' example (uses array, collections.deque)
 
 - 59th 'connect-4' example
 
 - c64 example now without glitches for international karate
-
-- support for 'mmap' module (francois boutines)
-
-- support for 'binascii' module (fahrzin hemmati)
-
-- file I/O rewrite for performance (francois)
 
 - fixes for 'universal mode' (francois)
 
@@ -27,8 +31,6 @@
 - string equality optimization (francois)
 
 - fix for string/array equality and \0 (francois)
-
-- massive optimization for complex numbers (copy-by-value)
 
 - implementation of builtins split up into separate files (triggered by francois)
 
