@@ -421,7 +421,6 @@ The `shedskin` command can be given the following options:
 {{{
     -a --ann               Output annotated source code (.ss.py)
     -b --nobounds          Disable bounds checking
-    -d --dir               Specify alternate directory for output files
     -e --extmod            Generate extension module
     -f --flags             Provide alternate Makefile flags
     -l --long              Use long long ("64-bit") integers
