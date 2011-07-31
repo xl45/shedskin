@@ -435,14 +435,12 @@ The `shedskin` command can be given the following options:
 
 For example, to compile the file `test.py` as an extension module, type `shedskin –e test` or `shedskin ––extmod test`.
 
-In Python, exceptions are raised for index out-of-bounds errors, as in the following example. Because checking for these errors can slow down certain programs, it can be turned off with the `-b` or `--nobounds` option.
-
+Using `-b` or `--nobounds` is also very common, as it disables out-of-bounds exceptions (`IndexError`), which can have a large impact on performance.
+ 
 {{{
     a = [1, 2, 3]
     print a[5] # invalid index: out of bounds
 }}}
-
-Also, negative index values can often be used to count 'backwards' (`a[-1]` in the example). Because checking for this can also slow down certain programs, it can be turned off with the `-w` or `--nowrap` option.
 
 = Performance Tips and Tricks =
 
