@@ -52,6 +52,8 @@
 
 - support for 'isinstance' was dropped
 
+- avoid 'jump' to 100% in progress bar 
+
 - removed -d command-line option, replaced it with hidden debug-level option
 
 - documented how to profile extension modules
