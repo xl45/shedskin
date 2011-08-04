@@ -12,7 +12,7 @@
 
 - massive optimization for complex numbers (copy-by-value)
 
-- type inference scalability improvements (c64 emulator goes from 24 to 4 mins)
+- type inference scalability improvements (c64 emulator is analyzed 10 times faster!)
 
 - 3 new example programs:
 
