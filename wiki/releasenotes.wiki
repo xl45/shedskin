@@ -14,15 +14,13 @@
 
 - type inference scalability improvements (c64 emulator goes from 24 to 4 mins)
 
-- 4 new example programs:
+- 3 new example programs:
 
   - sokoban (uses array, collections.deque)
 
   - connect-4
 
   - interactive mandelbrot 
-
-  - dancing links sudoku solver
 
 - c64 example now without glitches for international karate
 
