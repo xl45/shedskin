@@ -2,6 +2,8 @@
 
 = Shed Skin 0.9 (GIT) =
 
+- type inference scalability improvements (c64 emulator is analyzed 10 times faster!)
+
 - support for 'mmap' module (francois boutines)
 
 - support for 'binascii' module (fahrzin hemmati)
@@ -11,8 +13,6 @@
 - file I/O rewrite for performance (francois)
 
 - massive optimization for complex numbers (copy-by-value)
-
-- type inference scalability improvements (c64 emulator is analyzed 10 times faster!)
 
 - 3 new example programs:
 
