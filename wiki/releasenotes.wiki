@@ -14,13 +14,15 @@
 
 - massive optimization for complex numbers (copy-by-value)
 
-- 3 new example programs:
+- 4 new example programs:
 
   - sokoban (uses array, collections.deque)
 
   - connect-4
 
   - interactive mandelbrot 
+
+  - dancing links sudoku solver
 
 - c64 example now without glitches for international karate
 
