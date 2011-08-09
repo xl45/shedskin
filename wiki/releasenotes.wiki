@@ -10,7 +10,7 @@
 
 - support for 'colorsys' module (tony veijalainen)
 
-- large file I/O performance improvements (francois)
+- much improved file I/O performance (francois)
 
 - massive optimization for complex numbers (copy-by-value)
 
@@ -40,11 +40,11 @@
 
 - fix for string/array equality and \0 (francois)
 
+- improved support for overloading comparison operators
+
 - implementation of builtins split up into separate files (triggered by francois)
 
 - cleaned up GCC warnings for builtins (triggered by francois)
-
-- improved support for overloading comparison operators
 
 - support 'id' builtin for non-scalars
 
