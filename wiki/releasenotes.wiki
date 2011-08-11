@@ -42,6 +42,8 @@
 
 - improved support for overloading comparison operators
 
+- several inheritance fixes (thanks to test case by jason ye)
+
 - implementation of builtins split up into separate files (triggered by francois)
 
 - cleaned up GCC warnings for builtins (triggered by francois)
