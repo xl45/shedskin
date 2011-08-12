@@ -44,6 +44,8 @@
 
 - several inheritance fixes (thanks to test case by jason ye)
 
+- improvements for working with 'incompatible' types (e.g., [[]] == [[1]])
+
 - implementation of builtins split up into separate files (triggered by francois)
 
 - cleaned up GCC warnings for builtins (triggered by francois)
