@@ -16,13 +16,13 @@
 
 - 4 new example programs:
 
-  - sokoban (uses array, collections.deque)
+    - sokoban (uses array, collections.deque)
 
-  - connect-4
+    - connect-4
 
-  - interactive mandelbrot 
+    - interactive mandelbrot 
 
-  - dancing links sudoku solver
+    - dancing links sudoku solver
 
 - c64 example now without glitches for international karate
 
@@ -44,7 +44,7 @@
 
 - several inheritance fixes (thanks to test case by jason ye)
 
-- improvements for working with 'incompatible' types (e.g., [[]] == [[1]])
+- improvements for working with 'incompatible' types (e.g., `[[]] == [[1]]`)
 
 - implementation of builtins split up into separate files (triggered by francois)
 
