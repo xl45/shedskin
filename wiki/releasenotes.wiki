@@ -62,6 +62,10 @@
 
 - removed -d command-line option, replaced it with hidden debug-level option
 
+- add --silent mode, showing only warnings
+
+- add timer (jason ye)
+
 - documented how to profile extension modules
 
 - documentation moved to wiki
