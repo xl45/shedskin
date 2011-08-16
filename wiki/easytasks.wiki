@@ -8,9 +8,15 @@ for ints, we use a special __ss_int type that can be changed from a single line 
 
 the important __modfill function in lib/builtin.cpp can probably become a lot faster by building the result in one go, instead of using many intermediate allocations. something similar holds for many __repr__ methods..
 
+(francois is looking into this)
+
 = itertools.product =
 
 the performance of this common function can be improved in at least two ways, as was done for the zip(a,b) implementation: preallocate tuples if their number is known, and use FOR_IN type iteration.
+
+= optimize 'for a,b in somedict.iteritems()' =
+
+similar as for zip and enumerate, we would like to optimize away intermediate objects here. see shedskin/lib/builtin/iter.hpp and shedskin/cpp.py.
 
 = extension module improvements =
 
