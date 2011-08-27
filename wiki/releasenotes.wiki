@@ -10,17 +10,19 @@
 
 - support for 'colorsys' module (tony veijalainen)
 
-- much improved file I/O performance (francois)
+- greatly improved file I/O performance (francois)
 
 - massive optimization for complex numbers (copy-by-value)
 
-- 4 new example programs:
+- 5 new example programs:
+
+    - RCG natural language parser (andreas van cranenburgh)
 
     - sokoban (uses array, collections.deque)
 
     - connect-4
 
-    - interactive mandelbrot 
+    - interactive mandelbrot (tony veijalainen)
 
     - dancing links sudoku solver
 
