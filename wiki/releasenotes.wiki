@@ -36,7 +36,7 @@
 
 - add set.isdisjoint, sys.maxsize (brent pedersen)
 
-- some other set improvements (brent)
+- several set methods now take multiple arguments (brent)
 
 - string equality optimization (francois)
 
