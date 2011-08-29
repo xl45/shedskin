@@ -68,6 +68,8 @@
 
 - add timer (jason ye)
 
+- os.utime implementation for windows
+
 - documented how to profile extension modules
 
 - documentation moved to wiki
