@@ -69,7 +69,7 @@ a = (1, [1]) # good
 
 In the future, mixed tuples up to a certain length will probably be allowed.
 
-*None* may only be mixed with non-scalar types (i.e., not with *int*, *float* or *complex*):
+*None* may only be mixed with non-scalar types (i.e., not with *int*, *float*, *bool* or *complex*):
 
 {{{
 l = [1]
