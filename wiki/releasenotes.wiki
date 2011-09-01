@@ -14,6 +14,8 @@
 
 - massive optimization for complex numbers (copy-by-value)
 
+- optimized 'for .., .. in somedict.iteritems()'
+
 - 5 new example programs (now 62 in total!):
 
     - RCG natural language parser (andreas van cranenburgh)
