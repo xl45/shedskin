@@ -32,7 +32,7 @@
 
 - fixes for 'universal mode' (francois)
 
-- only print tracebacks for uncaught exceptions (joris van zwieten)
+- only print tracebacks for uncaught exceptions (shedskin -x; joris van zwieten)
 
 - some further exception handling cleanups
 
