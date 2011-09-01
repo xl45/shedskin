@@ -16,7 +16,7 @@
 
 - optimized 'for .., .. in somedict.iteritems()'
 
-- 5 new example programs (now 62 in total!):
+- 6 new example programs (now 63 in total!):
 
     - natural language parser (andreas van cranenburgh)
 
@@ -27,6 +27,8 @@
     - interactive mandelbrot (tony veijalainen)
 
     - dancing links sudoku solver
+
+    - K-means++ clustering
 
 - c64 emulator example now without glitches for international karate
 
