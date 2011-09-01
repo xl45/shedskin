@@ -60,6 +60,8 @@
 
 - some optimizations for array('c')
 
+- some improvements for 'copy' module
+
 - use 'long' type for hash values everywhere
 
 - support for 'isinstance' was dropped
