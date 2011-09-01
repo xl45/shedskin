@@ -18,7 +18,7 @@
 
 - 5 new example programs (now 62 in total!):
 
-    - RCG natural language parser (andreas van cranenburgh)
+    - natural language parser (andreas van cranenburgh)
 
     - sokoban (uses array, collections.deque)
 
