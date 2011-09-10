@@ -14,10 +14,6 @@ the important __modfill function in lib/builtin.cpp can probably become a lot fa
 
 the performance of this common function can be improved in at least two ways, as was done for the zip(a,b) implementation: preallocate tuples if their number is known, and use FOR_IN type iteration.
 
-= optimize 'for a,b in somedict.iteritems()' =
-
-similar as for zip and enumerate, we would like to optimize away intermediate objects here. see shedskin/lib/builtin/iter.hpp and shedskin/cpp.py.
-
 = extension module improvements =
 
 we could use more tests (see tests/run.py). support for class-level attributes and properties would be nice.
