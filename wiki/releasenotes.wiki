@@ -1,6 +1,6 @@
 #summary release notes
 
-= Shed Skin 0.9 (09-10-2011) =
+= Shed Skin 0.9 (10-09-2011) =
 
 - type inference scalability improvements (c64 emulator 10 times faster!)
 
