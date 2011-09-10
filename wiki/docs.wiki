@@ -428,12 +428,12 @@ The `shedskin` command can be given the following options:
     -f --flags             Provide alternate Makefile flags
     -l --long              Use long long ("64-bit") integers
     -m --makefile          Specify alternate Makefile name
+    -n --silent            Silent mode, only show warnings
     -o --noassert          Disable assert statements
     -r --random            Use fast random number generator (rand())
     -s --strhash           Use fast string hashing algorithm (murmur)
-    -v --msvc              Output MSVC-style Makefile
     -w --nowrap            Disable wrap-around checking
-    -x --backtrace         Print backtraces for all exceptions
+    -x --traceback         Print traceback for uncaught exceptions
 }}}
 
 For example, to compile the file `test.py` as an extension module, type `shedskin –e test` or `shedskin ––extmod test`.
