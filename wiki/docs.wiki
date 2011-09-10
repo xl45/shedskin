@@ -342,7 +342,7 @@ $ cp /lib/x86_64-linux-gnu/libpcre.so.3 .
 $ LD_LIBRARY_PATH=. ./test
 }}}
 
-Note that both systems have to be 32- or 64-bit for this to work. If not, **Shed Skin** must be installed on the other system, to recompile the binary.
+Note that both systems have to be 32- or 64-bit for this to work. If not, *Shed Skin* must be installed on the other system, to recompile the binary.
 
 = Parallel Processing =
 
