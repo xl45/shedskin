@@ -2,7 +2,7 @@
 
 = Shed Skin 0.9 (10-09-2011) =
 
-- type inference scalability improvements (c64 emulator 10 times faster!)
+- major type inference scalability improvements (c64 emulator 10 times faster!)
 
 - support for 'mmap' module (francois boutines)
 
