@@ -323,10 +323,10 @@ After compiling this module as an extension module with **Shed Skin**, we can pa
 To use a generated Windows binary on another system, or to start it without having to double-click *init.bat*, place the following files into the same directory as the binary:
 
 {{{
-shedskin-0.8\shedskin\gc.dll
-shedskin-0.8\shedskin-libpcre-0.dll
-shedskin-0.8\bin\libgcc_s_dw-1.dll
-shedskin-0.8\bin\libstdc++.dll
+shedskin-0.9\shedskin\gc.dll
+shedskin-0.9\shedskin-libpcre-0.dll
+shedskin-0.9\bin\libgcc_s_dw-1.dll
+shedskin-0.9\bin\libstdc++.dll
 }}}
 
 ==UNIX==
