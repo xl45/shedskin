@@ -264,7 +264,7 @@ make
 
 For 'make' to succeed on a non-Windows system, make sure to have the Python development files installed (under *Debian*, install `python-dev`; under *Fedora*, install `python-devel`).
 
-Note that for type inference to be possible, the module must (indirectly) call its own functions. This is accomplished in the example by putting the function calls under the `if __name__=='__main__'` statement, so that they are not executed when the module is imported. Note that functions only have to be called indirectly, so if `func2` calls `func1`, the call to `func1` can be omitted.
+Note that for type inference to be possible, the module must (indirectly) call its own functions. This is accomplished in the example by putting the function calls under the `if __name__=='__main__'` statement, so that they are not executed when the module is imported. Functions only have to be called indirectly, so if `func2` calls `func1`, the call to `func1` can be omitted.
 
 The extension module can now be simply imported and used as usual:
 
