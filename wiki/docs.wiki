@@ -434,6 +434,7 @@ The `shedskin` command can be given the following options:
     -s --strhash           Use fast string hashing algorithm (murmur)
     -w --nowrap            Disable wrap-around checking
     -x --traceback         Print traceback for uncaught exceptions
+    -L --lib               Add a library directory
 }}}
 
 For example, to compile the file `test.py` as an extension module, type `shedskin –e test` or `shedskin ––extmod test`.
