@@ -6,6 +6,10 @@
 
 - support /etc/shedskin/FLAGS, /usr/share/shedskin/lib (triggered by Paul Boddie)
 
+- itertools.product optimization (triggered by lesshaste)
+
+- str.join and str non-equality optimization (triggered by lesshaste)
+
 - fix for itertools.izip (Jérémie Roquet)
 
 - several fixes for MSVC (Liu Zhenhai)
@@ -15,10 +19,6 @@
 - annotation fix (William Edwards)
 
 - fix for 'not a < b < c' (François Boutines)
-
-- itertools.product optimization (triggered by lesshaste)
-
-- str.join and str non-equality optimization (triggered by lesshaste)
 
 - os.popen2 improvement (triggered by Danny Milosavljevic)
 
