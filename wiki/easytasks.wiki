@@ -20,10 +20,6 @@ we could use more tests (see tests/run.py). support for class-level attributes a
 
 profile and optimize commonly used string methods. long term, we want to replace the STL strings with a cpython-based implementation, but that's a lot of work.
 
-= struct and ieee754 =
-
-(un)packing floats on hardware that doesn't natively use ieee754 format currently doesn't work.
-
 = list implementation =
 
 currently we use an STL vector internally. it should probably be faster to use our own cpython-based implementation, and GC_MALLOC_ATOMIC when possible (as was done for the set and dict classes). probably not that easy, but a proof-of-concept would be very interesting.
@@ -37,3 +33,11 @@ this is also currently disabled under windows.
 = arbitrary-size arithmetic =
 
 might be quite a bit of work, but long term it would be nice to support arbitrary-size integer arithmetic through something like libgmp. note the 'typedef __ss_int' statement in the top of lib/builtin.hpp.
+
+= share memory between shedskin and cpython =
+
+e.g. by making arrays accessible from both sides (no conversion). would be very nice to allow shedskin to work on numpy objects this way.
+
+= struct and ieee754 =
+
+(un)packing floats on hardware that doesn't natively use ieee754 format currently doesn't work.
