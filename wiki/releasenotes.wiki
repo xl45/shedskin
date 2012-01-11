@@ -1,5 +1,29 @@
 #summary release notes
 
+= Shed Skin 0.9.1 (15-01-2012) =
+
+- support /etc/shedskin/FLAGS, /usr/share/shedskin/lib (triggered by Paul Boddie)
+
+- fix for itertools.izip (Jérémie Roquet)
+
+- several fixes for MSVC (Liu Zhenhai)
+
+- fix os.listdir crash (Pierre-Marie de Rodat)
+
+- annotation fix (William Edwards)
+
+- new -L option to add library directories (Artem Egorkine)
+
+- fix for 'not a < b < c' (François Boutines)
+
+- itertools.product optimization (triggered by lesshaste)
+
+- str.join and str non-equality optimization (triggered by lesshaste)
+
+- os.popen2 improvement (triggered by Danny Milosavljevic)
+
+- improved extmod warnings (triggered by Paul Boddie)
+
 = Shed Skin 0.9 (10-09-2011) =
 
 - major type inference scalability improvements (c64 emulator 10 times faster!)
