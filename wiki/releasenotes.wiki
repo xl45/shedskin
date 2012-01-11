@@ -2,6 +2,10 @@
 
 = Shed Skin 0.9.1 (15-01-2012) =
 
+- new -L option to add library directories (Artem Egorkine)
+
+- support /etc/shedskin/FLAGS, /usr/share/shedskin/lib (triggered by Paul Boddie)
+
 - fix for itertools.izip (Jérémie Roquet)
 
 - several fixes for MSVC (Liu Zhenhai)
@@ -10,11 +14,7 @@
 
 - annotation fix (William Edwards)
 
-- new -L option to add library directories (Artem Egorkine)
-
 - fix for 'not a < b < c' (François Boutines)
-
-- support /etc/shedskin/FLAGS, /usr/share/shedskin/lib (triggered by Paul Boddie)
 
 - itertools.product optimization (triggered by lesshaste)
 
