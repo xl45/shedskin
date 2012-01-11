@@ -30,6 +30,8 @@
 
 - added missing class qualifier/include statement
 
+- fix for ConfigParser model (reported by Danny Milosavljevic)
+
 = Shed Skin 0.9 (10-09-2011) =
 
 - major type inference scalability improvements (c64 emulator 10 times faster!)
