@@ -4,6 +4,8 @@
 
 - support /etc/shedskin/FLAGS, /usr/share/shedskin/lib (triggered by Paul Boddie)
 
+- support enumerate 'start' argument
+
 - fix for itertools.izip (Jérémie Roquet)
 
 - several fixes for MSVC (Liu Zhenhai)
@@ -23,6 +25,8 @@
 - os.popen2 improvement (triggered by Danny Milosavljevic)
 
 - improved extmod warnings (triggered by Paul Boddie)
+
+- sys.exit improvements (reported by rodseth)
 
 = Shed Skin 0.9 (10-09-2011) =
 
