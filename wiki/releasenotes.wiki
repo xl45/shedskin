@@ -12,6 +12,8 @@
 
 - str.join and str non-equality optimization (triggered by lesshaste)
 
+- new example: hq2x image scaling
+
 - fix for itertools.izip (Jérémie Roquet)
 
 - several fixes for MSVC (Liu Zhenhai)
