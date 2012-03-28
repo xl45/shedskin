@@ -4,6 +4,8 @@
 
 - optimized `array.__getitem__`, array slicing
 
+- new example: stereo belief propagation (james coughlan)
+
 - `float.is_integer`
 
 - use 64-bit arithmetic in `pow` internally
