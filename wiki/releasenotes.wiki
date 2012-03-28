@@ -4,7 +4,7 @@
 
 - optimized `array.__getitem__`, array slicing
 
-- new example: stereo belief propagation (james coughlan)
+- new example: stereo computer vision (james coughlan)
 
 - `float.is_integer`
 
