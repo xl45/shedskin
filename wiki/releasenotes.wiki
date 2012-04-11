@@ -6,6 +6,8 @@
 
 - new example: stereo computer vision (james coughlan)
 
+- os.popen2 fix (danny milosavljevic)
+
 - `float.is_integer`
 
 - use 64-bit arithmetic in `pow` internally
