@@ -18,7 +18,7 @@
 
 - fix for skipped calls in generator (reported by francesco frassinelli)
 
-- avoid abstract `object` type, to avoid hiding warnings (triggered by wilkin ng)
+- avoid abstract `object` type, to avoid hiding warnings (reported by wilkin ng)
 
 - avoid multiple definitions for rich comparison code in header file (idem)
 
