@@ -2,27 +2,27 @@
 
 = Shed Skin 0.9.2 (?) =
 
-- optimized array indexing, slicing
-
 - new example: stereo computer vision (james coughlan)
 
 - os.popen2 fix (danny milosavljevic)
 
-- `float.is_integer`
+- optimized array indexing, slicing (reported by francesco frassinelli)
 
-- use 64-bit arithmetic in `pow` internally
+- `float.is_integer` (reported by tony veijalainen)
 
-- `set.__ior__` etc. modeling fix
+- use 64-bit arithmetic in `pow` internally (idem)
 
-- model `__eq__` in methods `__contains__`, `index`, `count`, `remove`
+- `set.__ior__` etc. modeling fix (reported by william edwards)
 
-- fix for skipped calls in generator
+- model `__eq__` in methods `__contains__`, `index`, `count`, `remove` (reported  by tony veijalainen)
 
-- avoid abstract `object` type, to avoid hiding warnings
+- fix for skipped calls in generator (reported by francesco frassinelli)
 
-- avoid multiple definitions for rich comparison code in header file
+- avoid abstract `object` type, to avoid hiding warnings (triggered by wilkin ng)
 
-- look in correct context for inherited methods
+- avoid multiple definitions for rich comparison code in header file (idem)
+
+- look in correct context for inherited methods (idem)
 
 = Shed Skin 0.9.1 (15-01-2012) =
 
