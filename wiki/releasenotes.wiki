@@ -10,6 +10,8 @@
 
 - optimized list.pop without arguments (reported by ecir hana)
 
+- optimized bool(list) (idem)
+
 - `float.is_integer` (reported by tony veijalainen)
 
 - use 64-bit arithmetic in `pow` internally (idem)
