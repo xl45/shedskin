@@ -8,6 +8,8 @@
 
 - optimized array indexing, slicing (reported by francesco frassinelli)
 
+- optimized list.pop without arguments (reported by ecir hana)
+
 - `float.is_integer` (reported by tony veijalainen)
 
 - use 64-bit arithmetic in `pow` internally (idem)
