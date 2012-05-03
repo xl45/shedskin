@@ -4,6 +4,8 @@
 
 - new example: stereo computer vision (james coughlan)
 
+- new example: rubik cube solver (author unknown)
+
 - os.popen2 fix (danny milosavljevic)
 
 - optimized array indexing, slicing (reported by francesco frassinelli)
