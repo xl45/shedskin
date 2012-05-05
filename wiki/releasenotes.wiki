@@ -4,7 +4,7 @@
 
 - new example: stereo computer vision (james coughlan)
 
-- new example: rubik cube solver (author unknown)
+- new example: rubik's cube solver (author unknown)
 
 - os.popen2 fix (danny milosavljevic)
 
