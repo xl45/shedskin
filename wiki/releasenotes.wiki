@@ -14,7 +14,7 @@
 
 - optimized bool(list) (idem)
 
-- `float.is_integer` (reported by tony veijalainen)
+- support `float.is_integer` (reported missing by tony veijalainen)
 
 - use 64-bit arithmetic in `pow` internally (idem)
 
