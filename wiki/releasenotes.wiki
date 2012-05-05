@@ -6,13 +6,13 @@
 
 - new example: rubik's cube solver (author unknown)
 
-- os.popen2 fix (danny milosavljevic)
-
 - optimized array indexing, slicing (reported by francesco frassinelli)
 
 - optimized list.pop without arguments (reported by ecir hana)
 
 - optimized bool(list) (idem)
+
+- os.popen2 fix (danny milosavljevic)
 
 - support `float.is_integer` (reported by tony veijalainen)
 
