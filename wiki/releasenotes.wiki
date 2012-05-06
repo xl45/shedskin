@@ -1,5 +1,9 @@
 #summary release notes
 
+= Shed Skin 0.9.3 (?) =
+
+- new -g option to disable GC warnings
+
 = Shed Skin 0.9.2 (5-5-2012) =
 
 - new example: stereo computer vision (james coughlan)
