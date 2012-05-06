@@ -10,6 +10,8 @@
 
 - new example: rubik's cube solver (author unknown)
 
+- new example: thistlethwaite rubik's cube solver (stephan pochmann)
+
 - optimized array indexing, slicing (reported by francesco frassinelli)
 
 - optimized list.pop without arguments (reported by ecir hana)
