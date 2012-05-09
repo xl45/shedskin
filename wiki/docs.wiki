@@ -159,29 +159,11 @@ See [#How_to_help_out_in_Development How to help out in Development] on how to h
 
 = Installation =
 
-There are four types of downloads available: a self-extracting *Windows* installer, a *Debian* (*Ubuntu*) package, an *RPM* package, and a *UNIX* tarball.
+There are two types of downloads available: a self-extracting *Windows* installer and a *UNIX* tarball. But preferrably of course, it is installed via your *GNU/Linux* package manager (Shed Skin is available in at least *Debian*, *Ubuntu*, *Fedora* and *Arch*).
 
 ==Windows==
 
-To install the *Windows* version, simply download and start it. (If you use *ActivePython* or some other non-standard Python distribution, or *MingW*, please deinstall this first.)
-
-==Debian (Ubuntu)==
-
-To install the *Debian* package, simply download and install it using your package manager. Make sure the following packages are installed (at least version 4.2 of `g++`):
-
-{{{
-sudo apt-get install g++ libpcre3-dev libgc-dev python-dev
-}}}
-
-==RPM==
-
-(Note that several RPM distributions, such as Fedora, contain *Shed Skin* in their package repositories.)
-
-To install the *RPM* package, simply download and install it using your package manager. Make sure the following packages are installed (at least version 4.2 of `gcc-g++`):
-
-{{{
-sudo yum install gcc-c++ pcre-devel gc-devel python-devel
-}}}
+To install the *Windows* version, simply download and start it. (If you use *ActivePython* or some other non-standard Python distribution, or *MingW*, please deinstall this first.) Please note that there are some known issues with Windows 7.
 
 ==UNIX==
 
