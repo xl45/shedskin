@@ -18,7 +18,7 @@ Additionally, the type inference techniques employed by **Shed Skin** currently 
 
 Because **Shed Skin** is still in an early stage of development, it can also improve a lot. At the moment, you will probably run into some bugs when using it. Please report these, so they can be fixed!
 
-At the moment, **Shed Skin** is compatible with Python versions 2.4 to 2.7, behaves like 2.6, and should work on Windows and most UNIX platforms, such as GNU/Linux and OSX. On UNIX platforms, GCC version 4.2 or higher is required to compile the resulting C++ code.
+At the moment, **Shed Skin** is compatible with Python versions 2.4 to 2.7, behaves like 2.6, and should work on Windows and most UNIX platforms, such as GNU/Linux and OSX. On UNIX platforms, GCC version 4.2 to 4.6 is required to compile the resulting C++ code.
 
 = Typing Restrictions =
 
@@ -159,11 +159,11 @@ See [#How_to_help_out_in_Development How to help out in Development] on how to h
 
 = Installation =
 
-There are two types of downloads available: a self-extracting *Windows* installer and a *UNIX* tarball. But preferrably of course, it is installed via your *GNU/Linux* package manager (Shed Skin is available in at least *Debian*, *Ubuntu*, *Fedora* and *Arch*).
+There are two types of downloads available: a self-extracting *Windows* installer and a *UNIX* tarball. But preferrably of course, Shed Skin is installed via your *GNU/Linux* package manager (Shed Skin is available in at least *Debian*, *Ubuntu*, *Fedora* and *Arch*).
 
 ==Windows==
 
-To install the *Windows* version, simply download and start it. (If you use *ActivePython* or some other non-standard Python distribution, or *MingW*, please deinstall this first.) Please note that there are some known issues with Windows 7.
+To install the *Windows* version, simply download and start it. (If you use *ActivePython* or some other non-standard Python distribution, or *MingW*, please deinstall this first.) Please note that there are some known issues with Windows 7. We hope to fix this for 0.9.3
 
 ==UNIX==
 
@@ -176,6 +176,8 @@ To install the **UNIX** tarball on a *GNU/Linux* or *OSX* system, take the follo
  * install the [http://www.hpl.hp.com/personal/Hans_Boehm/gc/ Boehm garbage collector] (including development files)
  * install the [http://www.pcre.org/ PCRE library] (including development files)
  * make sure the Python development files are installed
+
+Please note there are some known issues with OSX Lion. We hope to fix this for 0.9.3.
 
 If the Boehm garbage collector is not available via your package manager, the following is known to work. Download for example version 7.2alpha6 from the [http://www.hpl.hp.com/personal/Hans_Boehm/gc/ website], unpack it, and install it as follows:
 
