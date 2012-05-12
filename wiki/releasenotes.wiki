@@ -4,6 +4,8 @@
 
 - new -g option to disable GC warnings
 
+- remaining fixes for GCC 4.7
+
 = Shed Skin 0.9.2 (5-5-2012) =
 
 - new example: stereo computer vision (james coughlan)
