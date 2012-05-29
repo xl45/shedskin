@@ -6,6 +6,8 @@
 
 - remaining fixes for GCC 4.7 (help from thomas spura, mos4567)
 
+- avoid crash on non-existant attribute (reported by danny milosavljevic)
+
 = Shed Skin 0.9.2 (5-5-2012) =
 
 - new example: stereo computer vision (james coughlan)
