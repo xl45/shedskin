@@ -8,6 +8,8 @@
 
 - avoid crash on non-existant attribute (reported by danny milosavljevic)
 
+- improve include file ordering (triggered by danny)
+
 - avoid trouble by adding main module to module cache (reported by badamomike)
 
 = Shed Skin 0.9.2 (5-5-2012) =
