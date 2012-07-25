@@ -2,6 +2,8 @@
 
 = Shed Skin 0.9.3 (?) =
 
+- support select.select (danny milosavljevic)
+
 - new -g option to disable GC warnings
 
 - remaining fixes for GCC 4.7 (help from thomas spura, mos4567)
