@@ -6,6 +6,8 @@
 
 - greatly optimized creating/extending arrays (triggered by piotr tarsa)
 
+- improve string formatting and null chars (reported by jorik blaas)
+
 - new -g option to disable GC warnings
 
 - remaining fixes for GCC 4.7 (help from thomas spura, mos4567)
