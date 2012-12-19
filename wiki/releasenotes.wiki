@@ -6,6 +6,8 @@
 
 - greatly optimized creating/extending arrays (triggered by piotr tarsa)
 
+- fix generator expression problem (triggered by piotr tarsa)
+
 - improve string formatting and null chars (reported by jorik blaas)
 
 - new -g option to disable GC warnings
