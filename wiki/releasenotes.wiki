@@ -5,6 +5,8 @@
 - support select.select (danny milosavljevic)
 
 - greatly optimized creating/extending arrays (triggered by piotr tarsa)
+ 
+- improve support for arbitrary code at the class level 
 
 - fix generator expression problem (triggered by piotr tarsa)
 
