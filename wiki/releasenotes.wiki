@@ -11,9 +11,9 @@
 
 - two new example programs:
 
-  - TarsaLZP, a data compression algorithm (about 900 lines)
+  - TarsaLZP, a data compression algorithm (about 900 lines, piotr tarsa)
   
-  - minpng, a minimal uncompressed PNG encoder (about 50 lines)
+  - minpng, a minimal uncompressed PNG encoder
 
 - fix generator expression problem (triggered by piotr tarsa)
 
