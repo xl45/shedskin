@@ -9,6 +9,12 @@
  
 - improve support for arbitrary code at the class level 
 
+- two new example programs:
+
+  - TarsaLZP, a data compression algorithm (about 900 lines)
+  
+  - minpng, a minimal uncompressed PNG encoder (about 50 lines)
+
 - fix generator expression problem (triggered by piotr tarsa)
 
 - improve string formatting and null chars (reported by jorik blaas)
