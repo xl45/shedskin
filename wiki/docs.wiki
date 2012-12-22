@@ -95,7 +95,7 @@ a = [1] # wrong - use a float here, too
 **Shed Skin** will only ever support a subset of all Python features. The following common features are currently not supported:
 
  * *eval*, *getattr*, *hasattr*, *isinstance*, anything really dynamic
- * arbitrary-size arithmetic (integers become 32-bit by default on most architectures, see [#Command-line_Options Command-line Options])
+ * arbitrary-size arithmetic (integers become 32-bit (signed) by default on most architectures, see [#Command-line_Options Command-line Options])
  * argument (un)packing (`*args` and `**kwargs`)
  * multiple inheritance
  * nested functions and classes
