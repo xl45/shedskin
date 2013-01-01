@@ -13,7 +13,7 @@
   
   - a conflict-driven satisfiability solver (thomas leonard)
 
-  - TarsaLZP, a data compression algorithm (about 900 lines, iotr tarsa)
+  - TarsaLZP, a data compression algorithm (about 900 lines, piotr tarsa)
   
   - minpng, a minimal uncompressed PNG encoder
 
