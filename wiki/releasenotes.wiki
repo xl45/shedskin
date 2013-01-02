@@ -1,6 +1,6 @@
 #summary release notes
 
-= Shed Skin 0.9.3 (1-1-2013) =
+= Shed Skin 0.9.3 (6-1-2013) =
 
 - support select.select (danny milosavljevic)
 
