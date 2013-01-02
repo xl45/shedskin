@@ -9,8 +9,10 @@
  
 - improve support for arbitrary code at the class level 
 
-- three new example programs:
+- new example programs (now 71 in total):
   
+  - a working NES emulator 
+
   - a conflict-driven satisfiability solver (thomas leonard)
 
   - TarsaLZP, a data compression algorithm (about 900 lines, piotr tarsa)
