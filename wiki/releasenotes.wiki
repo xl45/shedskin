@@ -9,9 +9,11 @@
  
 - improve support for arbitrary code at the class level 
 
-- new example programs (now 71 in total):
+- new example programs (now 72 in total):
   
   - pygasus, a NES emulator (Maciek "Mistrall" Żuk)
+
+  - timsort sorting algorithm (dan stromberg)
 
   - a conflict-driven satisfiability solver (thomas leonard)
 
