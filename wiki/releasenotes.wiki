@@ -11,7 +11,7 @@
 
 - new example programs (now 71 in total):
   
-  - pygasus, a working NES emulator 
+  - pygasus, a NES emulator (Maciek "Mistrall" Żuk)
 
   - a conflict-driven satisfiability solver (thomas leonard)
 
