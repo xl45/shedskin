@@ -11,9 +11,9 @@
 
 - new example programs (now 72 in total):
   
-  - pygasus, a NES emulator (Maciek "Mistrall" Żuk)
+  - pygasus, a NES emulator (about 1500 lines, Maciek "Mistrall" Żuk)
 
-  - timsort sorting algorithm (dan stromberg)
+  - timsort sorting algorithm (about 650 lines, dan stromberg)
 
   - a conflict-driven satisfiability solver (thomas leonard)
 
