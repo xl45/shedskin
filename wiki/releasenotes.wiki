@@ -35,7 +35,11 @@
 
 - avoid trouble by adding main module to module cache (reported by badamomike)
 
-- add a few warnings
+- update random.expovariate to 2.7 behaviour, finally fixing test 172
+
+- add a few warnings for expressions without types
+
+- various minor fixes
 
 = Shed Skin 0.9.2 (5-5-2012) =
 
