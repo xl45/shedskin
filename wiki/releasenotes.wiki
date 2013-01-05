@@ -37,7 +37,7 @@
 
 - update random.expovariate to 2.7 behaviour, finally fixing test 172
 
-- add a few warnings for expressions without types
+- add a few warnings for broken python code
 
 - various minor fixes
 
