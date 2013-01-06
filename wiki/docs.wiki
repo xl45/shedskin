@@ -101,7 +101,7 @@ a = [1] # wrong - use a float here, too
  * nested functions and classes
  * unicode
  * inheritance from builtins (excluding *Exception* and *object*)
- * overloading `__iter__` and `__call__`
+ * overloading `__iter__`, `__call__`, `__del__`
  * closures
 
 Some other features are currently only partially supported:
