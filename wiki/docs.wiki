@@ -2,7 +2,7 @@
 
 =Shed Skin Documentation=
 
-Version 0.9.2, May 5 2012, Mark Dufour and James Coughlan
+Version 0.9.3, January 9 2013, Mark Dufour and James Coughlan
 
 <wiki:toc max_depth="1" />
 
