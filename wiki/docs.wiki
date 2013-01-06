@@ -143,7 +143,7 @@ At the moment, the following 25 modules are largely supported. Several of these,
  * `itertools` (no starmap)
  * `math`
  * `mmap`
- * `os`
+ * `os` (some functionality missing on Windows)
  * `os.path`
  * `random`
  * `re`
