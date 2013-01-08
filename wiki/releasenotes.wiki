@@ -2,12 +2,11 @@
 
 = Shed Skin 0.9.3 (9-1-2013) =
 
-- support select.select (danny milosavljevic)
+- improve support for arbitrary code at the class level 
+
+- support select.select (UNIX, danny milosavljevic)
 
 - greatly optimized creating/extending arrays (triggered by piotr tarsa)
-
- 
-- improve support for arbitrary code at the class level 
 
 - new example programs (now 72 in total):
   
