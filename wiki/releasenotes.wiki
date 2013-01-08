@@ -2,7 +2,7 @@
 
 = Shed Skin 0.9.3 (9-1-2013) =
 
-- improve support for arbitrary code at the class level 
+- much improved support for arbitrary code at the class level 
 
 - support select.select (UNIX, danny milosavljevic)
 
