@@ -40,6 +40,8 @@
 
 - fix for when module exists in multiple libdirs (shedskin -L)
 
+- fix annotation crash (shedskin -a)
+
 = Shed Skin 0.9.2 (5-5-2012) =
 
 - new example: stereo computer vision (james coughlan)
