@@ -8,6 +8,10 @@ the important __modfill function in lib/builtin.cpp can probably become a lot fa
 
 the performance of this common function can be improved in at least two ways, as was done for the zip(a,b) implementation: preallocate tuples if their number is known, and use FOR_IN type iteration. (first part was done for 0.9.1)
 
+= cygwin instead of mingw =
+
+could this work, and would it lessen the pain of supporting windows correctly?
+
 = extension module improvements =
 
 we could use more tests (see tests/run.py). support for class-level attributes and properties would be nice.
