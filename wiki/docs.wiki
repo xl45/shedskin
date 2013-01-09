@@ -83,6 +83,8 @@ def fun(x = None): # bad: use a special value for x here, e.g. x = -1
 fun(1)
 }}}
 
+Integers and floats can usually be mixed (the integers become floats). Shedskin should complain in cases where they can't.
+
 = Python Subset Restrictions =
 
 **Shed Skin** will only ever support a subset of all Python features. The following common features are currently not supported:
