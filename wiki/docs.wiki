@@ -83,7 +83,7 @@ def fun(x = None): # bad: use a special value for x here, e.g. x = -1
 fun(1)
 }}}
 
-Integers and floats can usually be mixed (the integers become floats). **Shedskin** should complain in cases where they can't.
+Integers and floats can usually be mixed (the integers become floats). **Shed Skin** should complain in cases where they can't.
 
 = Python Subset Restrictions =
 
