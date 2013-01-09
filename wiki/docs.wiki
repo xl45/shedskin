@@ -406,6 +406,7 @@ The `shedskin` command can be given the following options:
     -b --nobounds          Disable bounds checking
     -e --extmod            Generate extension module
     -f --flags             Provide alternate Makefile flags
+    -g --nogcwarns         Disable runtime GC warnings
     -l --long              Use long long ("64-bit") integers
     -m --makefile          Specify alternate Makefile name
     -n --silent            Silent mode, only show warnings
