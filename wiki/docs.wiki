@@ -149,7 +149,7 @@ At the moment, the following 25 modules are largely supported. Several of these,
  * `sys`
  * `time`
 
-Note that any other module, such as *pygame*, *pyqt* or *pickle*, may be used in combination with a Shed Skin generated [#Generating_an_Extension_Module extension module]. For examples of this, see the [http://shedskin.googlecode.com/files/shedskin-examples-0.9.2.tgz Shed Skin examples].
+Note that any other module, such as *pygame*, *pyqt* or *pickle*, may be used in combination with a Shed Skin generated [#Generating_an_Extension_Module extension module]. For examples of this, see the [http://shedskin.googlecode.com/files/shedskin-examples-0.9.3.tgz Shed Skin examples].
 
 See [#How_to_help_out_in_Development How to help out in Development] on how to help improve or add to the set of supported modules.
 
