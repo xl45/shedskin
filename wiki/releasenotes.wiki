@@ -1,5 +1,35 @@
 #summary release notes
 
+= Shed Skin 0.9.4 (?-?-2013) =
+
+- type inference fix (avoiding premature termination in some cases)
+
+- simplified module lookup (Ernesto Ferro)
+
+- several large code cleanups (Ernesto Ferro)
+
+- (re)add and improve several warnings
+
+- fixes for pickling (triggered by Ernesto Ferro)
+
+- fix for method names equal to certain python builtins
+
+- fix for lost types in certain virtual functions
+
+- random.vonmisesvariate changed in python 2.7.4
+
+- parallelize tests (Ernesto Ferro)
+
+- fix for block quotes (#{ and #}, triggered by Paul Haeberli)
+
+- make __to_py__ method virtual (triggered by Ernesto Ferro)
+
+- fix for unpacking negative integers (reported by RealGrandrew)
+
+- partial implementation of __del__ (triggered by Paul Haeberli)
+
+- fix several crashes
+
 = Shed Skin 0.9.3 (9-1-2013) =
 
 - much improved support for arbitrary code at the class level 
