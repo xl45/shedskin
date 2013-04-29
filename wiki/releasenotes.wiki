@@ -26,7 +26,7 @@
 
 - fix for unpacking negative integers (reported by RealGrandrew)
 
-- partial implementation of __del__ (triggered by Paul Haeberli)
+- partial implementation of `__del__` (triggered by Paul Haeberli)
 
 - fix several crashes
 
