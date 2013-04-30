@@ -2,7 +2,7 @@
 
 = Shed Skin 0.9.4 (?-?-2013) =
 
-- type inference fix (avoiding premature termination in some cases)
+- type inference fix (concluding dynamic types too soon)
 
 - simplified module lookup (Ernesto Ferro)
 
