@@ -163,16 +163,68 @@ There are two types of downloads available: a self-extracting *Windows* installe
 To install the *Windows* version, simply download and start it. If you use *ActivePython* or some other non-standard Python distribution, or *MingW*, please deinstall this first. Note also that the 64-bit version of Python seems to be lacking a file, so it's not possible to build extension modules. Please use the 32-bit version instead.
 
 ==UNIX==
+===Using package Manager===
+For debian/fedora/ubuntu/arch install shedskin from the distro repository:
+{{{
+sudo apt-get install shedskin
+}}}
 
-To install the **UNIX** tarball on a *GNU/Linux* or *OSX* system, take the following steps:
+===Install manually===
+To install the **UNIX** tarball on a *GNU/Linux* system, take the following steps:
 
- * download and unpack it
+ * download and unpack shedskin
  * run `sudo python setup.py install`
+
+====Dependancies====
+To compile and run programs produced by shedskin the following libraries are needed: 
+ 
+ * `g++`, the C++ compiler (version 4.2 or higher).
+ * pcre development files
+ * Python development files
+ * Boehm garbage collection
+
+To install these libraries do the following:
+{{{
+sudo apt-get install g++ libpcre++dev python-all-dev libgc-dev
+}}}
+
+If the Boehm garbage collector is not available via your package manager, the following is known to work. Download for example version 7.2alpha6 from the [http://www.hpl.hp.com/personal/Hans_Boehm/gc/ website], unpack it, and install it as follows:
+
+{{{
+./configure --prefix=/usr/local --enable-threads=posix --enable-cplusplus --enable-thread-local-alloc --enable-large-config
+make
+make check
+sudo make install
+}}}
+
+If the PCRE library is not available via your package manager, the following is known to work. Download for example version 8.12 from the [http://www.pcre.org/ website], unpack it, and build as follows:
+
+{{{
+./configure --prefix=/usr/local
+make
+sudo make install
+}}}
+
+==OSX==
+
+===Install manually===
+To install the **UNIX** tarball on an *OSX* system, take the following steps:
+ * download and unpack shedskin
+ * run `sudo python setup.py install`
+
+====Dependancies====
+To compile and run programs produced by shedskin the following libraries  are needed: 
+ * `g++`, the C++ compiler (version 4.2 or higher)
+ * pcre development files
+ * Python development files
+ * Boehm garbage collection
+
+To install these libraries do the following:
+{{{
+sudo apt-get install g++ libpcre++dev python-all-dev libgc-dev
+}}}
+
  * For *OSX*: install the Apple XCode development environment
- * make sure you can run `g++`, the C++ compiler (version 4.2 or higher)
- * install the [http://www.hpl.hp.com/personal/Hans_Boehm/gc/ Boehm garbage collector] (including development files)
- * install the [http://www.pcre.org/ PCRE library] (including development files)
- * make sure the Python development files are installed
 
 Please note there are some known issues with OSX Lion. We hope to fix this for 0.9.3.
 
