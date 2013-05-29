@@ -164,7 +164,7 @@ To install the *Windows* version, simply download and start it. If you use *Acti
 
 ==UNIX==
 ===Using package Manager===
-For debian/fedora/ubuntu/arch install shedskin from the distro repository:
+Example command for when using Ubuntu:
 {{{
 sudo apt-get install shedskin
 }}}
@@ -175,7 +175,7 @@ To install the **UNIX** tarball on a *GNU/Linux* system, take the following step
  * download and unpack shedskin
  * run `sudo python setup.py install`
 
-====Dependancies====
+====Dependencies====
 To compile and run programs produced by shedskin the following libraries are needed: 
  
  * `g++`, the C++ compiler (version 4.2 or higher).
@@ -183,7 +183,7 @@ To compile and run programs produced by shedskin the following libraries are nee
  * Python development files
  * Boehm garbage collection
 
-To install these libraries do the following:
+To install these libraries under Ubuntu, type:
 {{{
 sudo apt-get install g++ libpcre++dev python-all-dev libgc-dev
 }}}
@@ -212,21 +212,12 @@ To install the **UNIX** tarball on an *OSX* system, take the following steps:
  * download and unpack shedskin
  * run `sudo python setup.py install`
 
-====Dependancies====
+====Dependencies====
 To compile and run programs produced by shedskin the following libraries  are needed: 
- * `g++`, the C++ compiler (version 4.2 or higher)
+ * `g++`, the C++ compiler (version 4.2 or higher; comes with the Apple XCode development environment?)
  * pcre development files
  * Python development files
  * Boehm garbage collection
-
-To install these libraries do the following:
-{{{
-sudo apt-get install g++ libpcre++dev python-all-dev libgc-dev
-}}}
-
- * For *OSX*: install the Apple XCode development environment
-
-Please note there are some known issues with OSX Lion. We hope to fix this for 0.9.3.
 
 If the Boehm garbage collector is not available via your package manager, the following is known to work. Download for example version 7.2alpha6 from the [http://www.hpl.hp.com/personal/Hans_Boehm/gc/ website], unpack it, and install it as follows:
 
