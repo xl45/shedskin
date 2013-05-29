@@ -169,7 +169,7 @@ Example command for when using Ubuntu:
 sudo apt-get install shedskin
 }}}
 
-===Manual Installation===
+===Manual installation===
 To manually install the **UNIX** tarball, take the following steps:
 
  * download and unpack shedskin
@@ -207,7 +207,7 @@ sudo make install
 
 ==OSX==
 
-===Manual Installation===
+===Manual installation===
 To install the **UNIX** tarball on an *OSX* system, take the following steps:
  * download and unpack shedskin
  * run `sudo python setup.py install`
