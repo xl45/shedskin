@@ -15,8 +15,10 @@
     - split up shared.py (Ernesto Ferro)
  
     - remove setgx/getgx functions (Ernesto Ferro)
- 
+
     - limit setmv/getmv functions to graph.py
+
+    - move most cpp-specific code to cpp.py (Ernesto Ferro)
 
 - (re)add and improve several warnings
 
