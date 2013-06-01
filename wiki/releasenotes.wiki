@@ -18,6 +18,8 @@
 
     - limit setmv/getmv functions to graph.py
 
+    - better follow python style guide, rename classes in shared.py (Ernesto Ferro)
+
     - move most cpp-specific code to cpp.py (Ernesto Ferro)
 
     - removed copy_ and struct_ modules (Ernesto Ferro)
