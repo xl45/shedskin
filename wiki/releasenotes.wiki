@@ -20,6 +20,8 @@
 
     - move most cpp-specific code to cpp.py (Ernesto Ferro)
 
+    - removed copy_ and struct_ modules (Ernesto Ferro)
+
 - (re)add and improve several warnings
 
 - fixes for pickling (triggered by Ernesto Ferro)
