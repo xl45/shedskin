@@ -4,11 +4,19 @@
 
 - type inference fix (concluding dynamic types too soon)
 
-- new example: wolfenstein-like engine (Ernesto Ferro)
+- new example: 
 
-- simplified module lookup (Ernesto Ferro)
+    - wolfenstein-like engine (Ernesto Ferro)
 
-- several large code cleanups (Ernesto Ferro)
+- several large code cleanups:
+
+    - simplified module lookup (Ernesto Ferro)
+
+    - split up shared.py (Ernesto Ferro)
+ 
+    - remove setgx/getgx functions (Ernesto Ferro)
+ 
+    - limit setmv/getmv functions to graph.py
 
 - (re)add and improve several warnings
 
