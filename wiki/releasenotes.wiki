@@ -4,11 +4,13 @@
 
 - type inference fix (concluding dynamic types too soon)
 
-- new examples: 
+- new examples (now 75 in total!):
 
     - wolfenstein-like engine (Ernesto Ferro)
 
     - 3D convex hull
+   
+    - C image processing (Paul Haeberli)
 
 - several large code cleanups:
 
