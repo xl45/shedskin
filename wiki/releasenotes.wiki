@@ -4,9 +4,11 @@
 
 - type inference fix (concluding dynamic types too soon)
 
-- new example: 
+- new examples: 
 
     - wolfenstein-like engine (Ernesto Ferro)
+
+    - 3D convex hull
 
 - several large code cleanups:
 
