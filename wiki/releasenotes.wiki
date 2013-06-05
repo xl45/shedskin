@@ -28,6 +28,8 @@
 
     - removed copy_ and struct_ modules (Ernesto Ferro)
 
+- fix for passing long integers to extension module (Ernesto Ferro)
+
 - (re)add and improve several warnings
 
 - fixes for pickling (triggered by Ernesto Ferro)
