@@ -30,8 +30,6 @@
 
 - fix for passing long integers to extension module (Ernesto Ferro)
 
-- (re)add and improve several warnings
-
 - fixes for pickling (triggered by Ernesto Ferro)
 
 - fix for method names equal to certain python builtins
@@ -47,6 +45,8 @@
 - fix corner case: removing last element of list while iterating over it.. (reported by akatopaz)
 
 - random.vonmisesvariate changed in python 2.7.4
+
+- (re)add and improve several warnings
 
 - make `__to_py__` method virtual (triggered by Ernesto Ferro)
 
