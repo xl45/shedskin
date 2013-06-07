@@ -1,6 +1,6 @@
 #summary release notes
 
-= Shed Skin 0.9.4 (?-6-2013) =
+= Shed Skin 0.9.4 (16-6-2013) =
 
 - type inference fix (concluding dynamic types too soon)
 
