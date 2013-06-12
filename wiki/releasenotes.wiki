@@ -46,6 +46,8 @@
 
 - fix corner case: removing last element of list while iterating over it.. (reported by akatopaz)
 
+- fix for method name equal to global variable name
+
 - random.vonmisesvariate changed in python 2.7.4
 
 - (re)add and improve several warnings
