@@ -32,6 +32,8 @@
 
 - fixes for pickling (triggered by Ernesto Ferro)
 
+- fix for when iteration variable is declared global (reported by Alex Susu)
+
 - fix for method names equal to certain python builtins
 
 - fix for lost types in certain virtual functions
