@@ -10,7 +10,7 @@ the performance of this common function can be improved in at least two ways, as
 
 = cygwin instead of mingw =
 
-could this work, and would it lessen the pain of supporting windows correctly?
+could this work, and would it lessen the pain of supporting windows?
 
 = extension module improvements =
 
